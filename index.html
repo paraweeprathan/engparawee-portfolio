@@ -9,15 +9,8 @@
 
     <meta
         name="description"
-        content="Parawee Prathan — Chemical Engineer with experience in process engineering, data, R&D, sustainability and technical projects."
+        content="Chemical Engineer with experience in process engineering, data analysis, R&D, laboratory work, and sustainability."
     >
-
-    <meta property="og:title" content="Parawee Prathan | Chemical Engineer">
-    <meta
-        property="og:description"
-        content="Chemical Engineer • Engineering • Process • Data • Sustainability • R&D"
-    >
-    <meta property="og:type" content="website">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,570 +20,379 @@
         rel="stylesheet"
     >
 
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+<!-- ================= NAVBAR ================= -->
 
-    <header class="navbar">
-        <div class="container nav-container">
+<header class="navbar">
+    <div class="nav-container">
 
-            <a href="#home" class="logo">
-                PP<span>.</span>
+        <a href="#home" class="logo">PP<span>.</span></a>
+
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<main>
+
+<!-- ================= HOME ================= -->
+
+<section id="home" class="hero section">
+
+    <div class="hero-content">
+
+        <div class="hero-tag">
+            CHEMICAL ENGINEER
+        </div>
+
+        <h1>
+            Engineering mindset.<br>
+            <span>Multidisciplinary thinking.</span>
+        </h1>
+
+        <p class="hero-description">
+            Chemical Engineer with hands-on experience across
+            process engineering, R&D, data, laboratory work,
+            and sustainability.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+                Explore My Work
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
-            <nav class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#journey" class="nav-link">Journey</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link">Contact</a>
-            </nav>
+            <a href="#journey" class="btn btn-outline">
+                My Journey
+            </a>
+        </div>
 
-            <div class="nav-actions">
-                <button
-                    class="theme-toggle"
-                    id="themeToggle"
-                    aria-label="Toggle theme"
-                >
-                    ◐
-                </button>
+    </div>
 
-                <button
-                    class="menu-toggle"
-                    id="menuToggle"
-                    aria-label="Open navigation menu"
-                >
-                    ☰
-                </button>
+    <div class="hero-graphic">
+
+        <div class="graphic-ring ring-1"></div>
+        <div class="graphic-ring ring-2"></div>
+        <div class="graphic-ring ring-3"></div>
+
+        <div class="graphic-center">
+            <span>PP</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about-section">
+
+    <div class="section-header">
+        <span class="section-number">01</span>
+
+        <div>
+            <p class="section-label">ABOUT ME</p>
+            <h2>Engineering with purpose.</h2>
+        </div>
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                I am a Chemical Engineering graduate from
+                Chulalongkorn University with experience in
+                manufacturing, process validation, R&D,
+                data analysis, and sustainability projects.
+            </p>
+
+            <p>
+                My interests lie at the intersection of
+                engineering, technology, data, and real-world
+                problem solving.
+            </p>
+
+        </div>
+
+        <div class="about-highlight">
+
+            <div class="highlight-card">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-gears"></i>
+                </span>
+
+                <div>
+                    <strong>Engineering</strong>
+                    <p>Process • Manufacturing • Problem Solving</p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-flask"></i>
+                </span>
+
+                <div>
+                    <strong>Innovation</strong>
+                    <p>R&D • Laboratory • Experimentation</p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+
+                <div>
+                    <strong>Data</strong>
+                    <p>Analysis • Visualization • Decision Making</p>
+                </div>
             </div>
 
         </div>
-    </header>
 
+    </div>
 
-    <main>
+</section>
 
-        <!-- =========================
-             HOME
-        ========================== -->
 
-        <section class="hero section" id="home">
+<!-- ================= SELECTED PROJECTS ================= -->
 
-            <div class="container hero-grid">
+<section class="section selected-projects">
 
-                <div class="hero-content">
+    <div class="section-header">
+        <span class="section-number">02</span>
 
-                    <div class="eyebrow">
-                        CHEMICAL ENGINEER
-                    </div>
+        <div>
+            <p class="section-label">SELECTED PROJECTS</p>
+            <h2>Things I've worked on.</h2>
+        </div>
+    </div>
 
-                    <h1>
-                        Engineering mindset.
-                        <span>Data-driven thinking.</span>
-                    </h1>
+    <div class="project-preview-grid" id="homeProjects">
+        <!-- JS will generate project previews -->
+    </div>
 
-                    <p class="hero-description">
-                        I am a Chemical Engineer interested in solving real-world
-                        problems through engineering, process improvement, data,
-                        research and sustainable innovation.
-                    </p>
+    <div class="center-button">
+        <a href="#projects" class="text-link">
+            View All Projects
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
 
-                    <div class="hero-tags">
-                        <span>Engineering</span>
-                        <span>Process</span>
-                        <span>Data</span>
-                        <span>R&amp;D</span>
-                        <span>Sustainability</span>
-                    </div>
+</section>
 
-                    <div class="hero-buttons">
 
-                        <a href="#journey" class="btn btn-primary">
-                            Explore My Journey
-                            <span>→</span>
-                        </a>
+<!-- ================= JOURNEY ================= -->
 
-                        <a href="#projects" class="btn btn-secondary">
-                            View Projects
-                            <span>→</span>
-                        </a>
+<section id="journey" class="section journey-section">
 
-                    </div>
+    <div class="section-header">
+        <span class="section-number">03</span>
 
-                </div>
+        <div>
+            <p class="section-label">JOURNEY</p>
+            <h2>Where I've been.</h2>
+        </div>
+    </div>
 
+    <div class="journey-list" id="journeyList">
+        <!-- JS generates journey cards -->
+    </div>
 
-                <div class="hero-visual">
+</section>
 
-                    <div class="hero-orbit orbit-one"></div>
-                    <div class="hero-orbit orbit-two"></div>
 
-                    <div class="hero-card">
+<!-- ================= SKILLS ================= -->
 
-                        <div class="hero-card-label">
-                            ENGINEERING × DATA
-                        </div>
+<section id="skills" class="section skills-section">
 
-                        <div class="hero-card-symbol">
-                            <span>∑</span>
-                        </div>
+    <div class="section-header">
+        <span class="section-number">04</span>
 
-                        <div class="hero-card-footer">
-                            <span>PROCESS</span>
-                            <span>R&amp;D</span>
-                            <span>IMPACT</span>
-                        </div>
+        <div>
+            <p class="section-label">SKILLS</p>
+            <h2>Tools & capabilities.</h2>
+        </div>
+    </div>
 
-                    </div>
+    <p class="skills-intro">
+        A combination of engineering knowledge, digital tools,
+        analytical thinking, and hands-on experience.
+    </p>
 
-                </div>
+    <div class="skills-grid" id="skillsGrid">
+        <!-- JS generates skills -->
+    </div>
 
-            </div>
+</section>
 
-        </section>
 
+<!-- ================= PROJECTS ================= -->
 
-        <!-- =========================
-             ABOUT
-        ========================== -->
+<section id="projects" class="section projects-section">
 
-        <section class="section about-section" id="about">
+    <div class="section-header">
+        <span class="section-number">05</span>
 
-            <div class="container">
+        <div>
+            <p class="section-label">PROJECTS</p>
+            <h2>Selected work.</h2>
+        </div>
+    </div>
 
-                <div class="section-heading">
+    <div class="project-filters" id="projectFilters">
 
-                    <div class="section-number">
-                        01
-                    </div>
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
 
-                    <div>
-                        <p class="section-label">
-                            ABOUT ME
-                        </p>
+        <button class="filter-btn" data-filter="high-school">
+            High School
+        </button>
 
-                        <h2>
-                            Engineering with purpose.
-                        </h2>
-                    </div>
+        <button class="filter-btn" data-filter="university">
+            University
+        </button>
 
-                </div>
+        <button class="filter-btn" data-filter="applied">
+            Applied / R&D
+        </button>
 
+    </div>
 
-                <div class="about-grid">
+    <div class="projects-grid" id="projectsGrid">
+        <!-- JS generates project cards -->
+    </div>
 
-                    <div class="about-main">
+</section>
 
-                        <p class="lead">
-                            I am a Chemical Engineering graduate from
-                            Chulalongkorn University with hands-on experience
-                            in manufacturing, process validation, R&amp;D,
-                            data-related work and sustainability projects.
-                        </p>
 
-                        <p>
-                            My experience has taught me to work with both
-                            technical details and real operational constraints.
-                            I enjoy understanding how systems work, working
-                            with data and translating technical information
-                            into practical solutions.
-                        </p>
+<!-- ================= PROJECT DETAIL ================= -->
 
-                        <p>
-                            I am particularly interested in opportunities where
-                            engineering knowledge can contribute to improving
-                            processes, products, organizations and society.
-                        </p>
+<section id="projectDetail" class="project-detail-section">
 
-                    </div>
+    <div class="project-detail-container">
 
+        <button class="back-projects" id="backProjects">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Projects
+        </button>
 
-                    <div class="about-cards">
+        <div id="projectDetailContent">
+            <!-- JS inserts project detail -->
+        </div>
 
-                        <div class="info-card">
-                            <span class="info-card-icon">⌬</span>
+        <div class="project-navigation">
 
-                            <div>
-                                <span class="info-card-label">
-                                    EDUCATION
-                                </span>
+            <button id="previousProject">
+                <i class="fa-solid fa-arrow-left"></i>
+                Previous
+            </button>
 
-                                <h3>
-                                    B.Eng. Chemical Engineering
-                                </h3>
+            <button id="nextProject">
+                Next
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
 
-                                <p>
-                                    Chulalongkorn University
-                                </p>
-                            </div>
-                        </div>
+        </div>
 
+    </div>
 
-                        <div class="info-card">
-                            <span class="info-card-icon">↗</span>
+</section>
 
-                            <div>
-                                <span class="info-card-label">
-                                    FOCUS
-                                </span>
 
-                                <h3>
-                                    Engineering &amp; Innovation
-                                </h3>
+<!-- ================= CONTACT ================= -->
 
-                                <p>
-                                    Process • Data • R&amp;D • Sustainability
-                                </p>
-                            </div>
-                        </div>
+<section id="contact" class="section contact-section">
 
-                    </div>
+    <div class="contact-content">
 
-                </div>
+        <p class="section-label">CONTACT</p>
 
-            </div>
+        <h2>
+            Let's build something<br>
+            <span>meaningful.</span>
+        </h2>
 
-        </section>
+        <p>
+            Open to opportunities in engineering, process,
+            R&D, laboratory, data, and sustainability.
+        </p>
 
-
-        <!-- =========================
-             JOURNEY
-        ========================== -->
-
-        <section class="section journey-section" id="journey">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div class="section-number">
-                        02
-                    </div>
-
-                    <div>
-                        <p class="section-label">
-                            JOURNEY
-                        </p>
-
-                        <h2>
-                            From learning to doing.
-                        </h2>
-
-                        <p class="section-intro">
-                            A timeline of the experiences that shaped how
-                            I approach engineering and problem solving.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="journey-list" id="journeyList">
-                    <!-- Generated by JavaScript -->
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SKILLS
-        ========================== -->
-
-        <section class="section skills-section" id="skills">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <div class="section-number">
-                        03
-                    </div>
-
-                    <div>
-                        <p class="section-label">
-                            SKILLS
-                        </p>
-
-                        <h2>
-                            Tools I work with.
-                        </h2>
-
-                        <p class="section-intro">
-                            A collection of technical, analytical and
-                            project-related skills I have developed through
-                            academic and practical experience.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="skills-grid" id="skillsGrid">
-                    <!-- Generated by JavaScript -->
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECTS
-        ========================== -->
-
-        <section class="section projects-section" id="projects">
-
-            <div class="container">
-
-                <div class="section-heading projects-heading">
-
-                    <div class="section-number">
-                        04
-                    </div>
-
-                    <div>
-                        <p class="section-label">
-                            PROJECTS
-                        </p>
-
-                        <h2>
-                            Things I've worked on.
-                        </h2>
-
-                        <p class="section-intro">
-                            A collection of academic, engineering, research
-                            and applied projects.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <!-- Project Filters -->
-
-                <div class="project-filters" id="projectFilters">
-
-                    <button
-                        class="filter-btn active"
-                        data-filter="all"
-                    >
-                        All
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="high-school"
-                    >
-                        High School
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="university"
-                    >
-                        University
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="applied"
-                    >
-                        Applied / R&amp;D
-                    </button>
-
-                    <button
-                        class="filter-btn"
-                        data-filter="sustainability"
-                    >
-                        Sustainability
-                    </button>
-
-                </div>
-
-
-                <!-- Project List -->
-
-                <div
-                    class="projects-grid"
-                    id="projectsGrid"
-                >
-                    <!-- Generated by JavaScript -->
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             PROJECT DETAIL
-        ========================== -->
-
-        <section
-            class="project-detail-section section hidden"
-            id="projectDetail"
+        <a
+            href="mailto:parawee.prathan@gmail.com"
+            class="contact-email"
         >
+            parawee.prathan@gmail.com
+        </a>
 
-            <div class="container">
+        <div class="social-links">
 
-                <div class="project-detail-top">
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
 
-                    <button
-                        class="back-projects"
-                        id="backProjects"
-                    >
-                        ← Back to Projects
-                    </button>
-
-                    <div class="project-navigation">
-
-                        <button id="previousProject">
-                            ← Previous
-                        </button>
-
-                        <button id="nextProject">
-                            Next →
-                        </button>
-
-                    </div>
-
-                </div>
-
-
-                <div id="projectDetailContent">
-                    <!-- Generated by JavaScript -->
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT
-        ========================== -->
-
-        <section class="section contact-section" id="contact">
-
-            <div class="container">
-
-                <div class="contact-box">
-
-                    <div>
-
-                        <p class="section-label">
-                            CONTACT
-                        </p>
-
-                        <h2>
-                            Let's build something meaningful.
-                        </h2>
-
-                        <p>
-                            Interested in engineering, process improvement,
-                            R&amp;D, data or sustainability? Feel free to
-                            get in touch.
-                        </p>
-
-                    </div>
-
-
-                    <div class="contact-links">
-
-                        <a
-                            href="mailto:parawee.prathan@gmail.com"
-                            class="contact-link"
-                        >
-                            <span>✉</span>
-                            <div>
-                                <small>Email</small>
-                                <strong>
-                                    parawee.prathan@gmail.com
-                                </strong>
-                            </div>
-                        </a>
-
-
-                        <a
-                            href="#"
-                            class="contact-link"
-                            id="linkedinLink"
-                        >
-                            <span>in</span>
-                            <div>
-                                <small>LinkedIn</small>
-                                <strong>
-                                    Connect with me
-                                </strong>
-                            </div>
-                        </a>
-
-
-                        <a
-                            href="#"
-                            class="contact-link"
-                            id="githubLink"
-                        >
-                            <span>⌘</span>
-                            <div>
-                                <small>GitHub</small>
-                                <strong>
-                                    View my work
-                                </strong>
-                            </div>
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="footer">
-
-        <div class="container footer-inner">
-
-            <p>
-                © 2026 Parawee Prathan
-            </p>
-
-            <p>
-                Chemical Engineer • Engineering • Data • R&amp;D
-            </p>
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+</main>
 
 
-    <!-- BACK TO TOP -->
+<!-- ================= FOOTER ================= -->
 
-    <button
-        class="back-to-top"
-        id="backToTop"
-        aria-label="Back to top"
-    >
-        ↑
-    </button>
+<footer class="footer">
+
+    <p>
+        © 2026 Parawee Prathan
+    </p>
+
+    <p>
+        Chemical Engineer
+    </p>
+
+</footer>
 
 
-    <script src="script.js"></script>
+<button class="back-top" id="backTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>
