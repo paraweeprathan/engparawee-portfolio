@@ -3,791 +3,728 @@
 ========================================================= */
 
 const skills = [
-    { name: "Microsoft Excel", icon: "▦" },
-    { name: "AI Tools", icon: "✦" },
-    { name: "Python", icon: "⌘" },
-    { name: "Data Analysis", icon: "⌁" },
-    { name: "Process Engineering", icon: "⚙" },
-    { name: "Process Validation", icon: "✓" },
-    { name: "Laboratory", icon: "⌬" },
-    { name: "R&D", icon: "◇" },
-    { name: "Minitab", icon: "▥" },
-    { name: "MATLAB", icon: "∫" },
-    { name: "Aspen Plus", icon: "△" },
-    { name: "SimaPro", icon: "♧" },
-    { name: "Technical Documentation", icon: "▤" },
-    { name: "Data Visualization", icon: "◫" },
-    { name: "Project Coordination", icon: "◎" },
-    { name: "Sustainability", icon: "♧" }
+    {
+        name: "Microsoft Excel",
+        icon: "fa-solid fa-table"
+    },
+    {
+        name: "AI Tools",
+        icon: "fa-solid fa-wand-magic-sparkles"
+    },
+    {
+        name: "Python",
+        icon: "fa-brands fa-python"
+    },
+    {
+        name: "Data Analysis",
+        icon: "fa-solid fa-chart-column"
+    },
+    {
+        name: "Process Engineering",
+        icon: "fa-solid fa-gears"
+    },
+    {
+        name: "Process Validation",
+        icon: "fa-solid fa-circle-check"
+    },
+    {
+        name: "Laboratory",
+        icon: "fa-solid fa-flask"
+    },
+    {
+        name: "R&D",
+        icon: "fa-solid fa-microscope"
+    },
+    {
+        name: "Minitab",
+        icon: "fa-solid fa-chart-line"
+    },
+    {
+        name: "MATLAB",
+        icon: "fa-solid fa-square-root-variable"
+    },
+    {
+        name: "Aspen Plus",
+        icon: "fa-solid fa-industry"
+    },
+    {
+        name: "SimaPro",
+        icon: "fa-solid fa-leaf"
+    },
+    {
+        name: "Technical Documentation",
+        icon: "fa-solid fa-file-lines"
+    },
+    {
+        name: "Data Visualization",
+        icon: "fa-solid fa-chart-pie"
+    },
+    {
+        name: "Project Coordination",
+        icon: "fa-solid fa-diagram-project"
+    },
+    {
+        name: "Sustainability",
+        icon: "fa-solid fa-seedling"
+    }
 ];
 
 
 const journey = [
     {
         number: "01",
-        title: "Professional Experience",
-        subtitle: "Reckitt | Process Technologist",
-        year: "2025–2026",
-        description:
-            "Worked in GMP-regulated medical device manufacturing, supporting process validation, machine trials, technical documentation and production-related problem solving.",
-        bullets: [
-            "Executed OQ/PQ process validation activities.",
-            "Supported UDI laser printing validation across 5 machines.",
-            "Supported electronic leakage testing validation across 12 new machines.",
-            "Worked with Production, QA, Engineering and operators to coordinate trials and resolve issues."
-        ],
-        tags: [
-            "Process Validation",
-            "GMP",
-            "Manufacturing",
-            "Technical Documentation"
-        ]
+        type: "PROFESSIONAL EXPERIENCE",
+        title: "Reckitt",
+        subtitle: "Process Technologist",
+        year: "2025 — 2026",
+        icon: "fa-solid fa-gears",
+        details: `
+            <p>
+                Worked in GMP-regulated medical device manufacturing,
+                supporting process validation, machine trials,
+                technical documentation, and production troubleshooting.
+            </p>
+
+            <ul>
+                <li>Executed OQ/PQ process validation.</li>
+                <li>Supported UDI laser printing validation across 5 machines.</li>
+                <li>Supported electronic leakage testing across 12 machines.</li>
+                <li>Worked with Production, QA, Engineering, and operators.</li>
+            </ul>
+        `
     },
 
     {
         number: "02",
-        title: "Education",
+        type: "EDUCATION",
+        title: "Chulalongkorn University",
         subtitle: "Bachelor of Engineering — Chemical Engineering",
-        year: "2021–2025",
-        description:
-            "Chulalongkorn University — Chemical Engineering. Developed a foundation in process design, transport phenomena, thermodynamics, reaction engineering, process control and engineering problem solving.",
-        bullets: [
-            "Chemical process design and simulation.",
-            "Engineering calculations and data analysis.",
-            "Laboratory and experimental work.",
-            "Engineering projects and multidisciplinary activities."
-        ],
-        tags: [
-            "Chemical Engineering",
-            "Process Design",
-            "Simulation"
-        ]
+        year: "2021 — 2025",
+        icon: "fa-solid fa-graduation-cap",
+        details: `
+            <p>
+                Studied Chemical Engineering with coursework and
+                project experience covering process design,
+                simulation, laboratory experimentation,
+                sustainability, and engineering analysis.
+            </p>
+        `
     },
 
     {
         number: "03",
-        title: "Internship",
-        subtitle: "Mektec | Facilities Engineer Intern",
+        type: "INTERNSHIP",
+        title: "Mektec",
+        subtitle: "Facilities Engineer Intern",
         year: "2024",
-        description:
-            "Worked with plant data and environmental-related engineering activities, including carbon footprint data collection and wastewater analysis.",
-        bullets: [
-            "Collected and organized plant data for Scope 1 and Scope 3 carbon footprint assessment.",
-            "Worked with cross-functional teams to obtain operational data.",
-            "Supported chemical preparation and environmental-related analysis.",
-            "Worked with wastewater and heavy-metal contamination data."
-        ],
-        tags: [
-            "Plant Data",
-            "Scope 1 & 3",
-            "Environmental",
-            "Facilities"
-        ]
+        icon: "fa-solid fa-industry",
+        details: `
+            <p>
+                Worked with plant and environmental data,
+                supporting carbon footprint analysis and
+                wastewater-related activities.
+            </p>
+
+            <ul>
+                <li>Collected and organized plant data.</li>
+                <li>Supported Scope 1 and Scope 3 analysis.</li>
+                <li>Worked with wastewater and heavy-metal data.</li>
+            </ul>
+        `
     },
 
     {
         number: "04",
-        title: "Internship",
-        subtitle: "Cirprise Startup | R&D Intern",
+        type: "INTERNSHIP",
+        title: "Cirprise Startup",
+        subtitle: "R&D Intern",
         year: "2025",
-        description:
-            "Worked on product formulation and experimental development for powdered hand soap, balancing product quality, formulation performance and cost considerations.",
-        bullets: [
-            "Conducted formulation trials and evaluated product performance.",
-            "Adjusted ingredients to investigate quality and cost trade-offs.",
-            "Supported product development and experimental documentation.",
-            "Coordinated with the team on patent-related activities."
-        ],
-        tags: [
-            "R&D",
-            "Formulation",
-            "Experiment",
-            "Product Development"
-        ]
+        icon: "fa-solid fa-flask",
+        details: `
+            <p>
+                Worked on powdered hand soap formulation,
+                focusing on product quality, cost, experimentation,
+                and sustainability.
+            </p>
+
+            <ul>
+                <li>Conducted formulation trials.</li>
+                <li>Evaluated quality and cost considerations.</li>
+                <li>Supported patent coordination.</li>
+            </ul>
+        `
     },
 
     {
         number: "05",
-        title: "Awards & Competitions",
-        subtitle: "Innovation • Sustainability • Engineering",
-        year: "2022–2025",
-        description:
-            "Participated in engineering, sustainability and innovation competitions throughout university.",
-        bullets: [
-            "Young Sustainability Practitioner #4 — Winner.",
-            "Faculty Future Race to Zero — Finalist.",
-            "Innovation Impact Challenge 2025 — Finalist.",
-            "Rakkaew Foundation National University Sustainability Showcase — Winner."
-        ],
-        tags: [
-            "Innovation",
-            "Sustainability",
-            "Competition"
-        ]
+        type: "AWARDS & COMPETITIONS",
+        title: "Innovation & Sustainability",
+        subtitle: "Competitions • Projects • Leadership",
+        year: "2022 — 2025",
+        icon: "fa-solid fa-trophy",
+        details: `
+            <p>
+                Participated in engineering, innovation,
+                sustainability, and university competitions
+                throughout my undergraduate years.
+            </p>
+
+            <ul>
+                <li>Young Sustainability Practitioner #4 — Winner</li>
+                <li>Faculty Future Race to Zero — Finalist</li>
+                <li>Innovation Impact Challenge 2025 — Finalist</li>
+                <li>Rakkaew Foundation Sustainability Showcase — Winner</li>
+            </ul>
+        `
     },
 
     {
         number: "06",
-        title: "International Experience",
-        subtitle: "Work & Travel | Montana, USA",
+        type: "INTERNATIONAL EXPERIENCE",
+        title: "Work & Travel",
+        subtitle: "Livingston, Montana, USA",
         year: "2025",
-        description:
-            "Spent four months working and living in Livingston, Montana, gaining international work experience and communicating in an English-speaking multicultural environment.",
-        bullets: [
-            "Worked in an international environment.",
-            "Communicated with people from different cultural backgrounds.",
-            "Adapted to a new workplace and living environment.",
-            "Developed practical English communication skills."
-        ],
-        tags: [
-            "USA",
-            "English",
-            "International Experience"
-        ]
+        icon: "fa-solid fa-earth-americas",
+        details: `
+            <p>
+                Spent approximately four months working and living
+                in Montana, United States, gaining international
+                work experience and communicating in a multicultural
+                environment.
+            </p>
+        `
     }
 ];
 
 
 /* =========================================================
-   PROJECTS
+   PROJECT DATA
 ========================================================= */
 
 const projects = [
+
     {
         id: "methanol-co2",
         category: "university",
-        categoryLabel: "University",
-        title: "Methanol from CO₂",
+        categoryLabel: "University Project",
+        title: "Methanol Production from CO₂",
         shortDescription:
-            "Conceptual process design and simulation for methanol production from CO₂, including process development, equipment design and economic consideration.",
-        year: "2024–2025",
-        role: "Chemical Engineering Project",
-        tools: ["Aspen Plus", "Process Simulation", "Process Design"],
-        heroLabel: "PROJECT IMAGE",
+            "Process design and simulation for converting CO₂ into methanol.",
+        imageLabel: "Project Image",
         overview:
-            "A chemical process design project focused on converting CO₂ into methanol. The project involved developing a conceptual process, performing simulation work and considering equipment configuration, layout and economics.",
+            "Designed a conceptual process for methanol production from CO₂, including process simulation, equipment selection, process layout, and economic considerations.",
         challenge:
-            "The challenge was to translate the chemical conversion concept into a practical process flow while maintaining product quality and considering the relationships between reaction conditions, separation and equipment.",
+            "Develop a technically feasible process while considering product purity, process conditions, equipment requirements, and overall economics.",
         approach:
-            "The process was developed from reaction and separation concepts, followed by process simulation and engineering calculations. Equipment and process configuration were then considered together with layout and economic aspects.",
-        process: [
-            "Defined the overall process concept.",
-            "Developed the process flow and major unit operations.",
-            "Performed process simulation and material/energy analysis.",
-            "Selected and considered major equipment.",
-            "Developed a conceptual layout.",
-            "Evaluated economic considerations."
-        ],
-        results:
-            "The conceptual process achieved a simulated methanol purity of more than 98%, providing a basis for evaluating the technical feasibility of the proposed process.",
+            "Used chemical engineering principles and process simulation to develop and evaluate the proposed process.",
+        process:
+            "Process flow development → simulation → equipment design → layout → economic evaluation.",
+        result:
+            "The designed process achieved a methanol purity of more than 98% under the selected process conditions.",
         learning:
-            "The project strengthened my understanding of how reaction engineering, process simulation, equipment selection, process integration and economics connect within a complete chemical process."
+            "Strengthened skills in process design, simulation, engineering calculations, and communicating technical results.",
+        gallery: [
+            "Process Flow Diagram",
+            "Simulation",
+            "Equipment Design",
+            "Process Layout"
+        ]
     },
 
     {
         id: "air-filter",
         category: "university",
-        categoryLabel: "University",
-        title: "Recycled Plastic → Electrospun Air Filter",
+        categoryLabel: "University Project",
+        title: "Recycled Plastic → High-Efficiency Air Filter",
         shortDescription:
-            "Developed a high-efficiency electrospun air filter using recycled plastic from used baby milk bottles.",
-        year: "2024–2025",
-        role: "Senior Project",
-        tools: ["Electrospinning", "Material Preparation", "Laboratory"],
-        heroLabel: "PROJECT IMAGE",
+            "Developed an electrospun air filter from recycled baby milk bottle plastic.",
+        imageLabel: "Project Image",
         overview:
-            "A senior project exploring the conversion of recycled plastic from used baby milk bottles into material for a high-efficiency electrospun air filter.",
+            "Explored the conversion of recycled plastic from baby milk bottles into electrospun fibers for high-efficiency air filtration.",
         challenge:
-            "The project explored how waste plastic could be transformed into a functional material while maintaining suitable properties for air filtration.",
+            "Create a useful engineering application from post-consumer plastic waste while maintaining suitable filtration performance.",
         approach:
-            "The work involved material preparation, experimental development and electrospinning to produce fibrous filter structures. The resulting material was then evaluated for its filtration performance.",
-        process: [
-            "Prepared recycled plastic material.",
-            "Developed material suitable for electrospinning.",
-            "Produced electrospun fiber structures.",
-            "Evaluated the resulting filter material.",
-            "Compared performance and material characteristics."
-        ],
-        results:
-            "The project demonstrated the potential of recycled plastic as a feedstock for developing electrospun filtration materials.",
+            "Prepared recycled polymer material and investigated electrospinning conditions to produce fibrous filter structures.",
+        process:
+            "Material preparation → electrospinning → fiber characterization → filtration evaluation.",
+        result:
+            "Developed an electrospun filter concept using recycled plastic as the primary material.",
         learning:
-            "I gained hands-on experience in laboratory experimentation, material processing, troubleshooting and connecting experimental results with engineering objectives."
+            "Gained experience in materials, laboratory experimentation, process optimization, and sustainability-oriented engineering.",
+        gallery: [
+            "Material Preparation",
+            "Electrospinning",
+            "Fiber Structure",
+            "Filter Testing"
+        ]
     },
 
     {
         id: "powdered-hand-soap",
         category: "applied",
-        categoryLabel: "Applied / R&D",
+        categoryLabel: "R&D",
         title: "Powdered Hand Soap Development",
         shortDescription:
-            "R&D formulation trials for powdered hand soap, focusing on product quality, performance and cost.",
-        year: "2025",
-        role: "R&D Intern",
-        tools: ["Formulation", "Experimentation", "Product Development"],
-        heroLabel: "PROJECT IMAGE",
+            "R&D formulation trials balancing product quality, cost, and sustainability.",
+        imageLabel: "Project Image",
         overview:
-            "An applied R&D project focused on developing a powdered hand soap formulation through iterative experimentation.",
+            "Worked on powdered hand soap formulation during an R&D internship.",
         challenge:
-            "The formulation needed to balance product quality, performance and cost while maintaining a practical formulation.",
+            "Develop a formulation that balances product performance, quality, cost, and environmental considerations.",
         approach:
-            "Different ingredient combinations and formulation conditions were tested and adjusted based on experimental observations and product requirements.",
-        process: [
-            "Reviewed the original formulation.",
-            "Designed formulation trials.",
-            "Adjusted ingredient ratios.",
-            "Evaluated product quality and performance.",
-            "Compared formulation alternatives."
-        ],
-        results:
-            "The trials helped identify formulation directions that could improve product performance while considering cost and environmental impact.",
+            "Conducted formulation trials and compared different ingredient combinations.",
+        process:
+            "Formulation → testing → comparison → adjustment → evaluation.",
+        result:
+            "Supported the development of a revised formulation with improved sustainability characteristics.",
         learning:
-            "The project strengthened my ability to design experiments, interpret results and make formulation decisions based on multiple constraints."
+            "Developed practical experience in R&D experimentation, formulation, documentation, and product-oriented problem solving.",
+        gallery: [
+            "Formulation",
+            "Experiment",
+            "Testing",
+            "Result"
+        ]
     },
 
     {
         id: "carbon-footprint",
-        category: "sustainability",
-        categoryLabel: "Sustainability",
-        title: "Plant Carbon Footprint — Scope 1 & 3",
-        shortDescription:
-            "Collected and analyzed manufacturing plant data to support Scope 1 and Scope 3 carbon footprint assessment.",
-        year: "2024",
-        role: "Facilities Engineer Intern",
-        tools: ["Plant Data", "Carbon Footprint", "SimaPro"],
-        heroLabel: "PROJECT IMAGE",
-        overview:
-            "An internship project involving real manufacturing plant data for carbon footprint assessment.",
-        challenge:
-            "The work required collecting information from different operational sources and organizing it into data suitable for environmental assessment.",
-        approach:
-            "Plant data was collected with support from relevant teams, organized and reviewed before being used for carbon footprint calculations and analysis.",
-        process: [
-            "Identified required operational data.",
-            "Collected data from plant activities.",
-            "Organized and reviewed the information.",
-            "Supported Scope 1 and Scope 3 assessment.",
-            "Worked with environmental-related datasets."
-        ],
-        results:
-            "The work contributed to building a clearer picture of the plant's emissions-related activities and provided practical experience in working with real operational data.",
-        learning:
-            "I learned that reliable environmental analysis depends heavily on accurate data collection, clear assumptions and collaboration with people who understand the underlying operations."
-    },
-
-    {
-        id: "marine-waste-carpet",
         category: "applied",
-        categoryLabel: "Applied / R&D",
-        title: "Marine Waste → Car Carpet",
+        categoryLabel: "Sustainability",
+        title: "Plant Carbon Footprint Analysis",
         shortDescription:
-            "Explored the use of marine waste as a material source for automotive carpet applications.",
-        year: "University Project",
-        role: "Innovation Project",
-        tools: ["Material Development", "Sustainability", "Automotive"],
-        heroLabel: "PROJECT IMAGE",
+            "Worked with real manufacturing data to support Scope 1 and Scope 3 analysis.",
+        imageLabel: "Project Image",
         overview:
-            "An innovation project exploring how marine waste could be transformed into a useful automotive material.",
+            "Supported carbon footprint-related work during a Facilities Engineering internship.",
         challenge:
-            "The project focused on finding a pathway to convert waste material into a product with practical value.",
+            "Collect and organize relevant plant data for environmental analysis.",
         approach:
-            "The concept connected waste collection, material processing and automotive application requirements.",
-        process: [
-            "Identified the waste material opportunity.",
-            "Considered material processing routes.",
-            "Developed the automotive application concept.",
-            "Considered practical and environmental value."
-        ],
-        results:
-            "The project demonstrated a concept for connecting waste management with material development and automotive applications.",
+            "Worked with plant information and cross-functional teams to gather and prepare data.",
+        process:
+            "Data collection → data organization → calculation → analysis.",
+        result:
+            "Supported the preparation of plant-level carbon footprint information.",
         learning:
-            "The project helped me think about engineering problems from both technical and application perspectives."
+            "Built experience in environmental data, manufacturing operations, and working with real industrial datasets.",
+        gallery: [
+            "Plant Data",
+            "Data Collection",
+            "Analysis",
+            "Output"
+        ]
     },
 
+    /*
+    ---------------------------------------------------------
+    ADD HIGH-SCHOOL PROJECTS HERE LATER
+    ---------------------------------------------------------
+
     {
-        id: "high-school-innovation",
+        id: "high-school-project-01",
         category: "high-school",
         categoryLabel: "High School",
-        title: "Engineering & Innovation Project",
-        shortDescription:
-            "An early engineering project that sparked my interest in developing practical solutions to real-world problems.",
-        year: "High School",
-        role: "Student Project",
-        tools: ["Engineering", "Problem Solving", "Innovation"],
-        heroLabel: "PROJECT IMAGE",
-        overview:
-            "A high-school project representing one of my early experiences with engineering and innovation.",
-        challenge:
-            "The project began with identifying a practical problem and exploring a possible technical solution.",
-        approach:
-            "The work involved defining the problem, developing an initial concept and testing the feasibility of the idea.",
-        process: [
-            "Identified the problem.",
-            "Developed a solution concept.",
-            "Built or tested the proposed idea.",
-            "Reviewed the outcome."
-        ],
-        results:
-            "The project became an early experience that encouraged me to continue exploring engineering and innovation.",
-        learning:
-            "It helped establish my interest in creating practical solutions rather than simply studying engineering concepts."
+        title: "Project Name",
+        shortDescription: "Short description.",
+        imageLabel: "Project Image",
+        overview: "...",
+        challenge: "...",
+        approach: "...",
+        process: "...",
+        result: "...",
+        learning: "...",
+        gallery: [
+            "Image 01",
+            "Image 02",
+            "Image 03"
+        ]
     }
+    */
 ];
 
 
 /* =========================================================
-   DOM
+   RENDER SKILLS
+========================================================= */
+
+const skillsGrid = document.getElementById("skillsGrid");
+
+skills.forEach(skill => {
+
+    const card = document.createElement("div");
+
+    card.className = "skill-card";
+
+    card.innerHTML = `
+        <div class="skill-icon">
+            <i class="${skill.icon}"></i>
+        </div>
+
+        <span>${skill.name}</span>
+
+        <div class="skill-arrow">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+    `;
+
+    skillsGrid.appendChild(card);
+});
+
+
+/* =========================================================
+   RENDER JOURNEY
 ========================================================= */
 
 const journeyList = document.getElementById("journeyList");
-const skillsGrid = document.getElementById("skillsGrid");
-const projectsGrid = document.getElementById("projectsGrid");
-const projectFilters = document.getElementById("projectFilters");
 
-const projectDetail = document.getElementById("projectDetail");
-const projectDetailContent = document.getElementById("projectDetailContent");
+journey.forEach((item, index) => {
 
-const backProjects = document.getElementById("backProjects");
-const previousProject = document.getElementById("previousProject");
-const nextProject = document.getElementById("nextProject");
+    const card = document.createElement("article");
 
-const navMenu = document.getElementById("navMenu");
-const menuToggle = document.getElementById("menuToggle");
+    card.className = "journey-card";
 
-const themeToggle = document.getElementById("themeToggle");
-const backToTop = document.getElementById("backToTop");
+    card.innerHTML = `
 
-let currentFilter = "all";
-let visibleProjects = [...projects];
-let currentProjectIndex = 0;
+        <button class="journey-header">
+
+            <div class="journey-number">
+                ${item.number}
+            </div>
+
+            <div class="journey-main">
+
+                <span class="journey-type">
+                    ${item.type}
+                </span>
+
+                <h3>${item.title}</h3>
+
+                <p>${item.subtitle}</p>
+
+            </div>
+
+            <div class="journey-year">
+                ${item.year}
+            </div>
+
+            <div class="journey-arrow">
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+        </button>
+
+        <div class="journey-details">
+
+            <div class="journey-details-inner">
+
+                <div class="journey-detail-icon">
+                    <i class="${item.icon}"></i>
+                </div>
+
+                <div>
+                    ${item.details}
+                </div>
+
+            </div>
+
+        </div>
+    `;
+
+    journeyList.appendChild(card);
+});
 
 
 /* =========================================================
-   JOURNEY
+   JOURNEY ACCORDION
 ========================================================= */
 
-function renderJourney() {
+document.querySelectorAll(".journey-header").forEach(header => {
 
-    journeyList.innerHTML = journey.map((item, index) => {
+    header.addEventListener("click", () => {
 
-        return `
-            <article class="journey-card reveal">
+        const card = header.parentElement;
 
-                <button
-                    class="journey-header"
-                    type="button"
-                    aria-expanded="false"
-                >
+        document.querySelectorAll(".journey-card").forEach(otherCard => {
 
-                    <span class="journey-number">
-                        ${item.number}
-                    </span>
-
-                    <span class="journey-main">
-
-                        <span class="journey-type">
-                            ${item.title}
-                        </span>
-
-                        <h3>
-                            ${item.subtitle}
-                        </h3>
-
-                        <p>
-                            ${item.description}
-                        </p>
-
-                    </span>
-
-                    <span class="journey-year">
-                        ${item.year}
-                    </span>
-
-                    <span class="journey-arrow">
-                        ↓
-                    </span>
-
-                </button>
-
-
-                <div class="journey-details">
-
-                    <div class="journey-details-inner">
-
-                        <div class="journey-detail-icon">
-                            ${index === 0 ? "⚙" :
-                              index === 1 ? "⌘" :
-                              index === 2 ? "◫" :
-                              index === 3 ? "◇" :
-                              index === 4 ? "★" : "✈"}
-                        </div>
-
-                        <div>
-
-                            <p>
-                                ${item.description}
-                            </p>
-
-                            <ul>
-                                ${item.bullets
-                                    .map(
-                                        bullet =>
-                                            `<li>${bullet}</li>`
-                                    )
-                                    .join("")}
-                            </ul>
-
-                            <div class="journey-tags">
-                                ${item.tags
-                                    .map(
-                                        tag =>
-                                            `<span>${tag}</span>`
-                                    )
-                                    .join("")}
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </article>
-        `;
-
-    }).join("");
-
-
-    document
-        .querySelectorAll(".journey-header")
-        .forEach(button => {
-
-            button.addEventListener("click", () => {
-
-                const card =
-                    button.closest(".journey-card");
-
-                const isOpen =
-                    card.classList.contains("open");
-
-
-                document
-                    .querySelectorAll(".journey-card.open")
-                    .forEach(openCard => {
-
-                        openCard.classList.remove("open");
-
-                        openCard
-                            .querySelector(".journey-header")
-                            .setAttribute(
-                                "aria-expanded",
-                                "false"
-                            );
-
-                    });
-
-
-                if (!isOpen) {
-
-                    card.classList.add("open");
-
-                    button.setAttribute(
-                        "aria-expanded",
-                        "true"
-                    );
-
-                }
-
-            });
+            if (otherCard !== card) {
+                otherCard.classList.remove("open");
+            }
 
         });
 
-}
+        card.classList.toggle("open");
+
+    });
+
+});
 
 
 /* =========================================================
-   SKILLS
+   RENDER HOME PROJECT PREVIEW
 ========================================================= */
 
-function renderSkills() {
+const homeProjects = document.getElementById("homeProjects");
 
-    skillsGrid.innerHTML = skills.map(skill => {
+projects.forEach(project => {
 
-        return `
-            <div class="skill-card reveal">
+    const card = document.createElement("article");
 
-                <div class="skill-icon">
-                    ${skill.icon}
+    card.className = "project-preview-card";
+
+    card.innerHTML = `
+
+        <div class="project-preview-image">
+            <span>${project.imageLabel}</span>
+
+            <div class="image-placeholder-icon">
+                <i class="fa-regular fa-image"></i>
+            </div>
+        </div>
+
+        <div class="project-preview-content">
+
+            <span class="project-category">
+                ${project.categoryLabel}
+            </span>
+
+            <h3>${project.title}</h3>
+
+            <p>${project.shortDescription}</p>
+
+        </div>
+
+    `;
+
+    card.addEventListener("click", () => {
+        openProject(project.id);
+    });
+
+    homeProjects.appendChild(card);
+
+});
+
+
+/* =========================================================
+   RENDER ALL PROJECTS
+========================================================= */
+
+const projectsGrid = document.getElementById("projectsGrid");
+
+function renderProjects(filter = "all") {
+
+    projectsGrid.innerHTML = "";
+
+    const filteredProjects =
+        filter === "all"
+            ? projects
+            : projects.filter(project => project.category === filter);
+
+    filteredProjects.forEach(project => {
+
+        const card = document.createElement("article");
+
+        card.className = "project-card";
+
+        card.innerHTML = `
+
+            <div class="project-image">
+
+                <div class="image-placeholder-icon">
+                    <i class="fa-regular fa-image"></i>
                 </div>
 
-                <div class="skill-name">
-                    ${skill.name}
-                </div>
+                <span>PROJECT IMAGE</span>
+
+            </div>
+
+            <div class="project-content">
+
+                <span class="project-category">
+                    ${project.categoryLabel}
+                </span>
+
+                <h3>${project.title}</h3>
+
+                <p>
+                    ${project.shortDescription}
+                </p>
+
+                <button class="view-project">
+                    View Project
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
 
             </div>
         `;
 
-    }).join("");
+        card.querySelector(".view-project")
+            .addEventListener("click", () => {
+                openProject(project.id);
+            });
 
+        projectsGrid.appendChild(card);
+
+    });
 }
+
+renderProjects();
 
 
 /* =========================================================
-   PROJECTS
+   PROJECT FILTER
 ========================================================= */
 
-function renderProjects(filter = "all") {
+document.querySelectorAll(".filter-btn").forEach(button => {
 
-    currentFilter = filter;
+    button.addEventListener("click", () => {
 
-    visibleProjects =
-        filter === "all"
-            ? [...projects]
-            : projects.filter(
-                project =>
-                    project.category === filter
-            );
+        document.querySelectorAll(".filter-btn")
+            .forEach(btn => btn.classList.remove("active"));
 
+        button.classList.add("active");
 
-    projectsGrid.innerHTML =
-        visibleProjects.map(project => {
+        renderProjects(button.dataset.filter);
 
-            return `
-                <article class="project-card reveal">
+    });
 
-                    <div class="project-image">
-
-                        <span class="image-placeholder">
-                            ${project.heroLabel}
-                        </span>
-
-                    </div>
-
-                    <div class="project-content">
-
-                        <span class="project-category">
-                            ${project.categoryLabel}
-                        </span>
-
-                        <h3>
-                            ${project.title}
-                        </h3>
-
-                        <p class="project-description">
-                            ${project.shortDescription}
-                        </p>
-
-                        <a
-                            href="#project/${project.id}"
-                            class="project-link"
-                            data-project-id="${project.id}"
-                        >
-                            View Project
-                            <span>→</span>
-                        </a>
-
-                    </div>
-
-                </article>
-            `;
-
-        }).join("");
-
-
-    document
-        .querySelectorAll("[data-project-id]")
-        .forEach(link => {
-
-            link.addEventListener("click", event => {
-
-                event.preventDefault();
-
-                openProject(
-                    link.dataset.projectId
-                );
-
-            });
-
-        });
-
-
-    observeRevealElements();
-
-}
+});
 
 
 /* =========================================================
    PROJECT DETAIL
 ========================================================= */
 
-function openProject(
-    projectId,
-    updateHistory = true
-) {
+const projectDetail = document.getElementById("projectDetail");
+const projectDetailContent = document.getElementById("projectDetailContent");
+const projectsSection = document.getElementById("projects");
 
-    const project =
-        projects.find(
-            item => item.id === projectId
-        );
+let currentProjectIndex = 0;
+
+
+function openProject(id) {
+
+    const project = projects.find(item => item.id === id);
 
     if (!project) return;
 
-
     currentProjectIndex =
-        visibleProjects.findIndex(
-            item => item.id === projectId
-        );
-
-
-    if (currentProjectIndex === -1) {
-
-        visibleProjects = [...projects];
-
-        currentProjectIndex =
-            visibleProjects.findIndex(
-                item => item.id === projectId
-            );
-
-    }
-
+        projects.findIndex(item => item.id === id);
 
     projectDetailContent.innerHTML = `
 
-        <div class="project-detail-header">
+        <div class="detail-header">
 
-            <span class="project-detail-category">
+            <span class="project-category">
                 ${project.categoryLabel}
             </span>
 
-            <h1>
-                ${project.title}
-            </h1>
+            <h1>${project.title}</h1>
 
-            <p class="project-detail-intro">
+            <p class="detail-subtitle">
                 ${project.shortDescription}
             </p>
 
         </div>
 
 
-        <div class="project-hero-image">
+        <div class="detail-hero-image">
 
-            <span class="image-placeholder">
-                ${project.heroLabel}
+            <div class="image-placeholder-icon">
+                <i class="fa-regular fa-image"></i>
+            </div>
+
+            <span>
+                MAIN PROJECT IMAGE — ADD LATER
             </span>
 
         </div>
 
 
-        <div class="project-detail-body">
+        <div class="detail-section">
 
-            <aside class="project-detail-sidebar">
+            <h2>Overview</h2>
 
-                <div class="detail-meta">
+            <p>
+                ${project.overview}
+            </p>
 
-                    <div class="detail-meta-item">
-                        <span class="detail-meta-label">
-                            Year
-                        </span>
+        </div>
 
-                        <span class="detail-meta-value">
-                            ${project.year}
-                        </span>
+
+        <div class="detail-two-column">
+
+            <div class="detail-section">
+
+                <h2>Challenge</h2>
+
+                <p>
+                    ${project.challenge}
+                </p>
+
+            </div>
+
+            <div class="detail-section">
+
+                <h2>Approach</h2>
+
+                <p>
+                    ${project.approach}
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="detail-section">
+
+            <h2>Process</h2>
+
+            <p>
+                ${project.process}
+            </p>
+
+        </div>
+
+
+        <div class="detail-gallery">
+
+            ${project.gallery.map((image, index) => `
+
+                <div class="gallery-placeholder">
+
+                    <div class="image-placeholder-icon">
+                        <i class="fa-regular fa-image"></i>
                     </div>
 
-
-                    <div class="detail-meta-item">
-                        <span class="detail-meta-label">
-                            Role
-                        </span>
-
-                        <span class="detail-meta-value">
-                            ${project.role}
-                        </span>
-                    </div>
-
-
-                    <div class="detail-meta-item">
-                        <span class="detail-meta-label">
-                            Category
-                        </span>
-
-                        <span class="detail-meta-value">
-                            ${project.categoryLabel}
-                        </span>
-                    </div>
-
-
-                    <div class="detail-meta-item">
-                        <span class="detail-meta-label">
-                            Tools
-                        </span>
-
-                        <span class="detail-meta-value">
-                            ${project.tools.join(" • ")}
-                        </span>
-                    </div>
+                    <span>${image}</span>
 
                 </div>
 
-            </aside>
+            `).join("")}
+
+        </div>
 
 
-            <div class="project-detail-text">
+        <div class="detail-two-column">
 
-                <section>
-                    <h2>Overview</h2>
-                    <p>${project.overview}</p>
-                </section>
+            <div class="detail-section">
 
+                <h2>Result</h2>
 
-                <section>
-                    <h2>Challenge</h2>
-                    <p>${project.challenge}</p>
-                </section>
+                <p>
+                    ${project.result}
+                </p>
 
+            </div>
 
-                <section>
-                    <h2>Approach</h2>
-                    <p>${project.approach}</p>
-                </section>
+            <div class="detail-section">
 
+                <h2>Learning</h2>
 
-                <section>
-
-                    <h2>Process</h2>
-
-                    <ul>
-                        ${project.process
-                            .map(step => `<li>${step}</li>`)
-                            .join("")}
-                    </ul>
-
-
-                    <div class="supporting-images">
-
-                        <div class="supporting-image">
-                            SUPPORTING IMAGE
-                        </div>
-
-                        <div class="supporting-image">
-                            DIAGRAM / RESULT
-                        </div>
-
-                    </div>
-
-                </section>
-
-
-                <section>
-                    <h2>Results</h2>
-                    <p>${project.results}</p>
-                </section>
-
-
-                <section>
-                    <h2>What I Learned</h2>
-                    <p>${project.learning}</p>
-                </section>
+                <p>
+                    ${project.learning}
+                </p>
 
             </div>
 
@@ -795,342 +732,258 @@ function openProject(
     `;
 
 
-    document
-        .querySelector("main")
-        .querySelectorAll(
-            ".hero, .about-section, .journey-section, .skills-section, .projects-section, .contact-section"
-        )
-        .forEach(section => {
-
-            section.classList.add("hidden");
-
-        });
-
-
-    projectDetail.classList.remove("hidden");
-
-
-    if (updateHistory) {
-
-        history.pushState(
-            { projectId },
-            "",
-            `#project/${projectId}`
-        );
-
-    }
-
+    projectsSection.style.display = "none";
+    projectDetail.classList.add("active");
 
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 
-
-    updateProjectNavigation();
-
-}
-
-
-/* =========================================================
-   PROJECT NAVIGATION
-========================================================= */
-
-function updateProjectNavigation() {
-
-    if (visibleProjects.length <= 1) {
-
-        previousProject.style.visibility = "hidden";
-        nextProject.style.visibility = "hidden";
-
-        return;
-    }
-
-
-    previousProject.style.visibility =
-        currentProjectIndex > 0
-            ? "visible"
-            : "hidden";
-
-
-    nextProject.style.visibility =
-        currentProjectIndex <
-        visibleProjects.length - 1
-            ? "visible"
-            : "hidden";
+    history.pushState(
+        { project: id },
+        "",
+        `#project/${id}`
+    );
 
 }
 
 
-previousProject.addEventListener("click", () => {
+function closeProject() {
 
-    if (currentProjectIndex > 0) {
+    projectDetail.classList.remove("active");
+    projectsSection.style.display = "";
 
-        openProject(
-            visibleProjects[
-                currentProjectIndex - 1
-            ].id
-        );
-
-    }
-
-});
-
-
-nextProject.addEventListener("click", () => {
-
-    if (
-        currentProjectIndex <
-        visibleProjects.length - 1
-    ) {
-
-        openProject(
-            visibleProjects[
-                currentProjectIndex + 1
-            ].id
-        );
-
-    }
-
-});
-
-
-/* =========================================================
-   BACK TO PROJECTS
-========================================================= */
-
-function closeProjectDetail(
-    updateHistory = true
-) {
-
-    projectDetail.classList.add("hidden");
-
-
-    document
-        .querySelector("main")
-        .querySelectorAll(
-            ".hero, .about-section, .journey-section, .skills-section, .projects-section, .contact-section"
-        )
-        .forEach(section => {
-
-            section.classList.remove("hidden");
-
-        });
-
-
-    if (updateHistory) {
-
-        history.pushState(
-            {},
-            "",
-            "#projects"
-        );
-
-    }
-
+    history.pushState(
+        {},
+        "",
+        "#projects"
+    );
 
     setTimeout(() => {
 
-        document
-            .getElementById("projects")
-            .scrollIntoView({
-                behavior: "smooth"
-            });
+        projectsSection.scrollIntoView({
+            behavior: "smooth"
+        });
 
     }, 50);
 
 }
 
 
-backProjects.addEventListener(
-    "click",
-    () => closeProjectDetail()
-);
+document
+    .getElementById("backProjects")
+    .addEventListener("click", closeProject);
 
 
 /* =========================================================
-   PROJECT FILTERS
+   PREVIOUS / NEXT PROJECT
 ========================================================= */
 
-projectFilters
-    .querySelectorAll(".filter-btn")
-    .forEach(button => {
+function navigateProject(direction) {
 
-        button.addEventListener("click", () => {
+    currentProjectIndex += direction;
 
-            projectFilters
-                .querySelectorAll(".filter-btn")
-                .forEach(btn =>
-                    btn.classList.remove("active")
-                );
-
-
-            button.classList.add("active");
-
-
-            renderProjects(
-                button.dataset.filter
-            );
-
-        });
-
-    });
-
-
-/* =========================================================
-   HASH / BROWSER NAVIGATION
-========================================================= */
-
-function handleHash() {
-
-    const hash =
-        window.location.hash;
-
-
-    if (hash.startsWith("#project/")) {
-
-        const projectId =
-            hash.replace(
-                "#project/",
-                ""
-            );
-
-        openProject(
-            projectId,
-            false
-        );
-
-        return;
+    if (currentProjectIndex < 0) {
+        currentProjectIndex = projects.length - 1;
     }
 
-
-    if (hash === "#projects") {
-
-        closeProjectDetail(false);
-
-        return;
+    if (currentProjectIndex >= projects.length) {
+        currentProjectIndex = 0;
     }
 
-
-    if (
-        projectDetail &&
-        !projectDetail.classList.contains("hidden")
-    ) {
-
-        closeProjectDetail(false);
-
-    }
+    openProject(projects[currentProjectIndex].id);
 
 }
 
 
-window.addEventListener(
-    "popstate",
-    handleHash
-);
+document
+    .getElementById("previousProject")
+    .addEventListener("click", () => {
+        navigateProject(-1);
+    });
 
-window.addEventListener(
-    "hashchange",
-    handleHash
-);
+
+document
+    .getElementById("nextProject")
+    .addEventListener("click", () => {
+        navigateProject(1);
+    });
+
+
+/* =========================================================
+   HANDLE BROWSER BACK / HASH
+========================================================= */
+
+window.addEventListener("popstate", () => {
+
+    const hash = window.location.hash;
+
+    if (hash.startsWith("#project/")) {
+
+        const id = hash.replace("#project/", "");
+
+        openProjectWithoutHistory(id);
+
+    } else {
+
+        projectDetail.classList.remove("active");
+        projectsSection.style.display = "";
+
+    }
+
+});
+
+
+function openProjectWithoutHistory(id) {
+
+    const project = projects.find(item => item.id === id);
+
+    if (!project) return;
+
+    currentProjectIndex =
+        projects.findIndex(item => item.id === id);
+
+    projectDetailContent.innerHTML = `
+        <div class="detail-header">
+
+            <span class="project-category">
+                ${project.categoryLabel}
+            </span>
+
+            <h1>${project.title}</h1>
+
+            <p class="detail-subtitle">
+                ${project.shortDescription}
+            </p>
+
+        </div>
+
+        <div class="detail-hero-image">
+            <div class="image-placeholder-icon">
+                <i class="fa-regular fa-image"></i>
+            </div>
+
+            <span>
+                MAIN PROJECT IMAGE — ADD LATER
+            </span>
+        </div>
+
+        <div class="detail-section">
+            <h2>Overview</h2>
+            <p>${project.overview}</p>
+        </div>
+
+        <div class="detail-two-column">
+
+            <div class="detail-section">
+                <h2>Challenge</h2>
+                <p>${project.challenge}</p>
+            </div>
+
+            <div class="detail-section">
+                <h2>Approach</h2>
+                <p>${project.approach}</p>
+            </div>
+
+        </div>
+
+        <div class="detail-section">
+            <h2>Process</h2>
+            <p>${project.process}</p>
+        </div>
+
+        <div class="detail-gallery">
+
+            ${project.gallery.map(image => `
+
+                <div class="gallery-placeholder">
+
+                    <div class="image-placeholder-icon">
+                        <i class="fa-regular fa-image"></i>
+                    </div>
+
+                    <span>${image}</span>
+
+                </div>
+
+            `).join("")}
+
+        </div>
+
+        <div class="detail-two-column">
+
+            <div class="detail-section">
+                <h2>Result</h2>
+                <p>${project.result}</p>
+            </div>
+
+            <div class="detail-section">
+                <h2>Learning</h2>
+                <p>${project.learning}</p>
+            </div>
+
+        </div>
+    `;
+
+    projectsSection.style.display = "none";
+    projectDetail.classList.add("active");
+
+}
 
 
 /* =========================================================
    NAVIGATION
 ========================================================= */
 
-document
-    .querySelectorAll(".nav-link")
-    .forEach(link => {
+document.querySelectorAll(".nav-link").forEach(link => {
 
-        link.addEventListener(
-            "click",
-            () => {
+    link.addEventListener("click", () => {
 
-                navMenu.classList.remove(
-                    "open"
-                );
+        const target = link.getAttribute("href");
 
-            }
-        );
+        if (target === "#projects") {
+
+            projectDetail.classList.remove("active");
+            projectsSection.style.display = "";
+
+        }
+
+        document
+            .querySelectorAll(".nav-link")
+            .forEach(nav => nav.classList.remove("active"));
+
+        link.classList.add("active");
 
     });
 
-
-menuToggle.addEventListener(
-    "click",
-    () => {
-
-        navMenu.classList.toggle(
-            "open"
-        );
-
-    }
-);
+});
 
 
 /* =========================================================
-   ACTIVE NAVIGATION
+   MOBILE MENU
 ========================================================= */
 
-const sections = [
-    document.getElementById("home"),
-    document.getElementById("journey"),
-    document.getElementById("skills"),
-    document.getElementById("projects"),
-    document.getElementById("contact")
-];
+const mobileMenuBtn =
+    document.getElementById("mobileMenuBtn");
+
+const navMenu =
+    document.querySelector(".nav-menu");
+
+mobileMenuBtn.addEventListener("click", () => {
+
+    navMenu.classList.toggle("open");
+
+});
 
 
-const navLinks =
-    document.querySelectorAll(
-        ".nav-link"
-    );
+document.querySelectorAll(".nav-link").forEach(link => {
 
+    link.addEventListener("click", () => {
 
-const sectionObserver =
-    new IntersectionObserver(
-        entries => {
+        navMenu.classList.remove("open");
 
-            entries.forEach(entry => {
-
-                if (!entry.isIntersecting)
-                    return;
-
-
-                const id =
-                    entry.target.getAttribute(
-                        "id"
-                    );
-
-
-                navLinks.forEach(link => {
-
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute(
-                            "href"
-                        ) === `#${id}`
-                    );
-
-                });
-
-            });
-
-        },
-        {
-            rootMargin:
-                "-35% 0px -55% 0px"
-        }
-    );
-
-
-sections.forEach(section => {
-
-    if (section)
-        sectionObserver.observe(
-            section
-        );
+    });
 
 });
 
@@ -1139,177 +992,106 @@ sections.forEach(section => {
    THEME TOGGLE
 ========================================================= */
 
-function updateThemeIcon() {
+const themeToggle =
+    document.getElementById("themeToggle");
 
-    themeToggle.textContent =
-        document.body.classList.contains(
-            "light-mode"
-        )
-            ? "☼"
-            : "◐";
+themeToggle.addEventListener("click", () => {
 
-}
+    document.body.classList.toggle("light");
 
+    const icon =
+        themeToggle.querySelector("i");
 
-themeToggle.addEventListener(
-    "click",
-    () => {
+    if (document.body.classList.contains("light")) {
 
-        document.body.classList.toggle(
-            "light-mode"
-        );
+        icon.className = "fa-solid fa-sun";
 
+    } else {
 
-        const isLight =
-            document.body.classList.contains(
-                "light-mode"
-            );
-
-
-        localStorage.setItem(
-            "portfolio-theme",
-            isLight
-                ? "light"
-                : "dark"
-        );
-
-
-        updateThemeIcon();
+        icon.className = "fa-solid fa-moon";
 
     }
-);
 
-
-const savedTheme =
-    localStorage.getItem(
-        "portfolio-theme"
-    );
-
-
-if (savedTheme === "light") {
-
-    document.body.classList.add(
-        "light-mode"
-    );
-
-}
-
-
-updateThemeIcon();
+});
 
 
 /* =========================================================
    BACK TO TOP
 ========================================================= */
 
-window.addEventListener(
-    "scroll",
-    () => {
+const backTop =
+    document.getElementById("backTop");
 
-        if (window.scrollY > 500) {
+window.addEventListener("scroll", () => {
 
-            backToTop.classList.add(
-                "show"
-            );
+    if (window.scrollY > 500) {
 
-        } else {
+        backTop.classList.add("show");
 
-            backToTop.classList.remove(
-                "show"
-            );
+    } else {
 
-        }
+        backTop.classList.remove("show");
 
     }
-);
+
+});
 
 
-backToTop.addEventListener(
-    "click",
-    () => {
+backTop.addEventListener("click", () => {
 
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 
-    }
-);
+});
 
 
 /* =========================================================
    SCROLL REVEAL
 ========================================================= */
 
-let revealObserver;
+const revealElements =
+    document.querySelectorAll(
+        ".section-header, .about-text, .about-highlight, .skill-card, .project-card"
+    );
 
 
-function observeRevealElements() {
+const observer =
+    new IntersectionObserver(
+        entries => {
 
-    if (!revealObserver) {
+            entries.forEach(entry => {
 
-        revealObserver =
-            new IntersectionObserver(
-                entries => {
+                if (entry.isIntersecting) {
 
-                    entries.forEach(entry => {
+                    entry.target.classList.add("revealed");
 
-                        if (
-                            entry.isIntersecting
-                        ) {
-
-                            entry.target.classList.add(
-                                "revealed"
-                            );
-
-                            revealObserver.unobserve(
-                                entry.target
-                            );
-
-                        }
-
-                    });
-
-                },
-                {
-                    threshold: 0.08
                 }
-            );
 
-    }
+            });
+
+        },
+        {
+            threshold: 0.1
+        }
+    );
 
 
-    document
-        .querySelectorAll(".reveal")
-        .forEach(element => {
-
-            if (
-                !element.classList.contains(
-                    "revealed"
-                )
-            ) {
-
-                revealObserver.observe(
-                    element
-                );
-
-            }
-
-        });
-
-}
+revealElements.forEach(element => {
+    observer.observe(element);
+});
 
 
 /* =========================================================
-   INITIALIZE
+   INITIAL HASH
 ========================================================= */
 
-renderJourney();
+if (window.location.hash.startsWith("#project/")) {
 
-renderSkills();
+    const id =
+        window.location.hash.replace("#project/", "");
 
-renderProjects();
+    openProjectWithoutHistory(id);
 
-observeRevealElements();
-
-handleHash();
+}
