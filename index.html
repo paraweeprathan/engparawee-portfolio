@@ -1,744 +1,398 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Parawee Prathan | Chemical Engineer</title>
 
-    <meta name="description"
-        content="Chemical Engineer interested in engineering, research, process improvement, and sustainability.">
+    <meta
+        name="description"
+        content="Chemical Engineer with experience in process engineering, data analysis, R&D, laboratory work, and sustainability."
+    >
 
-    <meta property="og:title" content="Parawee Prathan | Chemical Engineer">
-    <meta property="og:description"
-        content="Chemical Engineer interested in engineering, research, process improvement, and sustainability.">
-    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         NAVIGATION
-    ========================== -->
+<!-- ================= NAVBAR ================= -->
 
-    <nav class="navbar">
+<header class="navbar">
+    <div class="nav-container">
 
-        <a href="#home" class="logo">PARAWEE</a>
+        <a href="#home" class="logo">PP<span>.</span></a>
 
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#journey">Journey</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
+        <nav class="nav-menu">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#journey" class="nav-link">Journey</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-        <button class="menu-toggle" id="menu-toggle">
-            ☰
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
         </button>
 
-    </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
 
 
-    <!-- =========================
-         HOME
-    ========================== -->
+<main>
 
-    <section id="home" class="hero">
+<!-- ================= HOME ================= -->
 
-        <div class="hero-content">
+<section id="home" class="hero section">
 
-            <p class="eyebrow">
-                CHEMICAL ENGINEER
-            </p>
+    <div class="hero-content">
 
-            <h1>
-                Engineering mindset.<br>
-                Scientific thinking.
-            </h1>
-
-            <p class="hero-description">
-                I’m <strong>Parawee Prathan</strong>, a Chemical Engineering graduate
-                interested in engineering, process improvement, research,
-                and sustainability.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#projects" class="button primary">
-                    Explore my projects
-                </a>
-
-                <a href="resume.pdf" class="button secondary" target="_blank">
-                    View Resume
-                </a>
-
-            </div>
-
+        <div class="hero-tag">
+            CHEMICAL ENGINEER
         </div>
 
-
-        <div class="hero-card">
-
-            <div class="profile-frame">
-                <img src="images/profile.jpg"
-                    alt="Parawee Prathan">
-            </div>
-
-            <div class="hero-card-info">
-                <h3>Parawee Prathan</h3>
-                <p>Chemical Engineering</p>
-                <span>Thailand</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         JOURNEY
-    ========================== -->
-
-    <section id="journey" class="section journey-section">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                MY JOURNEY
-            </p>
-
-            <h2>
-                From engineering fundamentals<br>
-                to real-world applications.
-            </h2>
-
-            <p>
-                A journey shaped by engineering, research,
-                manufacturing, sustainability, and experiences
-                beyond the classroom.
-            </p>
-
-        </div>
-
-
-        <div class="timeline">
-
-            <!-- 01 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2021
-                </div>
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-label">
-                        EDUCATION
-                    </span>
-
-                    <h3>
-                        Chulalongkorn University
-                    </h3>
-
-                    <h4>
-                        Bachelor of Engineering — Chemical Engineering
-                    </h4>
-
-                    <p>
-                        Built a foundation in chemical engineering,
-                        process design, problem-solving, and technical analysis.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 02 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2024
-                </div>
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-label">
-                        INTERNSHIP
-                    </span>
-
-                    <h3>
-                        Mektec Manufacturing Corporation
-                    </h3>
-
-                    <h4>
-                        Facilities Engineer Intern
-                    </h4>
-
-                    <p>
-                        Worked with plant data related to carbon footprint,
-                        wastewater, and environmental processes.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 03 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2025
-                </div>
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-label">
-                        R&D INTERNSHIP
-                    </span>
-
-                    <h3>
-                        Cirprise Startup
-                    </h3>
-
-                    <h4>
-                        R&D Intern
-                    </h4>
-
-                    <p>
-                        Conducted formulation trials for powdered hand soap,
-                        considering quality, cost, and sustainability.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 04 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2025
-                </div>
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-label">
-                        INTERNATIONAL EXPERIENCE
-                    </span>
-
-                    <h3>
-                        Work & Travel — USA
-                    </h3>
-
-                    <h4>
-                        Livingston, Montana
-                    </h4>
-
-                    <p>
-                        Gained international work experience while developing
-                        English communication and adaptability in a multicultural
-                        environment.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <!-- 05 -->
-
-            <div class="timeline-item">
-
-                <div class="timeline-year">
-                    2025–2026
-                </div>
-
-                <div class="timeline-dot"></div>
-
-                <div class="timeline-content">
-
-                    <span class="timeline-label">
-                        PROFESSIONAL EXPERIENCE
-                    </span>
-
-                    <h3>
-                        Reckitt
-                    </h3>
-
-                    <h4>
-                        Process Technologist
-                    </h4>
-
-                    <p>
-                        Worked in GMP-regulated medical device manufacturing,
-                        supporting process validation, machine trials,
-                        technical documentation, and production troubleshooting.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         SKILLS
-    ========================== -->
-
-    <section id="skills" class="section skills-section">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                SKILLS
-            </p>
-
-            <h2>
-                Engineering knowledge<br>
-                with practical application.
-            </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    01
-                </span>
-
-                <h3>
-                    Engineering
-                </h3>
-
-                <ul>
-                    <li>Process Design</li>
-                    <li>Process Validation</li>
-                    <li>Process Improvement</li>
-                    <li>Troubleshooting</li>
-                    <li>Equipment Selection</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    02
-                </span>
-
-                <h3>
-                    Laboratory & R&D
-                </h3>
-
-                <ul>
-                    <li>Experimental Work</li>
-                    <li>Formulation</li>
-                    <li>Technical Analysis</li>
-                    <li>Research</li>
-                    <li>Problem Solving</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    03
-                </span>
-
-                <h3>
-                    Data & Analysis
-                </h3>
-
-                <ul>
-                    <li>Data Analysis</li>
-                    <li>Minitab</li>
-                    <li>Python</li>
-                    <li>MATLAB</li>
-                    <li>Microsoft Excel</li>
-                </ul>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <span class="skill-number">
-                    04
-                </span>
-
-                <h3>
-                    Sustainability
-                </h3>
-
-                <ul>
-                    <li>Carbon Footprint</li>
-                    <li>Waste Management</li>
-                    <li>Circular Economy</li>
-                    <li>Environmental Analysis</li>
-                    <li>Sustainability Assessment</li>
-                </ul>
-
-            </div>
-
-        </div>
-
-
-        <div class="software-list">
-
-            <span>TOOLS</span>
-
-            <p>
-                Aspen Plus · SimaPro · Fusion 360 · Minitab ·
-                MATLAB · Python · Microsoft Office
-            </p>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         PROJECTS
-    ========================== -->
-
-    <section id="projects" class="section projects-section">
-
-        <div class="section-heading">
-
-            <p class="eyebrow">
-                SELECTED PROJECTS
-            </p>
-
-            <h2>
-                Engineering ideas<br>
-                turned into projects.
-            </h2>
-
-            <p>
-                A selection of academic, research, engineering,
-                and sustainability projects.
-            </p>
-
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <!-- PROJECT 01 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-                    <img src="images/project-co2.jpg"
-                        alt="Methanol production from CO2">
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        01
-                    </span>
-
-                    <span class="project-category">
-                        PROCESS ENGINEERING
-                    </span>
-
-                    <h3>
-                        Methanol Production from CO₂
-                    </h3>
-
-                    <p>
-                        Process design and simulation of methanol production
-                        from CO₂, including equipment selection, plant layout,
-                        and economic evaluation.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Process Design</span>
-                        <span>Simulation</span>
-                        <span>Economics</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 02 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-                    <img src="images/project-filter.jpg"
-                        alt="Electrospun air filter">
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        02
-                    </span>
-
-                    <span class="project-category">
-                        MATERIALS & SUSTAINABILITY
-                    </span>
-
-                    <h3>
-                        Recycled Plastic → Air Filter
-                    </h3>
-
-                    <p>
-                        Upcycling processed waste plastic into high-efficiency
-                        electrospun air filtration materials.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Electrospinning</span>
-                        <span>Materials</span>
-                        <span>Circular Economy</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 03 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-                    <img src="images/project-soap.jpg"
-                        alt="Powdered hand soap formulation">
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        03
-                    </span>
-
-                    <span class="project-category">
-                        R&D / FORMULATION
-                    </span>
-
-                    <h3>
-                        Sustainable Powdered Hand Soap
-                    </h3>
-
-                    <p>
-                        Conducted formulation trials focused on product quality,
-                        cost considerations, and reducing environmental impact.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>R&D</span>
-                        <span>Formulation</span>
-                        <span>Sustainability</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 04 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-                    <img src="images/project-carbon.jpg"
-                        alt="Carbon footprint assessment">
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        04
-                    </span>
-
-                    <span class="project-category">
-                        ENVIRONMENTAL ANALYSIS
-                    </span>
-
-                    <h3>
-                        Plant Carbon Footprint
-                    </h3>
-
-                    <p>
-                        Worked with real plant data to support Scope 1 and
-                        Scope 3 carbon footprint assessment.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Carbon Footprint</span>
-                        <span>Plant Data</span>
-                        <span>SimaPro</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-
-            <!-- PROJECT 05 -->
-
-            <article class="project-card">
-
-                <div class="project-image">
-                    <img src="images/project-wastewater.jpg"
-                        alt="Wastewater analysis">
-                </div>
-
-                <div class="project-content">
-
-                    <span class="project-number">
-                        05
-                    </span>
-
-                    <span class="project-category">
-                        ENVIRONMENTAL / LAB
-                    </span>
-
-                    <h3>
-                        Wastewater & Heavy Metal Analysis
-                    </h3>
-
-                    <p>
-                        Investigated heavy metal contamination in wastewater
-                        as part of environmental engineering internship work.
-                    </p>
-
-                    <div class="project-tags">
-                        <span>Wastewater</span>
-                        <span>Laboratory</span>
-                        <span>Environmental</span>
-                    </div>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- =========================
-         CONTACT
-    ========================== -->
-
-    <section id="contact" class="contact-section">
-
-        <p class="eyebrow">
-            LET'S CONNECT
-        </p>
-
-        <h2>
-            Let's build<br>
-            something meaningful.
-        </h2>
-
-        <p class="contact-description">
-            I am open to opportunities in engineering, R&D,
-            laboratory work, process improvement, manufacturing,
+        <h1>
+            Engineering mindset.<br>
+            <span>Multidisciplinary thinking.</span>
+        </h1>
+
+        <p class="hero-description">
+            Chemical Engineer with hands-on experience across
+            process engineering, R&D, data, laboratory work,
             and sustainability.
         </p>
 
-
-        <div class="contact-info">
-
-            <a href="mailto:parawee.prathan@gmail.com"
-                class="contact-item">
-
-                <span class="contact-icon">
-                    ✉
-                </span>
-
-                <span>
-                    parawee.prathan@gmail.com
-                </span>
-
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+                Explore My Work
+                <i class="fa-solid fa-arrow-right"></i>
             </a>
 
+            <a href="#journey" class="btn btn-outline">
+                My Journey
+            </a>
+        </div>
 
-            <a href="tel:+66611439695"
-                class="contact-item">
+    </div>
 
-                <span class="contact-icon">
-                    ☎
+    <div class="hero-graphic">
+
+        <div class="graphic-ring ring-1"></div>
+        <div class="graphic-ring ring-2"></div>
+        <div class="graphic-ring ring-3"></div>
+
+        <div class="graphic-center">
+            <span>PP</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="section about-section">
+
+    <div class="section-header">
+        <span class="section-number">01</span>
+
+        <div>
+            <p class="section-label">ABOUT ME</p>
+            <h2>Engineering with purpose.</h2>
+        </div>
+    </div>
+
+    <div class="about-grid">
+
+        <div class="about-text">
+
+            <p>
+                I am a Chemical Engineering graduate from
+                Chulalongkorn University with experience in
+                manufacturing, process validation, R&D,
+                data analysis, and sustainability projects.
+            </p>
+
+            <p>
+                My interests lie at the intersection of
+                engineering, technology, data, and real-world
+                problem solving.
+            </p>
+
+        </div>
+
+        <div class="about-highlight">
+
+            <div class="highlight-card">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-gears"></i>
                 </span>
 
-                <span>
-                    +66 61 143 9695
+                <div>
+                    <strong>Engineering</strong>
+                    <p>Process • Manufacturing • Problem Solving</p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-flask"></i>
                 </span>
 
+                <div>
+                    <strong>Innovation</strong>
+                    <p>R&D • Laboratory • Experimentation</p>
+                </div>
+            </div>
+
+            <div class="highlight-card">
+                <span class="highlight-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </span>
+
+                <div>
+                    <strong>Data</strong>
+                    <p>Analysis • Visualization • Decision Making</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SELECTED PROJECTS ================= -->
+
+<section class="section selected-projects">
+
+    <div class="section-header">
+        <span class="section-number">02</span>
+
+        <div>
+            <p class="section-label">SELECTED PROJECTS</p>
+            <h2>Things I've worked on.</h2>
+        </div>
+    </div>
+
+    <div class="project-preview-grid" id="homeProjects">
+        <!-- JS will generate project previews -->
+    </div>
+
+    <div class="center-button">
+        <a href="#projects" class="text-link">
+            View All Projects
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+
+</section>
+
+
+<!-- ================= JOURNEY ================= -->
+
+<section id="journey" class="section journey-section">
+
+    <div class="section-header">
+        <span class="section-number">03</span>
+
+        <div>
+            <p class="section-label">JOURNEY</p>
+            <h2>Where I've been.</h2>
+        </div>
+    </div>
+
+    <div class="journey-list" id="journeyList">
+        <!-- JS generates journey cards -->
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section skills-section">
+
+    <div class="section-header">
+        <span class="section-number">04</span>
+
+        <div>
+            <p class="section-label">SKILLS</p>
+            <h2>Tools & capabilities.</h2>
+        </div>
+    </div>
+
+    <p class="skills-intro">
+        A combination of engineering knowledge, digital tools,
+        analytical thinking, and hands-on experience.
+    </p>
+
+    <div class="skills-grid" id="skillsGrid">
+        <!-- JS generates skills -->
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section projects-section">
+
+    <div class="section-header">
+        <span class="section-number">05</span>
+
+        <div>
+            <p class="section-label">PROJECTS</p>
+            <h2>Selected work.</h2>
+        </div>
+    </div>
+
+    <div class="project-filters" id="projectFilters">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="high-school">
+            High School
+        </button>
+
+        <button class="filter-btn" data-filter="university">
+            University
+        </button>
+
+        <button class="filter-btn" data-filter="applied">
+            Applied / R&D
+        </button>
+
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+        <!-- JS generates project cards -->
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECT DETAIL ================= -->
+
+<section id="projectDetail" class="project-detail-section">
+
+    <div class="project-detail-container">
+
+        <button class="back-projects" id="backProjects">
+            <i class="fa-solid fa-arrow-left"></i>
+            Back to Projects
+        </button>
+
+        <div id="projectDetailContent">
+            <!-- JS inserts project detail -->
+        </div>
+
+        <div class="project-navigation">
+
+            <button id="previousProject">
+                <i class="fa-solid fa-arrow-left"></i>
+                Previous
+            </button>
+
+            <button id="nextProject">
+                Next
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section contact-section">
+
+    <div class="contact-content">
+
+        <p class="section-label">CONTACT</p>
+
+        <h2>
+            Let's build something<br>
+            <span>meaningful.</span>
+        </h2>
+
+        <p>
+            Open to opportunities in engineering, process,
+            R&D, laboratory, data, and sustainability.
+        </p>
+
+        <a
+            href="mailto:parawee.prathan@gmail.com"
+            class="contact-email"
+        >
+            parawee.prathan@gmail.com
+        </a>
+
+        <div class="social-links">
+
+            <a href="#" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="#" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
             </a>
 
         </div>
 
+    </div>
 
-        <a href="resume.pdf"
-            class="button primary contact-button"
-            target="_blank">
+</section>
 
-            Download Resume
-
-        </a>
-
-    </section>
+</main>
 
 
-    <!-- =========================
-         FOOTER
-    ========================== -->
+<!-- ================= FOOTER ================= -->
 
-    <footer>
+<footer class="footer">
 
-        <p>
-            © 2026 Parawee Prathan
-        </p>
+    <p>
+        © 2026 Parawee Prathan
+    </p>
 
-        <p>
-            Chemical Engineer
-        </p>
+    <p>
+        Chemical Engineer
+    </p>
 
-    </footer>
+</footer>
 
 
-    <script src="script.js"></script>
+<button class="back-top" id="backTop">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script src="script.js"></script>
 
 </body>
-
 </html>
-```
