@@ -27,6 +27,7 @@ const journey = [
         number: "01",
         title: "Professional Experience",
         subtitle: "Reckitt | Process Technologist",
+        year: "2025–2026",
         description:
             "Worked in GMP-regulated medical device manufacturing, supporting process validation, machine trials, technical documentation and production-related problem solving.",
         bullets: [
@@ -47,6 +48,7 @@ const journey = [
         number: "02",
         title: "Education",
         subtitle: "Bachelor of Engineering — Chemical Engineering",
+        year: "2021–2025",
         description:
             "Chulalongkorn University — Chemical Engineering. Developed a foundation in process design, transport phenomena, thermodynamics, reaction engineering, process control and engineering problem solving.",
         bullets: [
@@ -66,6 +68,7 @@ const journey = [
         number: "03",
         title: "Internship",
         subtitle: "Mektec | Facilities Engineer Intern",
+        year: "2024",
         description:
             "Worked with plant data and environmental-related engineering activities, including carbon footprint data collection and wastewater analysis.",
         bullets: [
@@ -86,6 +89,7 @@ const journey = [
         number: "04",
         title: "Internship",
         subtitle: "Cirprise Startup | R&D Intern",
+        year: "2025",
         description:
             "Worked on product formulation and experimental development for powdered hand soap, balancing product quality, formulation performance and cost considerations.",
         bullets: [
@@ -106,6 +110,7 @@ const journey = [
         number: "05",
         title: "Awards & Competitions",
         subtitle: "Innovation • Sustainability • Engineering",
+        year: "2022–2025",
         description:
             "Participated in engineering, sustainability and innovation competitions throughout university.",
         bullets: [
@@ -125,6 +130,7 @@ const journey = [
         number: "06",
         title: "International Experience",
         subtitle: "Work & Travel | Montana, USA",
+        year: "2025",
         description:
             "Spent four months working and living in Livingston, Montana, gaining international work experience and communicating in an English-speaking multicultural environment.",
         bullets: [
@@ -142,6 +148,10 @@ const journey = [
 ];
 
 
+/* =========================================================
+   PROJECTS
+========================================================= */
+
 const projects = [
     {
         id: "methanol-co2",
@@ -152,11 +162,7 @@ const projects = [
             "Conceptual process design and simulation for methanol production from CO₂, including process development, equipment design and economic consideration.",
         year: "2024–2025",
         role: "Chemical Engineering Project",
-        tools: [
-            "Aspen Plus",
-            "Process Simulation",
-            "Process Design"
-        ],
+        tools: ["Aspen Plus", "Process Simulation", "Process Design"],
         heroLabel: "PROJECT IMAGE",
         overview:
             "A chemical process design project focused on converting CO₂ into methanol. The project involved developing a conceptual process, performing simulation work and considering equipment configuration, layout and economics.",
@@ -187,11 +193,7 @@ const projects = [
             "Developed a high-efficiency electrospun air filter using recycled plastic from used baby milk bottles.",
         year: "2024–2025",
         role: "Senior Project",
-        tools: [
-            "Electrospinning",
-            "Material Preparation",
-            "Laboratory"
-        ],
+        tools: ["Electrospinning", "Material Preparation", "Laboratory"],
         heroLabel: "PROJECT IMAGE",
         overview:
             "A senior project exploring the conversion of recycled plastic from used baby milk bottles into material for a high-efficiency electrospun air filter.",
@@ -221,11 +223,7 @@ const projects = [
             "R&D formulation trials for powdered hand soap, focusing on product quality, performance and cost.",
         year: "2025",
         role: "R&D Intern",
-        tools: [
-            "Formulation",
-            "Experimentation",
-            "Product Development"
-        ],
+        tools: ["Formulation", "Experimentation", "Product Development"],
         heroLabel: "PROJECT IMAGE",
         overview:
             "An applied R&D project focused on developing a powdered hand soap formulation through iterative experimentation.",
@@ -255,11 +253,7 @@ const projects = [
             "Collected and analyzed manufacturing plant data to support Scope 1 and Scope 3 carbon footprint assessment.",
         year: "2024",
         role: "Facilities Engineer Intern",
-        tools: [
-            "Plant Data",
-            "Carbon Footprint",
-            "SimaPro"
-        ],
+        tools: ["Plant Data", "Carbon Footprint", "SimaPro"],
         heroLabel: "PROJECT IMAGE",
         overview:
             "An internship project involving real manufacturing plant data for carbon footprint assessment.",
@@ -289,11 +283,7 @@ const projects = [
             "Explored the use of marine waste as a material source for automotive carpet applications.",
         year: "University Project",
         role: "Innovation Project",
-        tools: [
-            "Material Development",
-            "Sustainability",
-            "Automotive"
-        ],
+        tools: ["Material Development", "Sustainability", "Automotive"],
         heroLabel: "PROJECT IMAGE",
         overview:
             "An innovation project exploring how marine waste could be transformed into a useful automotive material.",
@@ -322,11 +312,7 @@ const projects = [
             "An early engineering project that sparked my interest in developing practical solutions to real-world problems.",
         year: "High School",
         role: "Student Project",
-        tools: [
-            "Engineering",
-            "Problem Solving",
-            "Innovation"
-        ],
+        tools: ["Engineering", "Problem Solving", "Innovation"],
         heroLabel: "PROJECT IMAGE",
         overview:
             "A high-school project representing one of my early experiences with engineering and innovation.",
@@ -349,7 +335,7 @@ const projects = [
 
 
 /* =========================================================
-   DOM ELEMENTS
+   DOM
 ========================================================= */
 
 const journeyList = document.getElementById("journeyList");
@@ -368,7 +354,6 @@ const navMenu = document.getElementById("navMenu");
 const menuToggle = document.getElementById("menuToggle");
 
 const themeToggle = document.getElementById("themeToggle");
-
 const backToTop = document.getElementById("backToTop");
 
 let currentFilter = "all";
@@ -385,7 +370,7 @@ function renderJourney() {
     journeyList.innerHTML = journey.map((item, index) => {
 
         return `
-            <article class="journey-item reveal">
+            <article class="journey-card reveal">
 
                 <button
                     class="journey-header"
@@ -397,14 +382,24 @@ function renderJourney() {
                         ${item.number}
                     </span>
 
-                    <span>
-                        <span class="journey-title">
+                    <span class="journey-main">
+
+                        <span class="journey-type">
                             ${item.title}
                         </span>
 
-                        <span class="journey-subtitle">
+                        <h3>
                             ${item.subtitle}
-                        </span>
+                        </h3>
+
+                        <p>
+                            ${item.description}
+                        </p>
+
+                    </span>
+
+                    <span class="journey-year">
+                        ${item.year}
                     </span>
 
                     <span class="journey-arrow">
@@ -414,24 +409,42 @@ function renderJourney() {
                 </button>
 
 
-                <div class="journey-content">
+                <div class="journey-details">
 
-                    <div class="journey-content-inner">
+                    <div class="journey-details-inner">
 
-                        <p>
-                            ${item.description}
-                        </p>
+                        <div class="journey-detail-icon">
+                            ${index === 0 ? "⚙" :
+                              index === 1 ? "⌘" :
+                              index === 2 ? "◫" :
+                              index === 3 ? "◇" :
+                              index === 4 ? "★" : "✈"}
+                        </div>
 
-                        <ul>
-                            ${item.bullets
-                                .map(bullet => `<li>${bullet}</li>`)
-                                .join("")}
-                        </ul>
+                        <div>
 
-                        <div class="journey-meta">
-                            ${item.tags
-                                .map(tag => `<span>${tag}</span>`)
-                                .join("")}
+                            <p>
+                                ${item.description}
+                            </p>
+
+                            <ul>
+                                ${item.bullets
+                                    .map(
+                                        bullet =>
+                                            `<li>${bullet}</li>`
+                                    )
+                                    .join("")}
+                            </ul>
+
+                            <div class="journey-tags">
+                                ${item.tags
+                                    .map(
+                                        tag =>
+                                            `<span>${tag}</span>`
+                                    )
+                                    .join("")}
+                            </div>
+
                         </div>
 
                     </div>
@@ -443,43 +456,51 @@ function renderJourney() {
 
     }).join("");
 
-    document.querySelectorAll(".journey-header").forEach(button => {
 
-        button.addEventListener("click", () => {
+    document
+        .querySelectorAll(".journey-header")
+        .forEach(button => {
 
-            const item = button.closest(".journey-item");
-            const isOpen = item.classList.contains("open");
+            button.addEventListener("click", () => {
 
-            document
-                .querySelectorAll(".journey-item.open")
-                .forEach(openItem => {
+                const card =
+                    button.closest(".journey-card");
 
-                    openItem.classList.remove("open");
+                const isOpen =
+                    card.classList.contains("open");
 
-                    const openButton =
-                        openItem.querySelector(".journey-header");
 
-                    openButton.setAttribute(
+                document
+                    .querySelectorAll(".journey-card.open")
+                    .forEach(openCard => {
+
+                        openCard.classList.remove("open");
+
+                        openCard
+                            .querySelector(".journey-header")
+                            .setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                    });
+
+
+                if (!isOpen) {
+
+                    card.classList.add("open");
+
+                    button.setAttribute(
                         "aria-expanded",
-                        "false"
+                        "true"
                     );
 
-                });
+                }
 
-            if (!isOpen) {
-
-                item.classList.add("open");
-
-                button.setAttribute(
-                    "aria-expanded",
-                    "true"
-                );
-
-            }
+            });
 
         });
 
-    });
 }
 
 
@@ -506,6 +527,7 @@ function renderSkills() {
         `;
 
     }).join("");
+
 }
 
 
@@ -517,57 +539,59 @@ function renderProjects(filter = "all") {
 
     currentFilter = filter;
 
-    if (filter === "all") {
-        visibleProjects = [...projects];
-    } else {
-        visibleProjects = projects.filter(
-            project => project.category === filter
-        );
-    }
-
-    projectsGrid.innerHTML = visibleProjects.map((project, index) => {
-
-        return `
-            <article class="project-card reveal">
-
-                <div class="project-image">
-
-                    <span class="image-placeholder">
-                        ${project.heroLabel}
-                    </span>
-
-                </div>
+    visibleProjects =
+        filter === "all"
+            ? [...projects]
+            : projects.filter(
+                project =>
+                    project.category === filter
+            );
 
 
-                <div class="project-content">
+    projectsGrid.innerHTML =
+        visibleProjects.map(project => {
 
-                    <span class="project-category">
-                        ${project.categoryLabel}
-                    </span>
+            return `
+                <article class="project-card reveal">
 
-                    <h3>
-                        ${project.title}
-                    </h3>
+                    <div class="project-image">
 
-                    <p class="project-description">
-                        ${project.shortDescription}
-                    </p>
+                        <span class="image-placeholder">
+                            ${project.heroLabel}
+                        </span>
 
-                    <a
-                        href="#project/${project.id}"
-                        class="project-link"
-                        data-project-id="${project.id}"
-                    >
-                        View Project
-                        <span>→</span>
-                    </a>
+                    </div>
 
-                </div>
+                    <div class="project-content">
 
-            </article>
-        `;
+                        <span class="project-category">
+                            ${project.categoryLabel}
+                        </span>
 
-    }).join("");
+                        <h3>
+                            ${project.title}
+                        </h3>
+
+                        <p class="project-description">
+                            ${project.shortDescription}
+                        </p>
+
+                        <a
+                            href="#project/${project.id}"
+                            class="project-link"
+                            data-project-id="${project.id}"
+                        >
+                            View Project
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+            `;
+
+        }).join("");
+
 
     document
         .querySelectorAll("[data-project-id]")
@@ -577,16 +601,17 @@ function renderProjects(filter = "all") {
 
                 event.preventDefault();
 
-                const projectId =
-                    link.dataset.projectId;
-
-                openProject(projectId);
+                openProject(
+                    link.dataset.projectId
+                );
 
             });
 
         });
 
+
     observeRevealElements();
+
 }
 
 
@@ -594,19 +619,24 @@ function renderProjects(filter = "all") {
    PROJECT DETAIL
 ========================================================= */
 
-function openProject(projectId, updateHistory = true) {
+function openProject(
+    projectId,
+    updateHistory = true
+) {
 
     const project =
-        projects.find(item => item.id === projectId);
+        projects.find(
+            item => item.id === projectId
+        );
 
-    if (!project) {
-        return;
-    }
+    if (!project) return;
+
 
     currentProjectIndex =
         visibleProjects.findIndex(
             item => item.id === projectId
         );
+
 
     if (currentProjectIndex === -1) {
 
@@ -616,7 +646,9 @@ function openProject(projectId, updateHistory = true) {
             visibleProjects.findIndex(
                 item => item.id === projectId
             );
+
     }
+
 
     projectDetailContent.innerHTML = `
 
@@ -653,7 +685,6 @@ function openProject(projectId, updateHistory = true) {
                 <div class="detail-meta">
 
                     <div class="detail-meta-item">
-
                         <span class="detail-meta-label">
                             Year
                         </span>
@@ -661,12 +692,10 @@ function openProject(projectId, updateHistory = true) {
                         <span class="detail-meta-value">
                             ${project.year}
                         </span>
-
                     </div>
 
 
                     <div class="detail-meta-item">
-
                         <span class="detail-meta-label">
                             Role
                         </span>
@@ -674,12 +703,10 @@ function openProject(projectId, updateHistory = true) {
                         <span class="detail-meta-value">
                             ${project.role}
                         </span>
-
                     </div>
 
 
                     <div class="detail-meta-item">
-
                         <span class="detail-meta-label">
                             Category
                         </span>
@@ -687,12 +714,10 @@ function openProject(projectId, updateHistory = true) {
                         <span class="detail-meta-value">
                             ${project.categoryLabel}
                         </span>
-
                     </div>
 
 
                     <div class="detail-meta-item">
-
                         <span class="detail-meta-label">
                             Tools
                         </span>
@@ -700,7 +725,6 @@ function openProject(projectId, updateHistory = true) {
                         <span class="detail-meta-value">
                             ${project.tools.join(" • ")}
                         </span>
-
                     </div>
 
                 </div>
@@ -711,55 +735,33 @@ function openProject(projectId, updateHistory = true) {
             <div class="project-detail-text">
 
                 <section>
+                    <h2>Overview</h2>
+                    <p>${project.overview}</p>
+                </section>
 
-                    <h2>
-                        Overview
-                    </h2>
 
-                    <p>
-                        ${project.overview}
-                    </p>
+                <section>
+                    <h2>Challenge</h2>
+                    <p>${project.challenge}</p>
+                </section>
 
+
+                <section>
+                    <h2>Approach</h2>
+                    <p>${project.approach}</p>
                 </section>
 
 
                 <section>
 
-                    <h2>
-                        Challenge
-                    </h2>
-
-                    <p>
-                        ${project.challenge}
-                    </p>
-
-                </section>
-
-
-                <section>
-
-                    <h2>
-                        Approach
-                    </h2>
-
-                    <p>
-                        ${project.approach}
-                    </p>
-
-                </section>
-
-
-                <section>
-
-                    <h2>
-                        Process
-                    </h2>
+                    <h2>Process</h2>
 
                     <ul>
                         ${project.process
                             .map(step => `<li>${step}</li>`)
                             .join("")}
                     </ul>
+
 
                     <div class="supporting-images">
 
@@ -777,28 +779,14 @@ function openProject(projectId, updateHistory = true) {
 
 
                 <section>
-
-                    <h2>
-                        Results
-                    </h2>
-
-                    <p>
-                        ${project.results}
-                    </p>
-
+                    <h2>Results</h2>
+                    <p>${project.results}</p>
                 </section>
 
 
                 <section>
-
-                    <h2>
-                        What I Learned
-                    </h2>
-
-                    <p>
-                        ${project.learning}
-                    </p>
-
+                    <h2>What I Learned</h2>
+                    <p>${project.learning}</p>
                 </section>
 
             </div>
@@ -832,12 +820,15 @@ function openProject(projectId, updateHistory = true) {
 
     }
 
+
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
 
+
     updateProjectNavigation();
+
 }
 
 
@@ -855,15 +846,19 @@ function updateProjectNavigation() {
         return;
     }
 
+
     previousProject.style.visibility =
         currentProjectIndex > 0
             ? "visible"
             : "hidden";
 
+
     nextProject.style.visibility =
-        currentProjectIndex < visibleProjects.length - 1
+        currentProjectIndex <
+        visibleProjects.length - 1
             ? "visible"
             : "hidden";
+
 }
 
 
@@ -871,10 +866,11 @@ previousProject.addEventListener("click", () => {
 
     if (currentProjectIndex > 0) {
 
-        const previous =
-            visibleProjects[currentProjectIndex - 1];
-
-        openProject(previous.id);
+        openProject(
+            visibleProjects[
+                currentProjectIndex - 1
+            ].id
+        );
 
     }
 
@@ -888,10 +884,11 @@ nextProject.addEventListener("click", () => {
         visibleProjects.length - 1
     ) {
 
-        const next =
-            visibleProjects[currentProjectIndex + 1];
-
-        openProject(next.id);
+        openProject(
+            visibleProjects[
+                currentProjectIndex + 1
+            ].id
+        );
 
     }
 
@@ -902,9 +899,12 @@ nextProject.addEventListener("click", () => {
    BACK TO PROJECTS
 ========================================================= */
 
-function closeProjectDetail(updateHistory = true) {
+function closeProjectDetail(
+    updateHistory = true
+) {
 
     projectDetail.classList.add("hidden");
+
 
     document
         .querySelector("main")
@@ -927,6 +927,7 @@ function closeProjectDetail(updateHistory = true) {
         );
 
     }
+
 
     setTimeout(() => {
 
@@ -959,13 +960,13 @@ projectFilters
 
             projectFilters
                 .querySelectorAll(".filter-btn")
-                .forEach(btn => {
+                .forEach(btn =>
+                    btn.classList.remove("active")
+                );
 
-                    btn.classList.remove("active");
-
-                });
 
             button.classList.add("active");
+
 
             renderProjects(
                 button.dataset.filter
@@ -982,12 +983,17 @@ projectFilters
 
 function handleHash() {
 
-    const hash = window.location.hash;
+    const hash =
+        window.location.hash;
+
 
     if (hash.startsWith("#project/")) {
 
         const projectId =
-            hash.replace("#project/", "");
+            hash.replace(
+                "#project/",
+                ""
+            );
 
         openProject(
             projectId,
@@ -1006,11 +1012,15 @@ function handleHash() {
     }
 
 
-    if (projectDetail.classList.contains("hidden")) {
-        return;
+    if (
+        projectDetail &&
+        !projectDetail.classList.contains("hidden")
+    ) {
+
+        closeProjectDetail(false);
+
     }
 
-    closeProjectDetail(false);
 }
 
 
@@ -1033,20 +1043,30 @@ document
     .querySelectorAll(".nav-link")
     .forEach(link => {
 
-        link.addEventListener("click", () => {
+        link.addEventListener(
+            "click",
+            () => {
 
-            navMenu.classList.remove("open");
+                navMenu.classList.remove(
+                    "open"
+                );
 
-        });
+            }
+        );
 
     });
 
 
-menuToggle.addEventListener("click", () => {
+menuToggle.addEventListener(
+    "click",
+    () => {
 
-    navMenu.classList.toggle("open");
+        navMenu.classList.toggle(
+            "open"
+        );
 
-});
+    }
+);
 
 
 /* =========================================================
@@ -1061,8 +1081,11 @@ const sections = [
     document.getElementById("contact")
 ];
 
+
 const navLinks =
-    document.querySelectorAll(".nav-link");
+    document.querySelectorAll(
+        ".nav-link"
+    );
 
 
 const sectionObserver =
@@ -1071,18 +1094,23 @@ const sectionObserver =
 
             entries.forEach(entry => {
 
-                if (!entry.isIntersecting) {
+                if (!entry.isIntersecting)
                     return;
-                }
+
 
                 const id =
-                    entry.target.getAttribute("id");
+                    entry.target.getAttribute(
+                        "id"
+                    );
+
 
                 navLinks.forEach(link => {
 
                     link.classList.toggle(
                         "active",
-                        link.getAttribute("href") === `#${id}`
+                        link.getAttribute(
+                            "href"
+                        ) === `#${id}`
                     );
 
                 });
@@ -1091,16 +1119,18 @@ const sectionObserver =
 
         },
         {
-            rootMargin: "-35% 0px -55% 0px"
+            rootMargin:
+                "-35% 0px -55% 0px"
         }
     );
 
 
 sections.forEach(section => {
 
-    if (section) {
-        sectionObserver.observe(section);
-    }
+    if (section)
+        sectionObserver.observe(
+            section
+        );
 
 });
 
@@ -1112,32 +1142,42 @@ sections.forEach(section => {
 function updateThemeIcon() {
 
     themeToggle.textContent =
-        document.body.classList.contains("light-mode")
+        document.body.classList.contains(
+            "light-mode"
+        )
             ? "☼"
             : "◐";
 
 }
 
 
-themeToggle.addEventListener("click", () => {
+themeToggle.addEventListener(
+    "click",
+    () => {
 
-    document.body.classList.toggle(
-        "light-mode"
-    );
-
-    const isLight =
-        document.body.classList.contains(
+        document.body.classList.toggle(
             "light-mode"
         );
 
-    localStorage.setItem(
-        "portfolio-theme",
-        isLight ? "light" : "dark"
-    );
 
-    updateThemeIcon();
+        const isLight =
+            document.body.classList.contains(
+                "light-mode"
+            );
 
-});
+
+        localStorage.setItem(
+            "portfolio-theme",
+            isLight
+                ? "light"
+                : "dark"
+        );
+
+
+        updateThemeIcon();
+
+    }
+);
 
 
 const savedTheme =
@@ -1154,6 +1194,7 @@ if (savedTheme === "light") {
 
 }
 
+
 updateThemeIcon();
 
 
@@ -1161,29 +1202,39 @@ updateThemeIcon();
    BACK TO TOP
 ========================================================= */
 
-window.addEventListener("scroll", () => {
+window.addEventListener(
+    "scroll",
+    () => {
 
-    if (window.scrollY > 500) {
+        if (window.scrollY > 500) {
 
-        backToTop.classList.add("show");
+            backToTop.classList.add(
+                "show"
+            );
 
-    } else {
+        } else {
 
-        backToTop.classList.remove("show");
+            backToTop.classList.remove(
+                "show"
+            );
+
+        }
 
     }
+);
 
-});
 
+backToTop.addEventListener(
+    "click",
+    () => {
 
-backToTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-});
+    }
+);
 
 
 /* =========================================================
@@ -1203,10 +1254,12 @@ function observeRevealElements() {
 
                     entries.forEach(entry => {
 
-                        if (entry.isIntersecting) {
+                        if (
+                            entry.isIntersecting
+                        ) {
 
                             entry.target.classList.add(
-                                "visible"
+                                "revealed"
                             );
 
                             revealObserver.unobserve(
@@ -1232,7 +1285,7 @@ function observeRevealElements() {
 
             if (
                 !element.classList.contains(
-                    "visible"
+                    "revealed"
                 )
             ) {
 
@@ -1252,7 +1305,9 @@ function observeRevealElements() {
 ========================================================= */
 
 renderJourney();
+
 renderSkills();
+
 renderProjects();
 
 observeRevealElements();
