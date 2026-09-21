@@ -2037,3 +2037,145 @@ body.light-mode .navbar {
         transition-duration: 0.01ms !important;
     }
 }
+/* =========================================================
+   MOBILE BOTTOM NAVIGATION
+   ========================================================= */
+
+.mobile-bottom-nav {
+  display: none;
+}
+
+@media (max-width: 768px) {
+
+  .mobile-bottom-nav {
+    position: fixed;
+    left: 12px;
+    right: 12px;
+    bottom: calc(12px + env(safe-area-inset-bottom));
+
+    height: 64px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    background: rgba(11, 17, 32, 0.94);
+    border: 1px solid rgba(148, 163, 184, 0.16);
+    border-radius: 20px;
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    box-shadow:
+      0 12px 35px rgba(0, 0, 0, 0.35),
+      0 0 25px rgba(56, 189, 248, 0.05);
+
+    z-index: 9999;
+    padding: 5px;
+  }
+
+  .mobile-nav-item {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 3px;
+
+    border: 0;
+    background: transparent;
+
+    color: #64748b;
+
+    font-family: inherit;
+    font-size: 9px;
+    font-weight: 600;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    border-radius: 15px;
+
+    transition:
+      color 0.25s ease,
+      background 0.25s ease,
+      transform 0.2s ease;
+  }
+
+  .mobile-nav-icon {
+    width: 21px;
+    height: 21px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition:
+      transform 0.25s ease,
+      filter 0.25s ease;
+  }
+
+  .mobile-nav-icon svg {
+    width: 20px;
+    height: 20px;
+
+    stroke: currentColor;
+    fill: none;
+
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  /* Active menu */
+  .mobile-nav-item.active {
+    color: #38bdf8;
+    background: rgba(56, 189, 248, 0.09);
+  }
+
+  .mobile-nav-item.active .mobile-nav-icon {
+    transform: translateY(-1px);
+
+    filter:
+      drop-shadow(0 0 7px rgba(56, 189, 248, 0.5));
+  }
+
+  /* Tap animation */
+  .mobile-nav-item:active {
+    transform: scale(0.93);
+  }
+
+  /* Don't let navigation cover the page content */
+  body {
+    padding-bottom: 95px;
+  }
+   .menu-toggle {
+     display: none;
+   }
+}
+   
+
+
+/* =========================================================
+   LIGHT MODE
+   ========================================================= */
+
+body.light-mode .mobile-bottom-nav {
+  background: rgba(255, 255, 255, 0.94);
+
+  border-color: rgba(15, 23, 42, 0.10);
+
+  box-shadow:
+    0 12px 35px rgba(15, 23, 42, 0.15),
+    0 0 25px rgba(14, 165, 233, 0.05);
+}
+
+body.light-mode .mobile-nav-item {
+  color: #64748b;
+}
+
+body.light-mode .mobile-nav-item.active {
+  color: #0284c7;
+  background: rgba(14, 165, 233, 0.08);
+}
