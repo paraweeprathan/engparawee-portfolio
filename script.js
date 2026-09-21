@@ -1513,6 +1513,7 @@ window.addEventListener(
    MOBILE NAV
 ========================================================= */
 
+/* Old hamburger menu */
 if (mobileToggle) {
 
     mobileToggle.addEventListener(
@@ -1527,6 +1528,7 @@ if (mobileToggle) {
 }
 
 
+/* Desktop nav links */
 document
     .querySelectorAll(".nav-link")
     .forEach(link => {
@@ -1535,15 +1537,55 @@ document
             "click",
             () => {
 
-                navMenu.classList.remove(
-                    "open"
-                );
+                navMenu.classList.remove("open");
 
             }
         );
 
     });
 
+
+/* ---------------------------------------------------------
+   MOBILE BOTTOM NAVIGATION
+--------------------------------------------------------- */
+
+const mobileNavItems =
+    document.querySelectorAll(
+        ".mobile-nav-item"
+    );
+
+
+function setMobileNavActive(sectionId) {
+
+    mobileNavItems.forEach(item => {
+
+        item.classList.toggle(
+            "active",
+            item.dataset.mobileNav === sectionId
+        );
+
+    });
+
+}
+
+
+/* Change active button when clicked */
+
+mobileNavItems.forEach(item => {
+
+    item.addEventListener(
+        "click",
+        () => {
+
+            const target =
+                item.dataset.mobileNav;
+
+            setMobileNavActive(target);
+
+        }
+    );
+
+});
 
 /* =========================================================
    ACTIVE NAV
@@ -1572,6 +1614,9 @@ const navObserver =
                 const id =
                     entry.target.id;
 
+
+                /* Desktop navigation */
+
                 navLinks.forEach(link => {
 
                     link.classList.toggle(
@@ -1581,6 +1626,11 @@ const navObserver =
                     );
 
                 });
+
+
+                /* Mobile bottom navigation */
+
+                setMobileNavActive(id);
 
             });
 
