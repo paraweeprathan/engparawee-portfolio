@@ -2046,7 +2046,9 @@ body.light-mode .navbar {
 }
 
 @media (max-width: 768px) {
-
+   .menu-toggle {
+     display: none !important;
+   }
   .mobile-bottom-nav {
     position: fixed;
     left: 12px;
@@ -2150,9 +2152,6 @@ body.light-mode .navbar {
   body {
     padding-bottom: 95px;
   }
-   .menu-toggle {
-     display: none;
-   }
 }
    
 
