@@ -2049,6 +2049,10 @@ body.light-mode .navbar {
    .menu-toggle {
      display: none !important;
    }
+
+   .mobile-toggle {
+    display: none !important;
+   }
   .mobile-bottom-nav {
     position: fixed;
     left: 12px;
