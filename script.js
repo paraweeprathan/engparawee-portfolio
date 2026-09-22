@@ -28,27 +28,15 @@ const skills = [
     },
 
     {
-        name: "Data Analysis",
-        category: "Data",
-        icon: "DA"
-    },
-
-    {
-        name: "Process Engineering",
+        name: "Process Design",
         category: "Engineering",
-        icon: "PE"
+        icon: "PD"
     },
 
     {
         name: "Process Validation",
         category: "Manufacturing",
         icon: "PV"
-    },
-
-    {
-        name: "Laboratory",
-        category: "Technical",
-        icon: "LAB"
     },
 
     {
