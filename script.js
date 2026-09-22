@@ -1579,63 +1579,70 @@ mobileNavItems.forEach(item => {
    ACTIVE NAV
 ========================================================= */
 
-const sections =
-    document.querySelectorAll(
-        "main > section"
-    );
+/* =========================================================
+   ACTIVE NAV
+========================================================= */
 
-const navLinks =
-    document.querySelectorAll(
-        ".nav-link"
-    );
+const sections = document.querySelectorAll(
+    "main > section"
+);
 
+const navLinks = document.querySelectorAll(
+    ".nav-link"
+);
 
-const navObserver =
-    new IntersectionObserver(
-        entries => {
+function updateActiveNav() {
 
-            entries.forEach(entry => {
+    const scrollPosition =
+        window.scrollY + window.innerHeight * 0.35;
 
-                if (!entry.isIntersecting)
-                    return;
+    let currentSection = "home";
 
-                const id =
-                    entry.target.id;
+    sections.forEach(section => {
 
+        const sectionTop = section.offsetTop;
+        const sectionBottom =
+            sectionTop + section.offsetHeight;
 
-                /* Desktop navigation */
-
-                navLinks.forEach(link => {
-
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") ===
-                        `#${id}`
-                    );
-
-                });
-
-
-                /* Mobile bottom navigation */
-
-                setMobileNavActive(id);
-
-            });
-
-        },
-        {
-            rootMargin:
-                "-35% 0px -55% 0px"
+        if (
+            scrollPosition >= sectionTop &&
+            scrollPosition < sectionBottom
+        ) {
+            currentSection = section.id;
         }
-    );
+
+    });
+
+    /* Desktop navbar */
+
+    navLinks.forEach(link => {
+
+        link.classList.toggle(
+            "active",
+            link.getAttribute("href") ===
+            `#${currentSection}`
+        );
+
+    });
+
+    /* Mobile bottom navigation */
+
+    setMobileNavActive(currentSection);
+}
 
 
-sections.forEach(section => {
+/* Update while scrolling */
 
-    navObserver.observe(section);
+window.addEventListener(
+    "scroll",
+    updateActiveNav,
+    { passive: true }
+);
 
-});
 
+/* Update on page load */
+
+updateActiveNav();
 
 /* =========================================================
    THEME
