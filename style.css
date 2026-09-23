@@ -1816,6 +1816,42 @@ body.light-mode .navbar {
 
 
 @media (max-width: 760px) {
+    /* ================================
+       MOBILE HERO — CENTERED
+    ================================= */
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        text-align: center;
+
+        gap: 0;
+    }
+
+    .hero-eyebrow {
+        text-align: center;
+    }
+
+    .hero h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-description {
+        max-width: 760px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
 
     .section {
         padding: 85px 0;
