@@ -1,104 +1,197 @@
 /* =========================================================
-   DATA
+   PROJECT DATA
 ========================================================= */
 
-
-/* =========================================================
-   JOURNEY
-========================================================= */
-
-const journey = [
+const projects = [
 
     {
-        role: "Process Technologist",
-        company: "Reckitt Benckiser",
-        duration: "DEC 2025 — MAR 2026",
-        type: "WORK EXPERIENCE",
+        title: "Methanol Production from CO₂",
+
+        category: "UNIVERSITY PROJECT",
+
         color: "#38bdf8",
 
-        description:
-            "Worked in GMP-regulated medical device manufacturing, supporting process validation, technical documentation, troubleshooting and production activities.",
+        icon: "factory",
 
-        tags: [
-            "OQ / PQ",
+        description:
+            "Process design and simulation for converting CO₂ into methanol.",
+
+        keywords: [
+            "PROCESS DESIGN",
+            "ASPEN PLUS",
+            "SIMULATION",
+            "CO₂"
+        ],
+
+        insights: [
+            "Designed a conceptual methanol production process.",
+            "Performed process simulation and material balance calculations.",
+            "Evaluated equipment design and process economics."
+        ],
+
+        details: [
+            {
+                title: "OVERVIEW",
+
+                text:
+                    "Designed a conceptual process for producing methanol from CO₂, combining process simulation, equipment design and economic considerations."
+            },
+
+            {
+                title: "CHALLENGE",
+
+                text:
+                    "Developing a technically feasible process while maintaining product purity and considering process integration."
+            },
+
+            {
+                title: "APPROACH",
+
+                text:
+                    "Defined the process route, performed simulation and material balance calculations, designed major equipment and evaluated preliminary process economics."
+            },
+
+            {
+                title: "KEY RESULT",
+
+                text:
+                    "The simulated process achieved methanol purity above 98%."
+            },
+
+            {
+                title: "LEARNING",
+
+                text:
+                    "Strengthened my understanding of how chemical engineering fundamentals connect with real process design and decision-making."
+            }
+        ]
+    },
+
+
+    {
+        title: "UDI Laser Printing Validation",
+
+        category: "APPLIED / R&D",
+
+        color: "#2563eb",
+
+        icon: "laser",
+
+        description:
+            "Process validation of UDI laser printing across five production machines.",
+
+        keywords: [
+            "VALIDATION",
             "GMP",
-            "Manufacturing",
-            "Technical Data"
+            "OQ / PQ",
+            "MANUFACTURING"
+        ],
+
+        insights: [
+            "Led UDI laser printing validation across 5 machines.",
+            "Collected and reviewed process and machine data.",
+            "Worked across Production, QA/QC and Engineering."
+        ],
+
+        details: [
+            {
+                title: "OVERVIEW",
+
+                text:
+                    "Supported and led validation activities for UDI laser printing on foil within a GMP-regulated medical device manufacturing environment."
+            },
+
+            {
+                title: "CHALLENGE",
+
+                text:
+                    "Ensuring consistent printing performance across multiple production machines while maintaining validation requirements."
+            },
+
+            {
+                title: "APPROACH",
+
+                text:
+                    "Reviewed validation requirements, prepared and executed validation activities, collected process data and documented findings."
+            },
+
+            {
+                title: "KEY RESULT",
+
+                text:
+                    "Generated validation evidence supporting evaluation of the UDI laser printing process."
+            },
+
+            {
+                title: "LEARNING",
+
+                text:
+                    "Strengthened my understanding of validation, technical documentation and the importance of reliable process data."
+            }
         ]
     },
 
 
     {
-        role: "Bachelor of Engineering",
-        company: "Chemical Engineering · Chulalongkorn University",
-        duration: "2021 — 2025",
-        type: "EDUCATION",
-        color: "#a78bfa",
+        title: "Recycled Plastic to Air Filter",
 
-        description:
-            "Built a strong foundation in chemical engineering, process systems, engineering design, simulation, laboratory work and technical analysis.",
+        category: "SUSTAINABILITY",
 
-        tags: [
-            "Chemical Engineering",
-            "Process Design",
-            "Simulation"
-        ]
-    },
-
-
-    {
-        role: "Facilities Engineer Intern",
-        company: "Mektec Manufacturing Corporation (Thailand)",
-        duration: "2024",
-        type: "INTERNSHIP",
         color: "#2dd4bf",
 
-        description:
-            "Collected and organized plant data for carbon footprint assessment and supported environmental and wastewater-related activities.",
-
-        tags: [
-            "Plant Data",
-            "Scope 1",
-            "Scope 3",
-            "Environment"
-        ]
-    },
-
-
-    {
-        role: "R&D Intern",
-        company: "Cirprise Startup",
-        duration: "2025",
-        type: "R&D EXPERIENCE",
-        color: "#fb923c",
+        icon: "filter",
 
         description:
-            "Conducted formulation trials for powdered hand soap, evaluating quality, cost and sustainability considerations during product development.",
+            "Development of an electrospun air filter using recycled plastic.",
 
-        tags: [
-            "R&D",
-            "Formulation",
-            "Innovation",
-            "Product Development"
-        ]
-    },
+        keywords: [
+            "MATERIALS",
+            "ELECTROSPINNING",
+            "SUSTAINABILITY",
+            "R&D"
+        ],
 
+        insights: [
+            "Explored recycled polymer as a material feedstock.",
+            "Produced electrospun fiber structures.",
+            "Connected material processing with filtration performance."
+        ],
 
-    {
-        role: "International Experience",
-        company: "Work & Travel · Montana, USA",
-        duration: "2025",
-        type: "INTERNATIONAL",
-        color: "#60a5fa",
+        details: [
+            {
+                title: "OVERVIEW",
 
-        description:
-            "Worked and lived in the United States for approximately four months, developing practical English communication and adaptability in a multicultural environment.",
+                text:
+                    "Explored the conversion of recycled plastic from baby milk bottles into material suitable for high-efficiency air filtration."
+            },
 
-        tags: [
-            "USA",
-            "English",
-            "Communication",
-            "Adaptability"
+            {
+                title: "CHALLENGE",
+
+                text:
+                    "Finding a practical way to transform waste plastic into a useful high-value material."
+            },
+
+            {
+                title: "APPROACH",
+
+                text:
+                    "Prepared recycled polymer material, investigated processing conditions, produced electrospun fiber structures and evaluated filter characteristics."
+            },
+
+            {
+                title: "KEY RESULT",
+
+                text:
+                    "Demonstrated the potential of recycled polymer waste as a feedstock for functional filtration materials."
+            },
+
+            {
+                title: "LEARNING",
+
+                text:
+                    "Learned how material properties, processing conditions and final product performance are closely connected."
+            }
         ]
     }
 
@@ -114,51 +207,96 @@ const skills = [
 
     {
         name: "Microsoft Excel",
-        category: "Data & Productivity",
-        icon: "EX",
+
+        category: "DATA & PRODUCTIVITY",
+
+        icon: "excel",
 
         description:
-            "Used for organizing, cleaning, reviewing and working with technical and operational data."
+            "Used Excel for organizing, reviewing and working with technical and operational data.",
+
+        points: [
+            "Data organization and cleaning",
+            "Technical data review",
+            "Tables and reporting",
+            "Data visualization"
+        ]
     },
 
 
     {
         name: "Python",
-        category: "Programming",
-        icon: "PY",
+
+        category: "PROGRAMMING",
+
+        icon: "python",
 
         description:
-            "Used as a programming foundation for data processing, analysis and technical problem-solving."
+            "Used Python as a tool for analytical thinking, data processing and exploring technical problems.",
+
+        points: [
+            "Data processing",
+            "Basic analysis",
+            "Problem-solving",
+            "Automation concepts"
+        ]
     },
 
 
     {
         name: "Process Validation",
-        category: "Manufacturing",
-        icon: "PV",
+
+        category: "MANUFACTURING",
+
+        icon: "validation",
 
         description:
-            "Hands-on experience supporting OQ/PQ activities, validation documentation, data review and GMP-regulated manufacturing."
+            "Practical experience supporting OQ/PQ validation in GMP-regulated medical device manufacturing.",
+
+        points: [
+            "OQ / PQ",
+            "Validation documentation",
+            "Process data review",
+            "Acceptance criteria"
+        ]
     },
 
 
     {
-        name: "Process Design",
-        category: "Engineering",
-        icon: "PD",
+        name: "Aspen Plus",
+
+        category: "PROCESS SIMULATION",
+
+        icon: "aspen",
 
         description:
-            "Experience with process design, material balances, simulation and engineering decision-making through university projects."
+            "Used Aspen Plus for process simulation and engineering design during university projects.",
+
+        points: [
+            "Process simulation",
+            "Material balance",
+            "Process flowsheets",
+            "Equipment considerations"
+        ]
     },
 
 
     {
-        name: "Technical Documentation",
-        category: "Engineering",
-        icon: "TD",
+        name: "Sustainability",
+
+        category: "IMPACT",
+
+        icon: "leaf",
 
         description:
-            "Experience preparing, reviewing and organizing technical information and validation-related documentation."
+            "Experience connecting engineering projects with sustainability and environmental considerations.",
+
+        points: [
+            "Carbon footprint data",
+            "Circular economy",
+            "Environmental projects",
+            "Sustainability innovation"
+        ]
     }
 
 ];
@@ -172,23 +310,34 @@ const skills = [
 const leadership = [
 
     {
-        title: "Chemical Engineering Night",
+        icon: "♧",
+        title: "Team Coordination",
         description:
-            "Supported event organization, coordination and registration activities for the faculty community."
+            "Coordinated activities and worked with teams across engineering and university projects."
     },
 
 
     {
-        title: "Volunteer Activities",
+        icon: "♡",
+        title: "Volunteer",
         description:
-            "Participated in volunteer and community activities through university organizations and student initiatives."
+            "Participated in volunteer activities and community-oriented projects."
     },
 
 
     {
-        title: "Mentorship & Student Activities",
+        icon: "◎",
+        title: "Mentorship",
         description:
-            "Supported peer learning, mentoring and collaborative activities throughout university."
+            "Supported student activities, mentoring and knowledge-sharing experiences."
+    },
+
+
+    {
+        icon: "✦",
+        title: "Competitions",
+        description:
+            "Participated in engineering, innovation and sustainability competitions."
     }
 
 ];
@@ -196,160 +345,139 @@ const leadership = [
 
 
 /* =========================================================
-   PROJECTS
+   SVG ICONS
 ========================================================= */
 
-const projects = [
+function iconSVG(type) {
 
-    {
-        id: "methanol-co2",
+    const icons = {
 
-        category: "UNIVERSITY PROJECT",
-
-        title: "Methanol Production from CO₂",
-
-        image: "project-methanol.jpg",
-
-        description:
-            "Process design and simulation for converting CO₂ into methanol.",
-
-        insight:
-            "Connecting chemical engineering fundamentals with process design, simulation and economic thinking.",
-
-        tags: [
-            "Process Design",
-            "Aspen Plus",
-            "Simulation",
-            "CO₂"
-        ],
-
-        overview:
-            "Designed a conceptual process for producing methanol from CO₂, combining process simulation, equipment design, process integration and economic considerations.",
-
-        challenge:
-            "Developing a technically feasible process while maintaining product purity and considering process integration.",
-
-        approach: [
-            "Defined the overall process route.",
-            "Performed process simulation and material balance calculations.",
-            "Designed major process equipment.",
-            "Developed preliminary equipment layout.",
-            "Evaluated process economics."
-        ],
-
-        result:
-            "The designed process achieved a simulated methanol purity above 98%.",
-
-        learning:
-            "The project strengthened my understanding of how chemical engineering fundamentals connect with real process design and decision-making.",
-
-        meta: {
-            type: "University Project",
-            tools: "Aspen Plus • Engineering Design",
-            year: "2024"
-        }
-    },
+        excel: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <rect x="10" y="8" width="44" height="48" rx="5"
+                    fill="#21A366"/>
+                <path d="M10 21h44" stroke="white" opacity=".25"/>
+                <path d="M21 27l8 10-8 10"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                <path d="M37 27l-8 10 8 10"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+        `,
 
 
-    {
-        id: "air-filter",
-
-        category: "SENIOR PROJECT",
-
-        title: "Recycled Plastic → Air Filter",
-
-        image: "project-air-filter.jpg",
-
-        description:
-            "Development of an electrospun air filter using recycled plastic.",
-
-        insight:
-            "Turning a waste material into a potentially useful high-value engineering application.",
-
-        tags: [
-            "Materials",
-            "Electrospinning",
-            "Sustainability",
-            "Circular Economy"
-        ],
-
-        overview:
-            "Explored the conversion of recycled plastic from baby milk bottles into material suitable for high-efficiency air filtration.",
-
-        challenge:
-            "Finding a practical way to transform waste plastic into a useful functional material.",
-
-        approach: [
-            "Prepared recycled polymer material.",
-            "Investigated material preparation conditions.",
-            "Produced electrospun fiber structures.",
-            "Evaluated resulting filter characteristics."
-        ],
-
-        result:
-            "The project demonstrated the potential of recycled polymer waste as a feedstock for functional filtration materials.",
-
-        learning:
-            "The project strengthened my understanding of the relationship between material properties, processing conditions and final product performance.",
-
-        meta: {
-            type: "Senior Project",
-            tools: "Electrospinning • Materials",
-            year: "2024 — 2025"
-        }
-    },
+        python: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <path
+                    d="M31 7h-7c-7 0-10 4-10 10v8h17v5H14c-7 0-10 4-10 11v6c0 7 4 10 10 10h8v-8c0-7 4-10 10-10h10c7 0 10-4 10-10V17c0-7-4-10-10-10H31Z"
+                    fill="#3776AB"/>
+                <circle cx="25" cy="14" r="2.5" fill="white"/>
+                <path
+                    d="M33 57h7c7 0 10-4 10-10v-8H33v-5h19c7 0 10-4 10-11v-6c0-7-4-10-10-10h-8v8c0 7-4 10-10 10H24c-7 0-10 4-10 10v11c0 7 4 10 10 10h9Z"
+                    fill="#FFD343"/>
+                <circle cx="39" cy="50" r="2.5" fill="#3776AB"/>
+            </svg>
+        `,
 
 
-    {
-        id: "udi-validation",
+        validation: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="24"
+                    stroke="#38bdf8"
+                    stroke-width="4"/>
+                <path
+                    d="m20 32 8 8 16-17"
+                    stroke="#38bdf8"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+        `,
 
-        category: "PROFESSIONAL EXPERIENCE",
 
-        title: "UDI Laser Printing Validation",
+        aspen: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <path
+                    d="M32 7 8 55h10l6-13h16l6 13h10L32 7Z"
+                    fill="#ef4444"/>
+                <path
+                    d="m27 33 5-12 5 12H27Z"
+                    fill="#38bdf8"/>
+            </svg>
+        `,
 
-        image: "project-udi.jpg",
 
-        description:
-            "Process validation of UDI laser printing across five production machines.",
+        leaf: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <path
+                    d="M52 10C28 10 13 21 13 39c0 8 5 13 13 13 18 0 26-17 26-42Z"
+                    stroke="#2dd4bf"
+                    stroke-width="4"/>
+                <path
+                    d="M14 52c9-14 20-23 35-31"
+                    stroke="#2dd4bf"
+                    stroke-width="3"
+                    stroke-linecap="round"/>
+            </svg>
+        `,
 
-        insight:
-            "Reliable technical data is essential when validating a process in a GMP-regulated manufacturing environment.",
 
-        tags: [
-            "Validation",
-            "GMP",
-            "OQ / PQ",
-            "Manufacturing"
-        ],
+        factory: `
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M10 82V45l28 15V45l28 15V25h24v57H10Z"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path d="M18 82V67" stroke="currentColor" stroke-width="4"/>
+                <path d="M31 82V67" stroke="currentColor" stroke-width="4"/>
+                <path d="M46 82V70" stroke="currentColor" stroke-width="4"/>
+                <path d="M61 82V70" stroke="currentColor" stroke-width="4"/>
+            </svg>
+        `,
 
-        overview:
-            "Supported and led validation activities for UDI laser printing on foil within a GMP-regulated medical device manufacturing environment.",
 
-        challenge:
-            "Ensuring consistent printing performance across multiple production machines while maintaining validation requirements.",
+        laser: `
+            <svg viewBox="0 0 100 100" fill="none">
+                <rect x="17" y="30" width="66" height="42" rx="5"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path
+                    d="M25 42h50M25 50h40M25 58h50"
+                    stroke="currentColor"
+                    stroke-width="3"/>
+                <path
+                    d="m45 10 10 10-10 10"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path
+                    d="M55 20h25"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+            </svg>
+        `,
 
-        approach: [
-            "Reviewed validation requirements.",
-            "Prepared and executed validation activities.",
-            "Collected process and machine data.",
-            "Compared results against predefined acceptance criteria.",
-            "Documented findings and coordinated with relevant functions."
-        ],
 
-        result:
-            "Generated validation evidence supporting the evaluation of the UDI laser printing process across five machines.",
+        filter: `
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M15 20h70L60 48v25l-20 10V48L15 20Z"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path
+                    d="M28 31h44M34 40h32"
+                    stroke="currentColor"
+                    stroke-width="3"/>
+            </svg>
+        `
+    };
 
-        learning:
-            "The project strengthened my understanding of validation, technical documentation and reliable process data.",
-
-        meta: {
-            type: "Professional Experience",
-            tools: "OQ / PQ • Technical Documentation",
-            year: "2025 — 2026"
-        }
-    }
-
-];
+    return icons[type] || "";
+}
 
 
 
@@ -357,8 +485,8 @@ const projects = [
    DOM
 ========================================================= */
 
-const journeyList =
-    document.getElementById("journeyList");
+const projectsGrid =
+    document.getElementById("projectsGrid");
 
 const skillsGrid =
     document.getElementById("skillsGrid");
@@ -366,81 +494,73 @@ const skillsGrid =
 const leadershipGrid =
     document.getElementById("leadershipGrid");
 
-const projectsGrid =
-    document.getElementById("projectsGrid");
+const projectPreviewModal =
+    document.getElementById("projectPreviewModal");
 
-const projectModal =
-    document.getElementById("projectModal");
-
-const projectModalContent =
-    document.getElementById("projectModalContent");
-
-const detailModal =
-    document.getElementById("detailModal");
-
-const detailModalContent =
-    document.getElementById("detailModalContent");
+const projectDetailModal =
+    document.getElementById("projectDetailModal");
 
 const skillModal =
     document.getElementById("skillModal");
 
-const skillModalContent =
-    document.getElementById("skillModalContent");
-
 
 
 /* =========================================================
-   JOURNEY
+   RENDER PROJECTS
 ========================================================= */
 
-function renderJourney() {
+function renderProjects() {
 
-    if (!journeyList) return;
-
-    journeyList.innerHTML =
-        journey.map((item, index) => `
+    projectsGrid.innerHTML =
+        projects.map((project, index) => `
 
             <article
-                class="journey-card"
-                style="--journey-color:${item.color}"
+                class="project-card"
+                data-index="${index}"
+                style="--project-color:${project.color}"
             >
 
-                <div class="journey-top">
+                <div class="project-graphic">
 
-                    <span class="journey-type">
-                        ${item.type}
-                    </span>
-
-                    <span class="journey-date">
-                        ${item.duration}
-                    </span>
+                    ${iconSVG(project.icon)}
 
                 </div>
 
 
-                <h3 class="journey-role">
-                    ${item.role}
-                </h3>
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        ${project.category}
+                    </span>
 
 
-                <div class="journey-company">
-                    ${item.company}
+                    <h3 class="project-title">
+                        ${project.title}
+                    </h3>
+
+
+                    <p class="project-description">
+                        ${project.description}
+                    </p>
+
+
+                    <div class="project-keywords">
+
+                        ${project.keywords.map(
+                            keyword => `
+                                <span class="keyword">
+                                    ${keyword}
+                                </span>
+                            `
+                        ).join("")}
+
+                    </div>
+
                 </div>
 
 
-                <p class="journey-description">
-                    ${item.description}
-                </p>
-
-
-                <div class="journey-tags">
-
-                    ${item.tags.map(tag => `
-                        <span>
-                            ${tag}
-                        </span>
-                    `).join("")}
-
+                <div class="project-arrow">
+                    →
                 </div>
 
             </article>
@@ -451,12 +571,10 @@ function renderJourney() {
 
 
 /* =========================================================
-   SKILLS
+   RENDER SKILLS
 ========================================================= */
 
 function renderSkills() {
-
-    if (!skillsGrid) return;
 
     skillsGrid.innerHTML =
         skills.map((skill, index) => `
@@ -467,7 +585,9 @@ function renderSkills() {
             >
 
                 <div class="skill-icon">
-                    ${skill.icon}
+
+                    ${iconSVG(skill.icon)}
+
                 </div>
 
 
@@ -488,21 +608,25 @@ function renderSkills() {
 
 
 /* =========================================================
-   LEADERSHIP
+   RENDER LEADERSHIP
 ========================================================= */
 
 function renderLeadership() {
-
-    if (!leadershipGrid) return;
 
     leadershipGrid.innerHTML =
         leadership.map(item => `
 
             <article class="leadership-card">
 
+                <div class="leadership-icon">
+                    ${item.icon}
+                </div>
+
+
                 <h4>
                     ${item.title}
                 </h4>
+
 
                 <p>
                     ${item.description}
@@ -516,323 +640,127 @@ function renderLeadership() {
 
 
 /* =========================================================
-   PROJECTS
+   OPEN PROJECT PREVIEW
 ========================================================= */
 
-function renderProjects() {
-
-    if (!projectsGrid) return;
-
-    projectsGrid.innerHTML =
-        projects.map((project, index) => `
-
-            <article
-                class="project-card"
-                data-project="${index}"
-            >
-
-                <div class="project-image">
-
-                    <img
-                        src="${project.image}"
-                        alt="${project.title}"
-                        onerror="this.style.display='none'"
-                    >
-
-                    <div class="project-image-placeholder">
-                        PROJECT ${String(index + 1).padStart(2,"0")}
-                    </div>
-
-                </div>
+let selectedProject = null;
 
 
-                <div class="project-info">
+function openProjectPreview(index) {
 
-                    <div class="project-category">
-                        ${project.category}
-                    </div>
-
-
-                    <h3 class="project-title">
-                        ${project.title}
-                    </h3>
-
-
-                    <p class="project-description">
-                        ${project.description}
-                    </p>
-
-
-                    <div class="project-tags">
-
-                        ${project.tags.map(tag => `
-                            <span>
-                                ${tag}
-                            </span>
-                        `).join("")}
-
-                    </div>
-
-
-                    <div class="project-link">
-                        View Project ↗
-                    </div>
-
-                </div>
-
-            </article>
-
-        `).join("");
-}
-
-
-
-/* =========================================================
-   PROJECT POPUP
-========================================================= */
-
-function openProject(index) {
-
-    const project =
+    selectedProject =
         projects[index];
 
-    if (!project) return;
+    document.getElementById(
+        "previewVisual"
+    ).innerHTML =
+        iconSVG(selectedProject.icon);
 
 
-    projectModalContent.innerHTML = `
+    document.getElementById(
+        "previewCategory"
+    ).textContent =
+        selectedProject.category;
 
-        <div class="modal-category">
-            ${project.category}
-        </div>
 
+    document.getElementById(
+        "previewTitle"
+    ).textContent =
+        selectedProject.title;
 
-        <h2 class="modal-title">
-            ${project.title}
-        </h2>
 
+    document.getElementById(
+        "previewDescription"
+    ).textContent =
+        selectedProject.description;
 
-        <p class="modal-description">
-            ${project.description}
-        </p>
 
+    document.getElementById(
+        "previewKeywords"
+    ).innerHTML =
+        selectedProject.keywords.map(
+            keyword =>
+                `<span class="keyword">${keyword}</span>`
+        ).join("");
 
-        <div class="key-insight">
 
-            <div class="key-insight-label">
-                KEY INSIGHT
-            </div>
+    document.getElementById(
+        "previewInsights"
+    ).innerHTML =
+        selectedProject.insights.map(
+            insight =>
+                `<li>${insight}</li>`
+        ).join("");
 
-            <strong>
-                ${project.insight}
-            </strong>
 
-        </div>
-
-
-        <div class="modal-tags">
-
-            ${project.tags.map(tag => `
-                <span>
-                    #${tag}
-                </span>
-            `).join("")}
-
-        </div>
-
-
-        <button
-            class="btn btn-primary"
-            onclick="openProjectDetail(${index})"
-        >
-            Explore Project
-            <span>↗</span>
-        </button>
-
-    `;
-
-
-    projectModal.classList.add("open");
-
-    projectModal.setAttribute(
-        "aria-hidden",
-        "false"
-    );
-
-    document.body.style.overflow = "hidden";
-}
-
-
-
-/* =========================================================
-   PROJECT DETAIL
-========================================================= */
-
-function openProjectDetail(index) {
-
-    const project =
-        projects[index];
-
-    if (!project) return;
-
-
-    projectModal.classList.remove("open");
-
-
-    detailModalContent.innerHTML = `
-
-        <div class="modal-category">
-            ${project.category}
-        </div>
-
-
-        <h2 class="modal-title">
-            ${project.title}
-        </h2>
-
-
-        <img
-            class="detail-image"
-            src="${project.image}"
-            alt="${project.title}"
-        >
-
-
-        <div class="detail-grid">
-
-            <div>
-
-                <section class="detail-block">
-
-                    <h3>
-                        OVERVIEW
-                    </h3>
-
-                    <p>
-                        ${project.overview}
-                    </p>
-
-                </section>
-
-
-                <section class="detail-block">
-
-                    <h3>
-                        CHALLENGE
-                    </h3>
-
-                    <p>
-                        ${project.challenge}
-                    </p>
-
-                </section>
-
-
-                <section class="detail-block">
-
-                    <h3>
-                        APPROACH
-                    </h3>
-
-                    <ul>
-
-                        ${project.approach.map(item => `
-                            <li>
-                                ${item}
-                            </li>
-                        `).join("")}
-
-                    </ul>
-
-                </section>
-
-
-                <section class="detail-block">
-
-                    <h3>
-                        RESULT
-                    </h3>
-
-                    <p>
-                        ${project.result}
-                    </p>
-
-                </section>
-
-
-                <section class="detail-block">
-
-                    <h3>
-                        LEARNING
-                    </h3>
-
-                    <p>
-                        ${project.learning}
-                    </p>
-
-                </section>
-
-            </div>
-
-
-            <aside class="detail-sidebar">
-
-                <div class="detail-meta">
-
-                    <span>
-                        TYPE
-                    </span>
-
-                    <strong>
-                        ${project.meta.type}
-                    </strong>
-
-                </div>
-
-
-                <div class="detail-meta">
-
-                    <span>
-                        TOOLS
-                    </span>
-
-                    <strong>
-                        ${project.meta.tools}
-                    </strong>
-
-                </div>
-
-
-                <div class="detail-meta">
-
-                    <span>
-                        YEAR
-                    </span>
-
-                    <strong>
-                        ${project.meta.year}
-                    </strong>
-
-                </div>
-
-            </aside>
-
-        </div>
-
-    `;
-
-
-    detailModal.classList.add("open");
-
-    detailModal.setAttribute(
-        "aria-hidden",
-        "false"
+    openModal(
+        projectPreviewModal
     );
 }
 
 
 
 /* =========================================================
-   SKILL POPUP
+   OPEN PROJECT DETAIL
+========================================================= */
+
+function openProjectDetail() {
+
+    if (!selectedProject) return;
+
+
+    document.getElementById(
+        "detailCategory"
+    ).textContent =
+        selectedProject.category;
+
+
+    document.getElementById(
+        "detailTitle"
+    ).textContent =
+        selectedProject.title;
+
+
+    document.getElementById(
+        "detailKeywords"
+    ).innerHTML =
+        selectedProject.keywords.map(
+            keyword =>
+                `<span class="keyword">${keyword}</span>`
+        ).join("");
+
+
+    document.getElementById(
+        "detailBody"
+    ).innerHTML =
+        selectedProject.details.map(
+            block => `
+
+                <section class="detail-block">
+
+                    <h3>
+                        ${block.title}
+                    </h3>
+
+                    <p>
+                        ${block.text}
+                    </p>
+
+                </section>
+
+            `
+        ).join("");
+
+
+    closeModal(projectPreviewModal);
+
+    openModal(projectDetailModal);
+}
+
+
+
+/* =========================================================
+   OPEN SKILL
 ========================================================= */
 
 function openSkill(index) {
@@ -840,48 +768,62 @@ function openSkill(index) {
     const skill =
         skills[index];
 
-    if (!skill) return;
+
+    document.getElementById(
+        "skillModalIcon"
+    ).innerHTML =
+        iconSVG(skill.icon);
 
 
-    skillModalContent.innerHTML = `
-
-        <div class="skill-modal-icon">
-            ${skill.icon}
-        </div>
-
-
-        <h2 class="skill-modal-title">
-            ${skill.name}
-        </h2>
+    document.getElementById(
+        "skillModalCategory"
+    ).textContent =
+        skill.category;
 
 
-        <div class="skill-modal-category">
-            ${skill.category}
-        </div>
+    document.getElementById(
+        "skillModalTitle"
+    ).textContent =
+        skill.name;
 
 
-        <p class="skill-modal-text">
-            ${skill.description}
-        </p>
+    document.getElementById(
+        "skillModalDescription"
+    ).textContent =
+        skill.description;
 
-    `;
+
+    document.getElementById(
+        "skillModalPoints"
+    ).innerHTML =
+        skill.points.map(
+            point =>
+                `<li>${point}</li>`
+        ).join("");
 
 
-    skillModal.classList.add("open");
-
-    skillModal.setAttribute(
-        "aria-hidden",
-        "false"
-    );
-
-    document.body.style.overflow = "hidden";
+    openModal(skillModal);
 }
 
 
 
 /* =========================================================
-   CLOSE MODALS
+   MODAL HELPERS
 ========================================================= */
+
+function openModal(modal) {
+
+    modal.classList.add("open");
+
+    modal.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    document.body.style.overflow =
+        "hidden";
+}
+
 
 function closeModal(modal) {
 
@@ -892,78 +834,39 @@ function closeModal(modal) {
         "true"
     );
 
-    document.body.style.overflow = "";
+    if (
+        !document.querySelector(".modal.open")
+    ) {
+
+        document.body.style.overflow =
+            "";
+
+    }
 }
-
-
-document
-    .querySelectorAll("[data-close-modal]")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => closeModal(projectModal)
-        );
-
-    });
-
-
-document
-    .querySelectorAll("[data-close-detail]")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => closeModal(detailModal)
-        );
-
-    });
-
-
-document
-    .querySelectorAll("[data-close-skill]")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => closeModal(skillModal)
-        );
-
-    });
 
 
 
 /* =========================================================
-   CARD CLICKS
+   PROJECT CLICK
 ========================================================= */
 
-document.addEventListener(
+projectsGrid.addEventListener(
     "click",
     event => {
 
-        const projectCard =
-            event.target.closest(".project-card");
-
-        if (projectCard) {
-
-            openProject(
-                Number(projectCard.dataset.project)
+        const card =
+            event.target.closest(
+                ".project-card"
             );
 
-            return;
-        }
+        if (!card) return;
 
 
-        const skillCard =
-            event.target.closest(".skill-card");
+        const index =
+            Number(card.dataset.index);
 
-        if (skillCard) {
 
-            openSkill(
-                Number(skillCard.dataset.skill)
-            );
-
-        }
+        openProjectPreview(index);
 
     }
 );
@@ -971,8 +874,69 @@ document.addEventListener(
 
 
 /* =========================================================
-   CLOSE BY OVERLAY
+   SKILL CLICK
 ========================================================= */
+
+skillsGrid.addEventListener(
+    "click",
+    event => {
+
+        const card =
+            event.target.closest(
+                ".skill-card"
+            );
+
+        if (!card) return;
+
+
+        const index =
+            Number(card.dataset.skill);
+
+
+        openSkill(index);
+
+    }
+);
+
+
+
+/* =========================================================
+   EXPLORE PROJECT
+========================================================= */
+
+document
+    .getElementById("exploreProject")
+    .addEventListener(
+        "click",
+        openProjectDetail
+    );
+
+
+
+/* =========================================================
+   CLOSE MODALS
+========================================================= */
+
+document
+    .querySelectorAll("[data-close]")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                const modal =
+                    document.getElementById(
+                        button.dataset.close
+                    );
+
+                closeModal(modal);
+
+            }
+        );
+
+    });
+
 
 document
     .querySelectorAll(".modal-overlay")
@@ -995,41 +959,25 @@ document
 
 
 /* =========================================================
-   ESC KEY
+   ESC TO CLOSE
 ========================================================= */
 
 document.addEventListener(
     "keydown",
     event => {
 
-        if (event.key !== "Escape") return;
+        if (
+            event.key !== "Escape"
+        ) return;
+
 
         document
             .querySelectorAll(".modal.open")
             .forEach(modal => {
+
                 closeModal(modal);
+
             });
-
-    }
-);
-
-
-
-/* =========================================================
-   THEME
-========================================================= */
-
-const themeToggle =
-    document.getElementById("themeToggle");
-
-
-themeToggle?.addEventListener(
-    "click",
-    () => {
-
-        document.body.classList.toggle(
-            "light-mode"
-        );
 
     }
 );
@@ -1042,7 +990,7 @@ themeToggle?.addEventListener(
 
 const sections =
     document.querySelectorAll(
-        "main > section"
+        "main section"
     );
 
 
@@ -1062,10 +1010,11 @@ function updateNavigation() {
 
     const position =
         window.scrollY +
-        window.innerHeight * 0.35;
+        window.innerHeight * .35;
 
 
-    let current = "home";
+    let current =
+        "home";
 
 
     sections.forEach(section => {
@@ -1077,7 +1026,8 @@ function updateNavigation() {
             section.offsetHeight
         ) {
 
-            current = section.id;
+            current =
+                section.id;
 
         }
 
@@ -1088,6 +1038,7 @@ function updateNavigation() {
 
         link.classList.toggle(
             "active",
+
             link.getAttribute("href") ===
             `#${current}`
         );
@@ -1099,7 +1050,9 @@ function updateNavigation() {
 
         item.classList.toggle(
             "active",
-            item.dataset.section === current
+
+            item.dataset.section ===
+            current
         );
 
     });
@@ -1110,8 +1063,39 @@ function updateNavigation() {
 window.addEventListener(
     "scroll",
     updateNavigation,
-    {
-        passive: true
+    { passive: true }
+);
+
+
+updateNavigation();
+
+
+
+/* =========================================================
+   THEME
+========================================================= */
+
+const themeToggle =
+    document.getElementById(
+        "themeToggle"
+    );
+
+
+themeToggle.addEventListener(
+    "click",
+    () => {
+
+        document.body.classList.toggle(
+            "light-mode"
+        );
+
+        themeToggle.textContent =
+            document.body.classList.contains(
+                "light-mode"
+            )
+                ? "☾"
+                : "☼";
+
     }
 );
 
@@ -1121,8 +1105,8 @@ window.addEventListener(
    INITIALIZE
 ========================================================= */
 
-renderJourney();
-renderSkills();
-renderLeadership();
 renderProjects();
-updateNavigation();
+
+renderSkills();
+
+renderLeadership();
