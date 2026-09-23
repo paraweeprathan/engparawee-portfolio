@@ -2,537 +2,699 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Parawee P. | Chemical Engineer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
 
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
 
-<!-- =====================================================
-     HEADER
-===================================================== -->
+    <header class="navbar">
 
-<header class="site-header">
-
-    <a
-        href="#home"
-        class="logo"
-    >
-        PARAWEE P.
-    </a>
-
-
-    <nav class="desktop-nav">
-
-        <a href="#home" class="nav-link active">
-            Home
+        <a href="#home" class="logo">
+            PARAWEE P.
         </a>
 
-        <a href="#journey" class="nav-link">
-            Journey
+
+        <nav class="desktop-nav">
+
+            <a href="#home" class="nav-link active">
+                Home
+            </a>
+
+            <a href="#journey" class="nav-link">
+                Journey
+            </a>
+
+            <a href="#projects" class="nav-link">
+                Projects
+            </a>
+
+            <a href="#skills" class="nav-link">
+                Skills
+            </a>
+
+            <a href="#contact" class="nav-link">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+        >
+            ☼
+        </button>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MOBILE BOTTOM NAV
+    ====================================================== -->
+
+    <nav class="mobile-nav">
+
+        <a
+            href="#home"
+            class="mobile-nav-item active"
+            data-section="home"
+        >
+            <span>⌂</span>
+            <small>Home</small>
         </a>
 
-        <a href="#skills" class="nav-link">
-            Skills
+
+        <a
+            href="#journey"
+            class="mobile-nav-item"
+            data-section="journey"
+        >
+            <span>◉</span>
+            <small>Journey</small>
         </a>
 
-        <a href="#projects" class="nav-link">
-            Projects
+
+        <a
+            href="#projects"
+            class="mobile-nav-item"
+            data-section="projects"
+        >
+            <span>✦</span>
+            <small>Projects</small>
         </a>
 
-        <a href="#contact" class="nav-link">
-            Contact
+
+        <a
+            href="#skills"
+            class="mobile-nav-item"
+            data-section="skills"
+        >
+            <span>▣</span>
+            <small>Skills</small>
+        </a>
+
+
+        <a
+            href="#contact"
+            class="mobile-nav-item"
+            data-section="contact"
+        >
+            <span>✉</span>
+            <small>Contact</small>
         </a>
 
     </nav>
 
 
-    <button
-        id="themeToggle"
-        class="theme-toggle"
-        aria-label="Toggle theme"
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+
+
+        <!-- =================================================
+             HERO
+        ================================================== -->
+
+        <section id="home" class="hero section">
+
+            <div class="hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="eyebrow">
+                        CHEMICAL ENGINEER
+                    </div>
+
+
+                    <h1>
+
+                        ENGINEERING
+                        <br>
+
+                        <span>
+                            × DATA × IMPACT
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        I’m a Chemical Engineering graduate passionate about
+                        applying engineering, data, and technology to solve
+                        real-world challenges and create meaningful impact.
+
+                    </p>
+
+
+                    <div class="hero-tags">
+
+                        <span>
+                            PROCESS
+                        </span>
+
+                        <span>
+                            DATA
+                        </span>
+
+                        <span>
+                            INNOVATION
+                        </span>
+
+                        <span>
+                            SUSTAINABILITY
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#projects"
+                            class="btn btn-primary"
+                        >
+                            EXPLORE MY WORK
+                            <span>→</span>
+                        </a>
+
+
+                        <a
+                            href="#journey"
+                            class="btn btn-secondary"
+                        >
+                            MY JOURNEY
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PROFILE -->
+
+                <div class="hero-visual">
+
+                    <div class="orbit orbit-one"></div>
+
+                    <div class="orbit orbit-two"></div>
+
+
+                    <div class="profile-glow">
+
+                        <div class="profile-frame">
+
+                            <img
+                                src="profile.jpg"
+                                alt="Parawee Prathan"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card card-top">
+
+                        <span>
+                            ENGINEERING
+                        </span>
+
+                        <strong>
+                            MINDSET
+                        </strong>
+
+                    </div>
+
+
+                    <div class="floating-card card-bottom">
+
+                        <span>
+                            DATA
+                        </span>
+
+                        <strong>
+                            → INSIGHT
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             JOURNEY
+        ================================================== -->
+
+        <section id="journey" class="section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        01 / EXPERIENCE
+                    </span>
+
+                    <h2>
+                        MY JOURNEY
+                    </h2>
+
+                </div>
+
+                <p>
+                    From engineering fundamentals to real-world
+                    manufacturing and technical experience.
+                </p>
+
+            </div>
+
+
+            <div
+                class="journey-grid"
+                id="journeyGrid"
+            >
+
+                <!-- JS -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             PROJECTS
+        ================================================== -->
+
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        02 / SELECTED WORK
+                    </span>
+
+                    <h2>
+                        FEATURED PROJECTS
+                    </h2>
+
+                </div>
+
+                <p>
+                    A selection of engineering, R&D and
+                    sustainability work.
+                </p>
+
+            </div>
+
+
+            <div
+                class="projects-grid"
+                id="projectsGrid"
+            >
+
+                <!-- JS -->
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             SKILLS
+        ================================================== -->
+
+        <section id="skills" class="section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="section-kicker">
+                        03 / TOOLKIT
+                    </span>
+
+                    <h2>
+                        SKILLS & TOOLS
+                    </h2>
+
+                </div>
+
+                <p>
+                    Click a skill to explore how I have used it.
+                </p>
+
+            </div>
+
+
+            <div
+                class="skills-grid"
+                id="skillsGrid"
+            >
+
+                <!-- JS -->
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LEADERSHIP
+            ================================================== -->
+
+            <div class="leadership-wrapper">
+
+                <div class="sub-heading">
+
+                    <span>
+                        BEYOND ENGINEERING
+                    </span>
+
+                    <h3>
+                        LEADERSHIP & VOLUNTEER EXPERIENCE
+                    </h3>
+
+                </div>
+
+
+                <div
+                    class="leadership-grid"
+                    id="leadershipGrid"
+                >
+
+                    <!-- JS -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             CONTACT
+        ================================================== -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="contact-box">
+
+                <div>
+
+                    <span class="section-kicker">
+                        04 / CONTACT
+                    </span>
+
+                    <h2>
+                        LET'S CONNECT.
+                    </h2>
+
+                    <p>
+                        Interested in engineering, technology,
+                        data and meaningful projects?
+                    </p>
+
+                </div>
+
+
+                <div class="contact-links">
+
+                    <a href="mailto:parawee.prathan@gmail.com">
+                        EMAIL →
+                    </a>
+
+                    <a
+                        href="https://github.com/paraweeprathan"
+                        target="_blank"
+                    >
+                        GITHUB →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         PROJECT PREVIEW MODAL
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="projectPreviewModal"
+        aria-hidden="true"
     >
-        ☼
-    </button>
 
-</header>
+        <div class="modal-overlay"></div>
 
 
+        <div class="modal-window project-preview">
 
-<!-- =====================================================
-     MAIN
-===================================================== -->
-
-<main>
-
-
-<!-- =====================================================
-     HERO
-===================================================== -->
-
-<section
-    class="hero section"
-    id="home"
->
-
-    <div class="hero-content">
-
-        <div class="eyebrow">
-            CHEMICAL ENGINEER
-            <span>•</span>
-            DATA
-            <span>•</span>
-            TECHNOLOGY
-        </div>
-
-
-        <h1 class="hero-title">
-
-            Engineering
-            <span>mindset.</span>
-
-            <br>
-
-            Real-world
-            <strong>impact.</strong>
-
-        </h1>
-
-
-        <p class="hero-description">
-
-            Hi, I'm
-            <strong>Parawee Prathan</strong>,
-            a Chemical Engineering graduate passionate about combining
-            engineering, data, and technology to solve real-world
-            challenges and create meaningful impact.
-
-        </p>
-
-
-        <div class="hero-actions">
-
-            <a
-                href="#projects"
-                class="btn btn-primary"
+            <button
+                class="modal-close"
+                data-close="projectPreviewModal"
             >
-                Explore Projects
-                <span>↗</span>
-            </a>
+                ×
+            </button>
 
 
-            <a
-                href="resume.pdf"
-                target="_blank"
-                class="btn btn-secondary"
+            <div
+                class="modal-project-visual"
+                id="previewVisual"
             >
-                View Resume
-            </a>
+            </div>
+
+
+            <div class="modal-content">
+
+                <span
+                    class="modal-category"
+                    id="previewCategory"
+                ></span>
+
+
+                <h2 id="previewTitle">
+                </h2>
+
+
+                <p
+                    class="modal-description"
+                    id="previewDescription"
+                >
+                </p>
+
+
+                <div
+                    class="keyword-list"
+                    id="previewKeywords"
+                >
+                </div>
+
+
+                <div class="key-insights">
+
+                    <h4>
+                        KEY INSIGHTS
+                    </h4>
+
+                    <ul id="previewInsights">
+                    </ul>
+
+                </div>
+
+
+                <button
+                    class="btn btn-primary explore-project"
+                    id="exploreProject"
+                >
+                    EXPLORE PROJECT
+                    <span>→</span>
+                </button>
+
+            </div>
 
         </div>
 
     </div>
 
 
-    <!-- PROFILE -->
 
-    <div class="hero-profile">
+    <!-- =====================================================
+         PROJECT DETAIL MODAL
+    ====================================================== -->
 
-        <div class="profile-glow"></div>
+    <div
+        class="modal"
+        id="projectDetailModal"
+        aria-hidden="true"
+    >
 
-        <div class="profile-ring">
+        <div class="modal-overlay"></div>
 
-            <img
-                src="profile.jpg"
-                alt="Parawee Prathan"
-                class="profile-image"
+
+        <div class="modal-window detail-window">
+
+            <button
+                class="modal-close"
+                data-close="projectDetailModal"
             >
+                ×
+            </button>
+
+
+            <div class="detail-header">
+
+                <span
+                    class="modal-category"
+                    id="detailCategory"
+                ></span>
+
+                <h2 id="detailTitle">
+                </h2>
+
+                <div
+                    class="keyword-list"
+                    id="detailKeywords"
+                >
+                </div>
+
+            </div>
+
+
+            <div
+                class="detail-body"
+                id="detailBody"
+            >
+            </div>
 
         </div>
 
+    </div>
 
-        <div class="profile-card">
 
-            <span>
-                CHEMICAL ENGINEER
+
+    <!-- =====================================================
+         SKILL MODAL
+    ====================================================== -->
+
+    <div
+        class="modal"
+        id="skillModal"
+        aria-hidden="true"
+    >
+
+        <div class="modal-overlay"></div>
+
+
+        <div class="modal-window skill-window">
+
+            <button
+                class="modal-close"
+                data-close="skillModal"
+            >
+                ×
+            </button>
+
+
+            <div
+                class="skill-modal-icon"
+                id="skillModalIcon"
+            >
+            </div>
+
+
+            <span
+                class="modal-category"
+                id="skillModalCategory"
+            >
             </span>
 
-            <strong>
-                Engineering × Data × Impact
-            </strong>
 
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     JOURNEY
-===================================================== -->
-
-<section
-    class="section"
-    id="journey"
->
-
-    <div class="section-heading">
-
-        <div class="section-number">
-            01
-        </div>
-
-        <div>
-
-            <p class="section-label">
-                JOURNEY
-            </p>
-
-            <h2>
-                Experience that shaped
-                <span>how I think.</span>
+            <h2 id="skillModalTitle">
             </h2>
 
-        </div>
 
-    </div>
-
-
-    <div
-        class="journey-grid"
-        id="journeyList"
-    ></div>
-
-</section>
-
-
-
-<!-- =====================================================
-     SKILLS
-===================================================== -->
-
-<section
-    class="section"
-    id="skills"
->
-
-    <div class="section-heading">
-
-        <div class="section-number">
-            02
-        </div>
-
-        <div>
-
-            <p class="section-label">
-                SKILLS
+            <p id="skillModalDescription">
             </p>
 
-            <h2>
-                Tools I use to
-                <span>build solutions.</span>
-            </h2>
+
+            <div>
+
+                <h4>
+                    HOW I USE IT
+                </h4>
+
+                <ul
+                    class="skill-points"
+                    id="skillModalPoints"
+                >
+                </ul>
+
+            </div>
 
         </div>
 
     </div>
 
 
-    <div
-        class="skills-grid"
-        id="skillsGrid"
-    ></div>
 
+    <footer>
 
-    <!-- LEADERSHIP -->
+        <strong>
+            PARAWEE P.
+        </strong>
 
-    <div class="leadership-section">
+        <span>
+            CHEMICAL ENGINEER × DATA × INNOVATION
+        </span>
 
-        <div class="leadership-title">
+        <span>
+            © 2026
+        </span>
 
-            <p class="section-label">
-                LEADERSHIP & VOLUNTEER EXPERIENCE
-            </p>
+    </footer>
 
-            <h3>
-                Beyond engineering,
-                <span>I build with people.</span>
-            </h3>
 
-        </div>
-
-
-        <div
-            class="leadership-grid"
-            id="leadershipGrid"
-        ></div>
-
-    </div>
-
-</section>
-
-
-
-<!-- =====================================================
-     PROJECTS
-===================================================== -->
-
-<section
-    class="section"
-    id="projects"
->
-
-    <div class="section-heading">
-
-        <div class="section-number">
-            03
-        </div>
-
-        <div>
-
-            <p class="section-label">
-                SELECTED PROJECTS
-            </p>
-
-            <h2>
-                Turning ideas into
-                <span>practical work.</span>
-            </h2>
-
-        </div>
-
-    </div>
-
-
-    <div
-        class="projects-grid"
-        id="projectsGrid"
-    ></div>
-
-</section>
-
-
-
-<!-- =====================================================
-     CONTACT
-===================================================== -->
-
-<section
-    class="section contact-section"
-    id="contact"
->
-
-    <div class="contact-box">
-
-        <p class="section-label">
-            CONTACT
-        </p>
-
-        <h2>
-            Let's build something
-            <span>meaningful.</span>
-        </h2>
-
-
-        <p>
-            Open to engineering, data, technology,
-            process improvement and impactful opportunities.
-        </p>
-
-
-        <a
-            href="mailto:parawee.prathan@gmail.com"
-            class="btn btn-primary"
-        >
-            Get in touch
-            <span>↗</span>
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-
-<!-- =====================================================
-     PROJECT MODAL
-===================================================== -->
-
-<div
-    class="modal"
-    id="projectModal"
-    aria-hidden="true"
->
-
-    <div class="modal-overlay"></div>
-
-
-    <div class="modal-window">
-
-        <button
-            class="modal-close"
-            data-close-modal
-        >
-            ×
-        </button>
-
-
-        <div id="projectModalContent"></div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     PROJECT DETAIL MODAL
-===================================================== -->
-
-<div
-    class="modal"
-    id="detailModal"
-    aria-hidden="true"
->
-
-    <div class="modal-overlay"></div>
-
-
-    <div class="modal-window modal-large">
-
-        <button
-            class="modal-close"
-            data-close-detail
-        >
-            ×
-        </button>
-
-
-        <div id="detailModalContent"></div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     SKILL MODAL
-===================================================== -->
-
-<div
-    class="modal"
-    id="skillModal"
-    aria-hidden="true"
->
-
-    <div class="modal-overlay"></div>
-
-
-    <div class="modal-window">
-
-        <button
-            class="modal-close"
-            data-close-skill
-        >
-            ×
-        </button>
-
-
-        <div id="skillModalContent"></div>
-
-    </div>
-
-</div>
-
-
-
-<!-- =====================================================
-     MOBILE NAV
-===================================================== -->
-
-<nav class="mobile-bottom-nav">
-
-    <a
-        href="#home"
-        class="mobile-nav-item active"
-        data-section="home"
-    >
-        <span>⌂</span>
-        <small>Home</small>
-    </a>
-
-
-    <a
-        href="#journey"
-        class="mobile-nav-item"
-        data-section="journey"
-    >
-        <span>◉</span>
-        <small>Journey</small>
-    </a>
-
-
-    <a
-        href="#skills"
-        class="mobile-nav-item"
-        data-section="skills"
-    >
-        <span>✦</span>
-        <small>Skills</small>
-    </a>
-
-
-    <a
-        href="#projects"
-        class="mobile-nav-item"
-        data-section="projects"
-    >
-        <span>▣</span>
-        <small>Projects</small>
-    </a>
-
-
-    <a
-        href="#contact"
-        class="mobile-nav-item"
-        data-section="contact"
-    >
-        <span>✉</span>
-        <small>Contact</small>
-    </a>
-
-</nav>
-
-
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
