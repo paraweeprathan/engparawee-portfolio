@@ -1453,8 +1453,7 @@ themeToggle.addEventListener(
    INITIALIZE
 ========================================================= */
 
+renderJourney();
 renderProjects();
-
 renderSkills();
-
 renderLeadership();
