@@ -126,7 +126,7 @@ const journey = [
             "Executed process validation to finish Operational Qualification (OQ) and Performance Qualification (PQ) in GMP-regulated medical device manufacturing.",
             "Led UDI laser printing validation across 5 machines and Supported electronic leakage testing across 12 new machines.",
             "Worked with Production, QC/QA, Engineering and operators to solve production issues.",
-            "Collected and reviewed technical data to support validation and troubleshooting."
+            "Collected and reviewed technical data to support validation and troubleshooting.",
             "Strengthening understanding of validation protocols and GMP compliance.",
    
         ]
