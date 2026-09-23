@@ -1,266 +1,69 @@
-/* =====================================================
-   DATA
-===================================================== */
-
-const skills = [
-
-    {
-        name: "Microsoft Excel",
-        category: "Data & Productivity",
-        icon: "EX"
-    },
-
-    {
-        name: "AI Tools",
-        category: "Technology",
-        icon: "AI"
-    },
-
-    {
-        name: "Python",
-        category: "Programming",
-        icon: "PY"
-    },
-
-    {
-        name: "Process Design",
-        category: "Engineering",
-        icon: "PD"
-    },
-
-    {
-        name: "Process Validation",
-        category: "Manufacturing",
-        icon: "PV"
-    },
-
-    {
-        name: "R&D",
-        category: "Innovation",
-        icon: "R&D"
-    },
-
-    {
-        name: "Minitab",
-        category: "Data Analysis",
-        icon: "MI"
-    },
-
-    {
-        name: "MATLAB",
-        category: "Engineering",
-        icon: "ML"
-    },
-
-    {
-        name: "Aspen Plus",
-        category: "Process Simulation",
-        icon: "AP"
-    },
-
-    {
-        name: "SimaPro",
-        category: "Sustainability",
-        icon: "SP"
-    },
-
-    {
-        name: "Technical Documentation",
-        category: "Engineering",
-        icon: "TD"
-    },
-
-    {
-        name: "Data Visualization",
-        category: "Data",
-        icon: "DV"
-    },
-
-    {
-        name: "Project Coordination",
-        category: "Professional",
-        icon: "PC"
-    },
-
-    {
-        name: "Sustainability",
-        category: "Impact",
-        icon: "SU"
-    }
-
-];
-
-
-/* =====================================================
-   JOURNEY
-===================================================== */
-
-const journey = [
-
-    {
-        role: "Process Technologist",
-        company: "Reckitt Benckiser",
-        duration: "DEC 2025 — MAR 2026",
-        color: "#38bdf8",
-
-        highlights: [
-            ["PROCESS VALIDATION", "OQ / PQ"],
-            ["SCOPE", "5 + 12 machines"]
-        ],
-
-        bullets: [
-            "Executed process validation in GMP-regulated medical device manufacturing.",
-            "Led UDI laser printing validation across 5 machines.",
-            "Supported electronic leakage testing across 12 new machines.",
-            "Worked with Production, QC/QA, Engineering and operators.",
-            "Collected and reviewed technical data for validation and troubleshooting."
-        ]
-    },
-
-
-    {
-        role: "Bachelor of Engineering",
-        company: "Chemical Engineering · Chulalongkorn University",
-        duration: "2021 — 2025",
-        color: "#a78bfa",
-
-        highlights: [
-            ["ENGINEERING", "Chemical Engineering"],
-            ["FOUNDATION", "Process · Design · Analysis"]
-        ],
-
-        bullets: [
-            "Developed a strong foundation in chemical engineering principles and process systems.",
-            "Worked on engineering design, simulation, laboratory experiments and technical analysis.",
-            "Completed projects involving CO₂ conversion, materials and process design.",
-            "Combined engineering fundamentals with sustainability and innovation activities."
-        ]
-    },
-
-
-    {
-        role: "Facilities Engineer Intern",
-        company: "Mektec Manufacturing Corporation (Thailand)",
-        duration: "2024",
-        color: "#2dd4bf",
-
-        highlights: [
-            ["PLANT DATA", "Carbon Footprint"],
-            ["ENVIRONMENT", "Wastewater"]
-        ],
-
-        bullets: [
-            "Collected and organized real plant data for carbon footprint assessment.",
-            "Supported Scope 1 and Scope 3 data collection.",
-            "Worked with chemical preparation and environmental data.",
-            "Supported heavy-metal contamination analysis in wastewater.",
-            "Collaborated with plant personnel to verify technical information."
-        ]
-    },
-
-
-    {
-        role: "R&D Intern",
-        company: "Cirprise Startup",
-        duration: "2025",
-        color: "#fb923c",
-
-        highlights: [
-            ["R&D", "Product formulation"],
-            ["FOCUS", "Quality × Cost"]
-        ],
-
-        bullets: [
-            "Conducted formulation trials for powdered hand soap.",
-            "Evaluated formulation changes based on quality and cost.",
-            "Adjusted ingredients and experimental conditions during product development.",
-            "Supported patent-related coordination.",
-            "Worked in an early-stage startup environment."
-        ]
-    },
-
-
-    {
-        role: "Awards & Competitions",
-        company: "Innovation · Sustainability · Engineering",
-        duration: "2022 — 2025",
-        color: "#facc15",
-
-        highlights: [
-            ["INNOVATION", "Finalist / Winner"],
-            ["FOCUS", "Engineering Impact"]
-        ],
-
-        bullets: [
-            "Young Sustainability Practitioner #4 — winning team.",
-            "Faculty Future Race to Zero — finalist.",
-            "Innovation Impact Challenge 2025 — finalist.",
-            "Rakkaew Foundation National University Sustainability Showcase — winner.",
-            "Participated in engineering, sustainability and innovation competitions."
-        ]
-    },
-
-
-    {
-        role: "International Experience",
-        company: "Work & Travel · Montana, USA",
-        duration: "2025",
-        color: "#60a5fa",
-
-        highlights: [
-            ["INTERNATIONAL", "United States"],
-            ["COMMUNICATION", "English · Multicultural"]
-        ],
-
-        bullets: [
-            "Worked and lived in Livingston, Montana for approximately four months.",
-            "Communicated with people from different cultural backgrounds.",
-            "Developed practical English communication skills.",
-            "Adapted to a new environment while working independently."
-        ]
-    }
-
-];
-
-
-/* =====================================================
-   PROJECTS
-===================================================== */
+/* =========================================================
+   PROJECT DATA
+========================================================= */
 
 const projects = [
 
     {
         title: "Methanol Production from CO₂",
 
-        category: "UNIVERSITY",
+        category: "UNIVERSITY PROJECT",
+
+        color: "#38bdf8",
+
+        icon: "factory",
 
         description:
             "Process design and simulation for converting CO₂ into methanol.",
 
-        tags: [
-            "Process Design",
-            "Aspen Plus",
-            "Simulation"
+        keywords: [
+            "PROCESS DESIGN",
+            "ASPEN PLUS",
+            "SIMULATION",
+            "CO₂"
         ],
 
-        overview:
-            "Designed a conceptual process for producing methanol from CO₂, combining process simulation, equipment design and economic considerations.",
-
-        contribution: [
-            "Defined the overall process route.",
+        insights: [
+            "Designed a conceptual methanol production process.",
             "Performed process simulation and material balance calculations.",
-            "Designed major process equipment.",
-            "Developed preliminary equipment layout.",
-            "Evaluated process economics."
+            "Evaluated equipment design and process economics."
         ],
 
-        results:
-            "The designed process achieved a simulated methanol purity above 98%.",
+        details: [
+            {
+                title: "OVERVIEW",
 
-        meta: [
-            ["TYPE", "University Project"],
-            ["TOOLS", "Aspen Plus"],
-            ["YEAR", "2024"]
+                text:
+                    "Designed a conceptual process for producing methanol from CO₂, combining process simulation, equipment design and economic considerations."
+            },
+
+            {
+                title: "CHALLENGE",
+
+                text:
+                    "Developing a technically feasible process while maintaining product purity and considering process integration."
+            },
+
+            {
+                title: "APPROACH",
+
+                text:
+                    "Defined the process route, performed simulation and material balance calculations, designed major equipment and evaluated preliminary process economics."
+            },
+
+            {
+                title: "KEY RESULT",
+
+                text:
+                    "The simulated process achieved methanol purity above 98%."
+            },
+
+            {
+                title: "LEARNING",
+
+                text:
+                    "Strengthened my understanding of how chemical engineering fundamentals connect with real process design and decision-making."
+            }
         ]
     },
 
@@ -270,624 +73,1012 @@ const projects = [
 
         category: "APPLIED / R&D",
 
+        color: "#2563eb",
+
+        icon: "laser",
+
         description:
             "Process validation of UDI laser printing across five production machines.",
 
-        tags: [
-            "Validation",
+        keywords: [
+            "VALIDATION",
             "GMP",
-            "Manufacturing"
-        ],
-
-        overview:
-            "Supported and led validation activities for UDI laser printing on foil within a GMP-regulated medical device manufacturing environment.",
-
-        contribution: [
-            "Reviewed validation requirements.",
-            "Prepared and executed validation activities.",
-            "Collected process and machine data.",
-            "Compared results against predefined acceptance criteria.",
-            "Documented findings and coordinated with relevant functions."
-        ],
-
-        results:
-            "Generated validation evidence supporting evaluation of the UDI laser printing process.",
-
-        meta: [
-            ["TYPE", "Professional Experience"],
-            ["SCOPE", "5 Machines"],
-            ["YEAR", "2025 — 2026"]
-        ]
-    },
-
-
-    {
-        title: "Recycled Plastic to High-Efficiency Air Filter",
-
-        category: "UNIVERSITY",
-
-        description:
-            "Development of an electrospun air filter using recycled baby milk bottle plastic.",
-
-        tags: [
-            "Materials",
-            "Electrospinning",
-            "Sustainability"
-        ],
-
-        overview:
-            "Explored the conversion of recycled plastic from baby milk bottles into material suitable for high-efficiency air filtration.",
-
-        contribution: [
-            "Prepared recycled polymer material.",
-            "Investigated material preparation conditions.",
-            "Produced electrospun fiber structures.",
-            "Evaluated resulting filter characteristics."
-        ],
-
-        results:
-            "Demonstrated the potential of recycled polymer waste as a feedstock for functional filtration materials.",
-
-        meta: [
-            ["TYPE", "Senior Project"],
-            ["FOCUS", "Materials"],
-            ["YEAR", "2024 — 2025"]
-        ]
-    },
-
-
-    {
-        title: "Electronic Leakage Testing Validation",
-
-        category: "APPLIED / R&D",
-
-        description:
-            "Validation support for electronic leakage testing across 12 new machines.",
-
-        tags: [
             "OQ / PQ",
-            "Validation",
-            "Data"
+            "MANUFACTURING"
         ],
 
-        overview:
-            "Supported validation of electronic leakage testing equipment used within a medical device manufacturing process.",
-
-        contribution: [
-            "Supported qualification and validation activities.",
-            "Collected machine and process data.",
-            "Reviewed test results.",
-            "Worked with production and engineering teams.",
-            "Investigated issues requiring troubleshooting."
+        insights: [
+            "Led UDI laser printing validation across 5 machines.",
+            "Collected and reviewed process and machine data.",
+            "Worked across Production, QA/QC and Engineering."
         ],
 
-        results:
-            "Provided documented validation and testing information for newly introduced equipment.",
+        details: [
+            {
+                title: "OVERVIEW",
 
-        meta: [
-            ["TYPE", "Professional Experience"],
-            ["SCOPE", "12 Machines"],
-            ["YEAR", "2025 — 2026"]
+                text:
+                    "Supported and led validation activities for UDI laser printing on foil within a GMP-regulated medical device manufacturing environment."
+            },
+
+            {
+                title: "CHALLENGE",
+
+                text:
+                    "Ensuring consistent printing performance across multiple production machines while maintaining validation requirements."
+            },
+
+            {
+                title: "APPROACH",
+
+                text:
+                    "Reviewed validation requirements, prepared and executed validation activities, collected process data and documented findings."
+            },
+
+            {
+                title: "KEY RESULT",
+
+                text:
+                    "Generated validation evidence supporting evaluation of the UDI laser printing process."
+            },
+
+            {
+                title: "LEARNING",
+
+                text:
+                    "Strengthened my understanding of validation, technical documentation and the importance of reliable process data."
+            }
         ]
     },
 
 
     {
-        title: "Plant Carbon Footprint Data",
+        title: "Recycled Plastic to Air Filter",
 
         category: "SUSTAINABILITY",
 
-        description:
-            "Collection and analysis of plant data for Scope 1 and Scope 3 carbon footprint assessment.",
+        color: "#2dd4bf",
 
-        tags: [
-            "Sustainability",
-            "Plant Data",
-            "SimaPro"
-        ],
-
-        overview:
-            "Supported environmental data collection and analysis during a facilities engineering internship.",
-
-        contribution: [
-            "Collected plant activity data.",
-            "Organized information for carbon footprint calculations.",
-            "Supported Scope 1 and Scope 3 data preparation.",
-            "Worked with plant personnel to verify information."
-        ],
-
-        results:
-            "Produced organized plant data supporting carbon footprint assessment activities.",
-
-        meta: [
-            ["TYPE", "Internship"],
-            ["TOOLS", "SimaPro"],
-            ["YEAR", "2024"]
-        ]
-    },
-
-
-    {
-        title: "Powdered Hand Soap Development",
-
-        category: "APPLIED / R&D",
+        icon: "filter",
 
         description:
-            "R&D trials focused on formulation quality, cost and sustainability.",
+            "Development of an electrospun air filter using recycled plastic.",
 
-        tags: [
-            "R&D",
-            "Formulation",
-            "Product Development"
+        keywords: [
+            "MATERIALS",
+            "ELECTROSPINNING",
+            "SUSTAINABILITY",
+            "R&D"
         ],
 
-        overview:
-            "Conducted product formulation experiments for a powdered hand soap concept within a startup environment.",
-
-        contribution: [
-            "Conducted formulation trials.",
-            "Adjusted ingredient ratios.",
-            "Compared product characteristics.",
-            "Considered cost and environmental impact.",
-            "Supported product development and patent coordination."
+        insights: [
+            "Explored recycled polymer as a material feedstock.",
+            "Produced electrospun fiber structures.",
+            "Connected material processing with filtration performance."
         ],
 
-        results:
-            "Developed formulation directions balancing quality, cost and sustainability.",
+        details: [
+            {
+                title: "OVERVIEW",
 
-        meta: [
-            ["TYPE", "R&D Internship"],
-            ["FOCUS", "Formulation"],
-            ["YEAR", "2025"]
+                text:
+                    "Explored the conversion of recycled plastic from baby milk bottles into material suitable for high-efficiency air filtration."
+            },
+
+            {
+                title: "CHALLENGE",
+
+                text:
+                    "Finding a practical way to transform waste plastic into a useful high-value material."
+            },
+
+            {
+                title: "APPROACH",
+
+                text:
+                    "Prepared recycled polymer material, investigated processing conditions, produced electrospun fiber structures and evaluated filter characteristics."
+            },
+
+            {
+                title: "KEY RESULT",
+
+                text:
+                    "Demonstrated the potential of recycled polymer waste as a feedstock for functional filtration materials."
+            },
+
+            {
+                title: "LEARNING",
+
+                text:
+                    "Learned how material properties, processing conditions and final product performance are closely connected."
+            }
         ]
     }
 
 ];
 
 
-/* =====================================================
-   JOURNEY RENDER
-===================================================== */
 
-const journeyList =
-    document.getElementById("journeyList");
+/* =========================================================
+   SKILLS
+========================================================= */
 
+const skills = [
 
-function renderJourney() {
+    {
+        name: "Microsoft Excel",
 
-    journeyList.innerHTML =
-        journey.map(item => `
+        category: "DATA & PRODUCTIVITY",
 
-            <article
-                class="journey-card"
-                style="--journey-color:${item.color}"
-            >
+        icon: "excel",
 
-                <div class="journey-header">
+        description:
+            "Used Excel for organizing, reviewing and working with technical and operational data.",
 
-                    <div class="journey-graphic">
-                        ◆
-                    </div>
-
-                    <div>
-
-                        <h3 class="journey-role">
-                            ${item.role}
-                        </h3>
-
-                        <div class="journey-company">
-                            ${item.company}
-                        </div>
-
-                        <div class="journey-duration">
-                            ${item.duration}
-                        </div>
-
-                    </div>
-
-                    <div class="journey-arrow">
-                        ↓
-                    </div>
-
-                </div>
+        points: [
+            "Data organization and cleaning",
+            "Technical data review",
+            "Tables and reporting",
+            "Data visualization"
+        ]
+    },
 
 
-                <div class="journey-details">
+    {
+        name: "Python",
 
-                    <div class="journey-details-inner">
+        category: "PROGRAMMING",
 
-                        <div class="journey-highlights">
+        icon: "python",
 
-                            ${item.highlights.map(
-                                h => `
+        description:
+            "Used Python as a tool for analytical thinking, data processing and exploring technical problems.",
 
-                                <div class="journey-highlight">
-
-                                    <div class="journey-highlight-label">
-                                        ${h[0]}
-                                    </div>
-
-                                    <strong>
-                                        ${h[1]}
-                                    </strong>
-
-                                </div>
-
-                            `).join("")}
-
-                        </div>
+        points: [
+            "Data processing",
+            "Basic analysis",
+            "Problem-solving",
+            "Automation concepts"
+        ]
+    },
 
 
-                        <ul class="journey-bullets">
+    {
+        name: "Process Validation",
 
-                            ${item.bullets.map(
-                                b => `<li>${b}</li>`
-                            ).join("")}
+        category: "MANUFACTURING",
 
-                        </ul>
+        icon: "validation",
 
-                    </div>
+        description:
+            "Practical experience supporting OQ/PQ validation in GMP-regulated medical device manufacturing.",
 
-                </div>
+        points: [
+            "OQ / PQ",
+            "Validation documentation",
+            "Process data review",
+            "Acceptance criteria"
+        ]
+    },
 
-            </article>
 
-        `);
+    {
+        name: "Aspen Plus",
+
+        category: "PROCESS SIMULATION",
+
+        icon: "aspen",
+
+        description:
+            "Used Aspen Plus for process simulation and engineering design during university projects.",
+
+        points: [
+            "Process simulation",
+            "Material balance",
+            "Process flowsheets",
+            "Equipment considerations"
+        ]
+    },
 
 
-    document
-        .querySelectorAll(".journey-header")
-        .forEach(header => {
+    {
+        name: "Sustainability",
 
-            header.addEventListener(
-                "click",
-                () => {
+        category: "IMPACT",
 
-                    const card =
-                        header.closest(".journey-card");
+        icon: "leaf",
 
-                    document
-                        .querySelectorAll(".journey-card")
-                        .forEach(c => {
+        description:
+            "Experience connecting engineering projects with sustainability and environmental considerations.",
 
-                            if (c !== card) {
-                                c.classList.remove("open");
-                            }
+        points: [
+            "Carbon footprint data",
+            "Circular economy",
+            "Environmental projects",
+            "Sustainability innovation"
+        ]
+    }
 
-                        });
+];
 
-                    card.classList.toggle("open");
 
-                }
-            );
 
-        });
+/* =========================================================
+   LEADERSHIP
+========================================================= */
 
+const leadership = [
+
+    {
+        icon: "♧",
+        title: "Team Coordination",
+        description:
+            "Coordinated activities and worked with teams across engineering and university projects."
+    },
+
+
+    {
+        icon: "♡",
+        title: "Volunteer",
+        description:
+            "Participated in volunteer activities and community-oriented projects."
+    },
+
+
+    {
+        icon: "◎",
+        title: "Mentorship",
+        description:
+            "Supported student activities, mentoring and knowledge-sharing experiences."
+    },
+
+
+    {
+        icon: "✦",
+        title: "Competitions",
+        description:
+            "Participated in engineering, innovation and sustainability competitions."
+    }
+
+];
+
+
+
+/* =========================================================
+   SVG ICONS
+========================================================= */
+
+function iconSVG(type) {
+
+    const icons = {
+
+        excel: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <rect x="10" y="8" width="44" height="48" rx="5"
+                    fill="#21A366"/>
+                <path d="M10 21h44" stroke="white" opacity=".25"/>
+                <path d="M21 27l8 10-8 10"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+                <path d="M37 27l-8 10 8 10"
+                    stroke="white"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+        `,
+
+
+        python: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <path
+                    d="M31 7h-7c-7 0-10 4-10 10v8h17v5H14c-7 0-10 4-10 11v6c0 7 4 10 10 10h8v-8c0-7 4-10 10-10h10c7 0 10-4 10-10V17c0-7-4-10-10-10H31Z"
+                    fill="#3776AB"/>
+                <circle cx="25" cy="14" r="2.5" fill="white"/>
+                <path
+                    d="M33 57h7c7 0 10-4 10-10v-8H33v-5h19c7 0 10-4 10-11v-6c0-7-4-10-10-10h-8v8c0 7-4 10-10 10H24c-7 0-10 4-10 10v11c0 7 4 10 10 10h9Z"
+                    fill="#FFD343"/>
+                <circle cx="39" cy="50" r="2.5" fill="#3776AB"/>
+            </svg>
+        `,
+
+
+        validation: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <circle cx="32" cy="32" r="24"
+                    stroke="#38bdf8"
+                    stroke-width="4"/>
+                <path
+                    d="m20 32 8 8 16-17"
+                    stroke="#38bdf8"
+                    stroke-width="5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"/>
+            </svg>
+        `,
+
+
+        aspen: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <path
+                    d="M32 7 8 55h10l6-13h16l6 13h10L32 7Z"
+                    fill="#ef4444"/>
+                <path
+                    d="m27 33 5-12 5 12H27Z"
+                    fill="#38bdf8"/>
+            </svg>
+        `,
+
+
+        leaf: `
+            <svg viewBox="0 0 64 64" fill="none">
+                <path
+                    d="M52 10C28 10 13 21 13 39c0 8 5 13 13 13 18 0 26-17 26-42Z"
+                    stroke="#2dd4bf"
+                    stroke-width="4"/>
+                <path
+                    d="M14 52c9-14 20-23 35-31"
+                    stroke="#2dd4bf"
+                    stroke-width="3"
+                    stroke-linecap="round"/>
+            </svg>
+        `,
+
+
+        factory: `
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M10 82V45l28 15V45l28 15V25h24v57H10Z"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path d="M18 82V67" stroke="currentColor" stroke-width="4"/>
+                <path d="M31 82V67" stroke="currentColor" stroke-width="4"/>
+                <path d="M46 82V70" stroke="currentColor" stroke-width="4"/>
+                <path d="M61 82V70" stroke="currentColor" stroke-width="4"/>
+            </svg>
+        `,
+
+
+        laser: `
+            <svg viewBox="0 0 100 100" fill="none">
+                <rect x="17" y="30" width="66" height="42" rx="5"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path
+                    d="M25 42h50M25 50h40M25 58h50"
+                    stroke="currentColor"
+                    stroke-width="3"/>
+                <path
+                    d="m45 10 10 10-10 10"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path
+                    d="M55 20h25"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+            </svg>
+        `,
+
+
+        filter: `
+            <svg viewBox="0 0 100 100" fill="none">
+                <path
+                    d="M15 20h70L60 48v25l-20 10V48L15 20Z"
+                    stroke="currentColor"
+                    stroke-width="4"/>
+                <path
+                    d="M28 31h44M34 40h32"
+                    stroke="currentColor"
+                    stroke-width="3"/>
+            </svg>
+        `
+    };
+
+    return icons[type] || "";
 }
 
 
-/* =====================================================
-   SKILLS
-===================================================== */
+
+/* =========================================================
+   DOM
+========================================================= */
+
+const projectsGrid =
+    document.getElementById("projectsGrid");
 
 const skillsGrid =
     document.getElementById("skillsGrid");
 
+const leadershipGrid =
+    document.getElementById("leadershipGrid");
 
-function renderSkills() {
+const projectPreviewModal =
+    document.getElementById("projectPreviewModal");
 
-    skillsGrid.innerHTML =
-        skills.map(skill => `
+const projectDetailModal =
+    document.getElementById("projectDetailModal");
 
-            <article class="skill-card">
+const skillModal =
+    document.getElementById("skillModal");
 
-                <div class="skill-icon">
-                    ${skill.icon}
+
+
+/* =========================================================
+   RENDER PROJECTS
+========================================================= */
+
+function renderProjects() {
+
+    projectsGrid.innerHTML =
+        projects.map((project, index) => `
+
+            <article
+                class="project-card"
+                data-index="${index}"
+                style="--project-color:${project.color}"
+            >
+
+                <div class="project-graphic">
+
+                    ${iconSVG(project.icon)}
+
                 </div>
 
-                <div>
 
-                    <div class="skill-name">
-                        ${skill.name}
+                <div class="project-content">
+
+                    <span class="project-tag">
+                        ${project.category}
+                    </span>
+
+
+                    <h3 class="project-title">
+                        ${project.title}
+                    </h3>
+
+
+                    <p class="project-description">
+                        ${project.description}
+                    </p>
+
+
+                    <div class="project-keywords">
+
+                        ${project.keywords.map(
+                            keyword => `
+                                <span class="keyword">
+                                    ${keyword}
+                                </span>
+                            `
+                        ).join("")}
+
                     </div>
 
-                    <div class="skill-category">
-                        ${skill.category}
-                    </div>
+                </div>
 
+
+                <div class="project-arrow">
+                    →
                 </div>
 
             </article>
 
         `).join("");
-
 }
 
 
-/* =====================================================
-   PROJECTS
-===================================================== */
 
-const projectsGrid =
-    document.getElementById("projectsGrid");
+/* =========================================================
+   RENDER SKILLS
+========================================================= */
 
+function renderSkills() {
 
-function renderProjects() {
+    skillsGrid.innerHTML =
+        skills.map((skill, index) => `
 
-    projectsGrid.innerHTML =
-        projects.map(
-            (project, index) => `
+            <article
+                class="skill-card"
+                data-skill="${index}"
+            >
 
-                <article
-                    class="project-card"
-                    data-project="${index}"
-                >
+                <div class="skill-icon">
 
-                    <div class="project-image">
+                    ${iconSVG(skill.icon)}
 
-                        <span>
-                            ${project.category}
-                        </span>
-
-                    </div>
+                </div>
 
 
-                    <div class="project-info">
-
-                        <div class="project-category">
-                            ${project.category}
-                        </div>
-
-                        <h3 class="project-title">
-                            ${project.title}
-                        </h3>
-
-                        <p class="project-description">
-                            ${project.description}
-                        </p>
+                <div class="skill-name">
+                    ${skill.name}
+                </div>
 
 
-                        <div class="project-tags">
+                <div class="skill-category">
+                    ${skill.category}
+                </div>
 
-                            ${project.tags.map(
-                                tag =>
-                                `<span>${tag}</span>`
-                            ).join("")}
+            </article>
 
-                        </div>
+        `).join("");
+}
 
-                    </div>
 
-                </article>
+
+/* =========================================================
+   RENDER LEADERSHIP
+========================================================= */
+
+function renderLeadership() {
+
+    leadershipGrid.innerHTML =
+        leadership.map(item => `
+
+            <article class="leadership-card">
+
+                <div class="leadership-icon">
+                    ${item.icon}
+                </div>
+
+
+                <h4>
+                    ${item.title}
+                </h4>
+
+
+                <p>
+                    ${item.description}
+                </p>
+
+            </article>
+
+        `).join("");
+}
+
+
+
+/* =========================================================
+   OPEN PROJECT PREVIEW
+========================================================= */
+
+let selectedProject = null;
+
+
+function openProjectPreview(index) {
+
+    selectedProject =
+        projects[index];
+
+    document.getElementById(
+        "previewVisual"
+    ).innerHTML =
+        iconSVG(selectedProject.icon);
+
+
+    document.getElementById(
+        "previewCategory"
+    ).textContent =
+        selectedProject.category;
+
+
+    document.getElementById(
+        "previewTitle"
+    ).textContent =
+        selectedProject.title;
+
+
+    document.getElementById(
+        "previewDescription"
+    ).textContent =
+        selectedProject.description;
+
+
+    document.getElementById(
+        "previewKeywords"
+    ).innerHTML =
+        selectedProject.keywords.map(
+            keyword =>
+                `<span class="keyword">${keyword}</span>`
+        ).join("");
+
+
+    document.getElementById(
+        "previewInsights"
+    ).innerHTML =
+        selectedProject.insights.map(
+            insight =>
+                `<li>${insight}</li>`
+        ).join("");
+
+
+    openModal(
+        projectPreviewModal
+    );
+}
+
+
+
+/* =========================================================
+   OPEN PROJECT DETAIL
+========================================================= */
+
+function openProjectDetail() {
+
+    if (!selectedProject) return;
+
+
+    document.getElementById(
+        "detailCategory"
+    ).textContent =
+        selectedProject.category;
+
+
+    document.getElementById(
+        "detailTitle"
+    ).textContent =
+        selectedProject.title;
+
+
+    document.getElementById(
+        "detailKeywords"
+    ).innerHTML =
+        selectedProject.keywords.map(
+            keyword =>
+                `<span class="keyword">${keyword}</span>`
+        ).join("");
+
+
+    document.getElementById(
+        "detailBody"
+    ).innerHTML =
+        selectedProject.details.map(
+            block => `
+
+                <section class="detail-block">
+
+                    <h3>
+                        ${block.title}
+                    </h3>
+
+                    <p>
+                        ${block.text}
+                    </p>
+
+                </section>
 
             `
         ).join("");
 
+
+    closeModal(projectPreviewModal);
+
+    openModal(projectDetailModal);
 }
 
 
-/* =====================================================
-   PROJECT MODAL
-===================================================== */
 
-const modal =
-    document.getElementById("projectModal");
+/* =========================================================
+   OPEN SKILL
+========================================================= */
 
-const modalContent =
-    document.getElementById("modalContent");
+function openSkill(index) {
 
-const closeModal =
-    document.getElementById("closeModal");
+    const skill =
+        skills[index];
 
 
-function openProject(index) {
-
-    const project =
-        projects[index];
-
-    modalContent.innerHTML = `
-
-        <div class="modal-category">
-            ${project.category}
-        </div>
+    document.getElementById(
+        "skillModalIcon"
+    ).innerHTML =
+        iconSVG(skill.icon);
 
 
-        <h2 class="modal-title">
-            ${project.title}
-        </h2>
+    document.getElementById(
+        "skillModalCategory"
+    ).textContent =
+        skill.category;
 
 
-        <p class="modal-summary">
-            ${project.description}
-        </p>
+    document.getElementById(
+        "skillModalTitle"
+    ).textContent =
+        skill.name;
 
 
-        <div class="modal-tags">
-
-            ${project.tags.map(
-                tag =>
-                `<span>${tag}</span>`
-            ).join("")}
-
-        </div>
+    document.getElementById(
+        "skillModalDescription"
+    ).textContent =
+        skill.description;
 
 
-        <div class="modal-grid">
-
-            <div>
-
-                <section class="modal-section">
-
-                    <h3>
-                        Overview
-                    </h3>
-
-                    <p>
-                        ${project.overview}
-                    </p>
-
-                </section>
+    document.getElementById(
+        "skillModalPoints"
+    ).innerHTML =
+        skill.points.map(
+            point =>
+                `<li>${point}</li>`
+        ).join("");
 
 
-                <section class="modal-section">
-
-                    <h3>
-                        My Contribution
-                    </h3>
-
-                    <ul>
-
-                        ${project.contribution.map(
-                            item =>
-                            `<li>${item}</li>`
-                        ).join("")}
-
-                    </ul>
-
-                </section>
-
-
-                <section class="modal-section">
-
-                    <h3>
-                        Results
-                    </h3>
-
-                    <p>
-                        ${project.results}
-                    </p>
-
-                </section>
-
-            </div>
-
-
-            <aside class="modal-sidebar">
-
-                ${project.meta.map(
-                    item => `
-
-                        <div class="modal-stat">
-
-                            <span>
-                                ${item[0]}
-                            </span>
-
-                            <strong>
-                                ${item[1]}
-                            </strong>
-
-                        </div>
-
-                    `
-                ).join("")}
-
-            </aside>
-
-        </div>
-
-    `;
-
-
-    modal.classList.add("show");
-
-    document.body.style.overflow = "hidden";
-
+    openModal(skillModal);
 }
 
+
+
+/* =========================================================
+   MODAL HELPERS
+========================================================= */
+
+function openModal(modal) {
+
+    modal.classList.add("open");
+
+    modal.setAttribute(
+        "aria-hidden",
+        "false"
+    );
+
+    document.body.style.overflow =
+        "hidden";
+}
+
+
+function closeModal(modal) {
+
+    modal.classList.remove("open");
+
+    modal.setAttribute(
+        "aria-hidden",
+        "true"
+    );
+
+    if (
+        !document.querySelector(".modal.open")
+    ) {
+
+        document.body.style.overflow =
+            "";
+
+    }
+}
+
+
+
+/* =========================================================
+   PROJECT CLICK
+========================================================= */
 
 projectsGrid.addEventListener(
     "click",
     event => {
 
         const card =
-            event.target.closest(".project-card");
+            event.target.closest(
+                ".project-card"
+            );
 
         if (!card) return;
 
-        openProject(
-            Number(card.dataset.project)
-        );
+
+        const index =
+            Number(card.dataset.index);
+
+
+        openProjectPreview(index);
 
     }
 );
 
 
-function closeProject() {
 
-    modal.classList.remove("show");
+/* =========================================================
+   SKILL CLICK
+========================================================= */
 
-    document.body.style.overflow = "";
-
-}
-
-
-closeModal.addEventListener(
+skillsGrid.addEventListener(
     "click",
-    closeProject
+    event => {
+
+        const card =
+            event.target.closest(
+                ".skill-card"
+            );
+
+        if (!card) return;
+
+
+        const index =
+            Number(card.dataset.skill);
+
+
+        openSkill(index);
+
+    }
 );
 
 
+
+/* =========================================================
+   EXPLORE PROJECT
+========================================================= */
+
 document
-    .querySelector(".modal-overlay")
+    .getElementById("exploreProject")
     .addEventListener(
         "click",
-        closeProject
+        openProjectDetail
     );
 
+
+
+/* =========================================================
+   CLOSE MODALS
+========================================================= */
+
+document
+    .querySelectorAll("[data-close]")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                const modal =
+                    document.getElementById(
+                        button.dataset.close
+                    );
+
+                closeModal(modal);
+
+            }
+        );
+
+    });
+
+
+document
+    .querySelectorAll(".modal-overlay")
+    .forEach(overlay => {
+
+        overlay.addEventListener(
+            "click",
+            () => {
+
+                const modal =
+                    overlay.closest(".modal");
+
+                closeModal(modal);
+
+            }
+        );
+
+    });
+
+
+
+/* =========================================================
+   ESC TO CLOSE
+========================================================= */
 
 document.addEventListener(
     "keydown",
     event => {
 
         if (
-            event.key === "Escape"
-        ) {
+            event.key !== "Escape"
+        ) return;
 
-            closeProject();
 
-        }
+        document
+            .querySelectorAll(".modal.open")
+            .forEach(modal => {
+
+                closeModal(modal);
+
+            });
 
     }
 );
 
 
-/* =====================================================
+
+/* =========================================================
+   ACTIVE NAV
+========================================================= */
+
+const sections =
+    document.querySelectorAll(
+        "main section"
+    );
+
+
+const navLinks =
+    document.querySelectorAll(
+        ".nav-link"
+    );
+
+
+const mobileNavItems =
+    document.querySelectorAll(
+        ".mobile-nav-item"
+    );
+
+
+function updateNavigation() {
+
+    const position =
+        window.scrollY +
+        window.innerHeight * .35;
+
+
+    let current =
+        "home";
+
+
+    sections.forEach(section => {
+
+        if (
+            position >= section.offsetTop &&
+            position <
+            section.offsetTop +
+            section.offsetHeight
+        ) {
+
+            current =
+                section.id;
+
+        }
+
+    });
+
+
+    navLinks.forEach(link => {
+
+        link.classList.toggle(
+            "active",
+
+            link.getAttribute("href") ===
+            `#${current}`
+        );
+
+    });
+
+
+    mobileNavItems.forEach(item => {
+
+        item.classList.toggle(
+            "active",
+
+            item.dataset.section ===
+            current
+        );
+
+    });
+
+}
+
+
+window.addEventListener(
+    "scroll",
+    updateNavigation,
+    { passive: true }
+);
+
+
+updateNavigation();
+
+
+
+/* =========================================================
    THEME
-===================================================== */
+========================================================= */
 
 const themeToggle =
-    document.getElementById("themeToggle");
-
-
-const savedTheme =
-    localStorage.getItem(
-        "portfolio-theme"
+    document.getElementById(
+        "themeToggle"
     );
-
-
-if (savedTheme === "light") {
-
-    document.body.classList.add(
-        "light-mode"
-    );
-
-}
-
-
-function updateThemeIcon() {
-
-    themeToggle.textContent =
-        document.body.classList.contains(
-            "light-mode"
-        )
-            ? "☾"
-            : "☼";
-
-}
-
-
-updateThemeIcon();
 
 
 themeToggle.addEventListener(
@@ -898,62 +1089,24 @@ themeToggle.addEventListener(
             "light-mode"
         );
 
-        const light =
+        themeToggle.textContent =
             document.body.classList.contains(
                 "light-mode"
-            );
-
-        localStorage.setItem(
-            "portfolio-theme",
-            light ? "light" : "dark"
-        );
-
-        updateThemeIcon();
+            )
+                ? "☾"
+                : "☼";
 
     }
 );
 
 
-/* =====================================================
-   BACK TO TOP
-===================================================== */
 
-const backTop =
-    document.getElementById("backToTop");
-
-
-window.addEventListener(
-    "scroll",
-    () => {
-
-        backTop.classList.toggle(
-            "show",
-            window.scrollY > 600
-        );
-
-    }
-);
-
-
-backTop.addEventListener(
-    "click",
-    () => {
-
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-
-    }
-);
-
-
-/* =====================================================
+/* =========================================================
    INITIALIZE
-===================================================== */
+========================================================= */
 
-renderJourney();
+renderProjects();
 
 renderSkills();
 
-renderProjects();
+renderLeadership();
