@@ -1,4 +1,157 @@
 /* =========================================================
+   JOURNEY DATA
+========================================================= */
+
+const journey = [
+
+    {
+        year: "2025 — 2026",
+
+        role: "PROCESS TECHNOLOGIST",
+
+        company: "RECKITT / DUREX",
+
+        category: "PROFESSIONAL EXPERIENCE",
+
+        description:
+            "Worked in GMP-regulated medical device manufacturing, supporting process validation, technical documentation, production trials and troubleshooting.",
+
+        tags: [
+            "PROCESS VALIDATION",
+            "GMP",
+            "MANUFACTURING",
+            "DATA",
+            "TROUBLESHOOTING"
+        ],
+
+        highlights: [
+            "Executed OQ/PQ process validation activities in a GMP-regulated manufacturing environment.",
+            "Led UDI laser printing validation across 5 production machines.",
+            "Supported electronic leakage testing OQ across 12 new machines.",
+            "Collected, reviewed and documented technical process data.",
+            "Worked cross-functionally with Production, QA/QC and Engineering."
+        ]
+    },
+
+
+    {
+        year: "2025",
+
+        role: "R&D INTERN",
+
+        company: "CIRPRISE",
+
+        category: "INTERNSHIP",
+
+        description:
+            "Worked on product development and formulation trials, focusing on product quality, cost considerations and sustainability-related innovation.",
+
+        tags: [
+            "R&D",
+            "PRODUCT DEVELOPMENT",
+            "FORMULATION",
+            "SUSTAINABILITY",
+            "INNOVATION"
+        ],
+
+        highlights: [
+            "Conducted formulation trials for powdered hand soap.",
+            "Evaluated product quality and cost considerations.",
+            "Worked with technical information and experimental results.",
+            "Supported patent coordination and technical documentation."
+        ]
+    },
+
+
+    {
+        year: "2024",
+
+        role: "FACILITIES ENGINEER INTERN",
+
+        company: "MEKTEC",
+
+        category: "INTERNSHIP",
+
+        description:
+            "Worked with manufacturing and environmental data, including carbon footprint analysis and wastewater-related technical information.",
+
+        tags: [
+            "ENGINEERING",
+            "MANUFACTURING",
+            "CARBON FOOTPRINT",
+            "DATA ANALYSIS",
+            "ENVIRONMENT"
+        ],
+
+        highlights: [
+            "Worked with plant data for carbon footprint assessment.",
+            "Supported Scope 1 and Scope 3 data collection.",
+            "Worked with wastewater and heavy-metal related information.",
+            "Connected engineering data with environmental considerations."
+        ]
+    },
+
+
+    {
+        year: "2021 — 2025",
+
+        role: "CHEMICAL ENGINEERING",
+
+        company: "CHULALONGKORN UNIVERSITY",
+
+        category: "EDUCATION",
+
+        description:
+            "Built a strong foundation in chemical engineering through process design, simulation, research projects and technical problem-solving.",
+
+        tags: [
+            "PROCESS DESIGN",
+            "SIMULATION",
+            "RESEARCH",
+            "ENGINEERING",
+            "PROBLEM SOLVING"
+        ],
+
+        highlights: [
+            "Developed process design and simulation skills.",
+            "Worked on engineering research and technical projects.",
+            "Applied chemical engineering principles to real-world problems.",
+            "Developed experience with technical analysis and engineering software."
+        ]
+    },
+
+
+    {
+        year: "2025",
+
+        role: "WORK & TRAVEL",
+
+        company: "LIVINGSTON, MONTANA, USA",
+
+        category: "INTERNATIONAL EXPERIENCE",
+
+        description:
+            "Gained international work experience while developing communication, adaptability and cross-cultural collaboration skills.",
+
+        tags: [
+            "INTERNATIONAL",
+            "ENGLISH",
+            "ADAPTABILITY",
+            "COMMUNICATION",
+            "CROSS-CULTURAL"
+        ],
+
+        highlights: [
+            "Worked and lived in the United States.",
+            "Communicated with people from different cultural backgrounds.",
+            "Developed adaptability and independence in a new environment.",
+            "Strengthened practical English communication skills."
+        ]
+    }
+
+];
+
+/* =========================================================
    PROJECT DATA
 ========================================================= */
 
@@ -484,6 +637,8 @@ function iconSVG(type) {
 /* =========================================================
    DOM
 ========================================================= */
+const journeyGrid =
+    document.getElementById("journeyGrid");
 
 const projectsGrid =
     document.getElementById("projectsGrid");
@@ -504,6 +659,199 @@ const skillModal =
     document.getElementById("skillModal");
 
 
+/* =========================================================
+   RENDER JOURNEY
+========================================================= */
+
+function renderJourney() {
+
+    journeyGrid.innerHTML =
+        journey.map((item, index) => `
+
+            <article
+                class="journey-card"
+                data-index="${index}"
+            >
+
+                <!-- JOURNEY HEADER -->
+
+                <button
+                    class="journey-header"
+                    type="button"
+                    aria-expanded="false"
+                >
+
+                    <div class="journey-year">
+                        ${item.year}
+                    </div>
+
+
+                    <div class="journey-main">
+
+                        <div class="journey-role">
+                            ${item.role}
+                        </div>
+
+                        <div class="journey-company">
+                            ${item.company}
+                        </div>
+
+                    </div>
+
+
+                    <div class="journey-category">
+                        ${item.category}
+                    </div>
+
+
+                    <div class="journey-arrow">
+                        →
+                    </div>
+
+                </button>
+
+
+
+                <!-- JOURNEY DETAILS -->
+
+                <div class="journey-details">
+
+                    <div class="journey-details-inner">
+
+                        <div class="journey-detail-heading">
+
+                            <span>
+                                EXPERIENCE
+                            </span>
+
+                            <h3>
+                                ${item.role}
+                            </h3>
+
+                        </div>
+
+
+                        <p class="journey-description">
+                            ${item.description}
+                        </p>
+
+
+                        <!-- KEYWORD TAGS -->
+
+                        <div class="journey-tags">
+
+                            ${item.tags.map(tag => `
+                                <span class="journey-tag">
+                                    ${tag}
+                                </span>
+                            `).join("")}
+
+                        </div>
+
+
+                        <!-- HIGHLIGHTS -->
+
+                        <div class="journey-highlights">
+
+                            <h4>
+                                KEY HIGHLIGHTS
+                            </h4>
+
+                            <ul>
+
+                                ${item.highlights.map(highlight => `
+                                    <li>
+                                        ${highlight}
+                                    </li>
+                                `).join("")}
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        `).join("");
+}
+/* =========================================================
+   JOURNEY ACCORDION
+========================================================= */
+
+journeyGrid.addEventListener(
+    "click",
+    event => {
+
+        const header =
+            event.target.closest(
+                ".journey-header"
+            );
+
+        if (!header) return;
+
+
+        const card =
+            header.closest(
+                ".journey-card"
+            );
+
+
+        const isOpen =
+            card.classList.contains(
+                "open"
+            );
+
+
+        /*
+         * Close all other cards
+         */
+
+        document
+            .querySelectorAll(
+                ".journey-card.open"
+            )
+            .forEach(openCard => {
+
+                if (openCard !== card) {
+
+                    openCard.classList.remove(
+                        "open"
+                    );
+
+                    openCard
+                        .querySelector(
+                            ".journey-header"
+                        )
+                        .setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                }
+
+            });
+
+
+        /*
+         * Toggle selected card
+         */
+
+        card.classList.toggle(
+            "open",
+            !isOpen
+        );
+
+
+        header.setAttribute(
+            "aria-expanded",
+            String(!isOpen)
+        );
+
+    }
+);
 
 /* =========================================================
    RENDER PROJECTS
