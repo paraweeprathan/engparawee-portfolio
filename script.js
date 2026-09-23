@@ -104,8 +104,8 @@ const journey = [
 
     {
         role: "Process Technologist",
-        company: "Reckitt",
-        duration: "2025 — 2026",
+        company: "Reckitt Benckiser",
+        duration: "DEC2025 — MAR2026",
 
         color: "#38bdf8",
 
@@ -123,11 +123,12 @@ const journey = [
         ],
 
         bullets: [
-            "Executed process validation in GMP-regulated medical device manufacturing.",
-            "Led UDI laser printing validation across 5 machines.",
-            "Supported electronic leakage testing across 12 new machines.",
-            "Worked with Production, QA, Engineering and operators to solve production issues.",
+            "Executed process validation to finish Operational Qualification (OQ) and Performance Qualification (PQ) in GMP-regulated medical device manufacturing.",
+            "Led UDI laser printing validation across 5 machines and Supported electronic leakage testing across 12 new machines.",
+            "Worked with Production, QC/QA, Engineering and operators to solve production issues.",
             "Collected and reviewed technical data to support validation and troubleshooting."
+            "Strengthening understanding of validation protocols and GMP compliance.",
+   
         ]
     },
 
@@ -148,7 +149,7 @@ const journey = [
             },
             {
                 label: "FOUNDATION",
-                value: "Process • Data • Design"
+                value: "Process • Mindset • Design"
             }
         ],
 
@@ -173,7 +174,7 @@ const journey = [
         highlights: [
             {
                 label: "PLANT DATA",
-                value: "Scope 1 & Scope 3"
+                value: "Carbon Footprint Calculation"
             },
             {
                 label: "ENVIRONMENT",
