@@ -5,98 +5,6 @@
 const journey = [
 
     {
-        number: "01",
-
-        role: "PROCESS TECHNOLOGIST",
-
-        company: "RECKITT • DUREX",
-
-        duration: "2025 — 2026",
-
-        color: "#38bdf8",
-
-        keywords: [
-            ["PROCESS VALIDATION", "OQ / PQ"],
-            ["GMP", "MEDICAL DEVICE"],
-            ["DATA", "ACCURACY"]
-        ],
-
-        description:
-            "Worked in GMP-regulated medical device manufacturing, supporting process validation, technical documentation and production-related problem solving.",
-
-        points: [
-            "Led UDI laser printing validation across 5 machines.",
-            "Supported electronic leakage testing OQ across 12 machines.",
-            "Worked with Production, QA/QC, Engineering and operators.",
-            "Collected, reviewed and documented technical process data."
-        ],
-
-        tags: [
-            "PROCESS VALIDATION",
-            "OQ / PQ",
-            "GMP",
-            "TECHNICAL DOCUMENTATION",
-            "DATA REVIEW"
-        ]
-    },
-
-
-    {
-        number: "02",
-
-        role: "CHEMICAL ENGINEERING",
-
-        company: "CHULALONGKORN UNIVERSITY",
-
-        duration: "2021 — 2025",
-
-        color: "#a78bfa",
-
-        stat: {
-            number: "4",
-            label: "VOLUNTEER CAMPS"
-        },
-
-        keywords: [
-            ["CHEMICAL ENGINEERING", "B.ENG."],
-            ["LEADERSHIP", "TEAMWORK"],
-            ["PROJECTS", "R&D"]
-        ],
-
-        description:
-            "Built a foundation in chemical engineering while exploring process design, materials, sustainability, research and leadership through academic and extracurricular projects.",
-
-        points: [
-            "Developed engineering projects across process design and materials.",
-            "Participated in research, innovation and sustainability activities.",
-            "Led and coordinated university activities and events.",
-            "Joined 4 volunteer camps and community-oriented activities."
-        ],
-
-        tags: [
-            "PROCESS DESIGN",
-            "R&D",
-            "SUSTAINABILITY",
-            "LEADERSHIP",
-            "VOLUNTEER"
-        ]
-    },
-
-
-    {
-        number: "03",
-
-        role: "R&D INTERN",
-
-        company: "CIRPRISE",
-
-        duration: "/* =========================================================
-   JOURNEY DATA
-========================================================= */
-
-const journey = [
-
-    {
         role: "Process Technologist",
 
         company: "Reckitt • Durex",
@@ -173,9 +81,7 @@ const journey = [
 
         points: [
             "Led academic club initiatives and student activities, balancing academic responsibilities with project planning, team coordination, and event execution.",
-
             "Organized 4 CSR camps, taking ownership of planning, logistics, budgeting, and on-ground problem solving for large student teams.",
-
             "Contributed to school renovation at Wat Khao Chong Lab School and reforestation activities in a wildlife sanctuary, strengthening leadership and community impact experience."
         ],
 
