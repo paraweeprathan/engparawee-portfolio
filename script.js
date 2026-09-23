@@ -709,193 +709,200 @@ const skillModal =
 
 function renderJourney() {
 
-    journeyGrid.innerHTML =
-        journey.map((item, index) => `
+    const journeyGrid =
+        document.getElementById("journeyGrid");
 
-            <article
-                class="journey-card"
-                data-index="${index}"
-            >
 
-                <!-- JOURNEY HEADER -->
+    journeyGrid.innerHTML = journey.map(
+        (item, index) => `
 
-                <button
-                    class="journey-header"
-                    type="button"
-                    aria-expanded="false"
-                >
+        <article
+            class="journey-card"
+            data-journey="${index}"
+            style="--journey-color:${item.color}"
+        >
 
-                    <div class="journey-year">
-                        ${item.year}
+            <div class="journey-header">
+
+                <div class="journey-number">
+                    ${item.number}
+                </div>
+
+
+                <div class="journey-main">
+
+                    <div class="journey-role">
+                        ${item.role}
+                    </div>
+
+                    <div class="journey-company">
+                        ${item.company}
+                    </div>
+
+                    <div class="journey-duration">
+                        ${item.duration}
                     </div>
 
 
-                    <div class="journey-main">
+                    ${
+                        item.stat
+                        ? `
+                            <div class="journey-stat">
 
-                        <div class="journey-role">
-                            ${item.role}
-                        </div>
+                                <div class="journey-stat-number">
+                                    ${item.stat.number}
+                                </div>
 
-                        <div class="journey-company">
-                            ${item.company}
-                        </div>
+                                <div class="journey-stat-label">
+                                    ${item.stat.label}
+                                </div>
 
-                    </div>
-
-
-                    <div class="journey-category">
-                        ${item.category}
-                    </div>
-
-
-                    <div class="journey-arrow">
-                        →
-                    </div>
-
-                </button>
+                            </div>
+                        `
+                        : ""
+                    }
 
 
+                    <div class="journey-keywords">
 
-                <!-- JOURNEY DETAILS -->
+                        ${item.keywords.map(
+                            keyword => `
 
-                <div class="journey-details">
+                            <span class="journey-keyword">
 
-                    <div class="journey-details-inner">
+                                ${keyword[0]}
 
-                        <div class="journey-detail-heading">
+                                <small>
+                                    ${keyword[1]}
+                                </small>
 
-                            <span>
-                                EXPERIENCE
                             </span>
 
-                            <h3>
-                                ${item.role}
-                            </h3>
-
-                        </div>
-
-
-                        <p class="journey-description">
-                            ${item.description}
-                        </p>
-
-
-                        <!-- KEYWORD TAGS -->
-
-                        <div class="journey-tags">
-
-                            ${item.tags.map(tag => `
-                                <span class="journey-tag">
-                                    ${tag}
-                                </span>
-                            `).join("")}
-
-                        </div>
-
-
-                        <!-- HIGHLIGHTS -->
-
-                        <div class="journey-highlights">
-
-                            <h4>
-                                KEY HIGHLIGHTS
-                            </h4>
-
-                            <ul>
-
-                                ${item.highlights.map(highlight => `
-                                    <li>
-                                        ${highlight}
-                                    </li>
-                                `).join("")}
-
-                            </ul>
-
-                        </div>
+                        `).join("")}
 
                     </div>
 
                 </div>
 
-            </article>
 
-        `).join("");
-}
-/* =========================================================
-   JOURNEY ACCORDION
-========================================================= */
+                <div class="journey-arrow">
+                    →
+                </div>
 
-journeyGrid.addEventListener(
-    "click",
-    event => {
-
-        const header =
-            event.target.closest(
-                ".journey-header"
-            );
-
-        if (!header) return;
+            </div>
 
 
-        const card =
-            header.closest(
-                ".journey-card"
-            );
+            <div class="journey-details">
+
+                <div class="journey-details-inner">
+
+                    <div>
+
+                        <div class="journey-detail-title">
+                            EXPERIENCE
+                        </div>
+
+                        <p class="journey-detail-description">
+                            ${item.description}
+                        </p>
 
 
-        const isOpen =
-            card.classList.contains(
-                "open"
-            );
+                        <div class="journey-detail-tags">
+
+                            ${item.tags.map(
+                                tag => `
+                                    <span class="journey-detail-tag">
+                                        ${tag}
+                                    </span>
+                                `
+                            ).join("")}
+
+                        </div>
+
+                    </div>
 
 
-        /*
-         * Close all other cards
-         */
+                    <div>
 
-        document
-            .querySelectorAll(
-                ".journey-card.open"
-            )
-            .forEach(openCard => {
+                        <div class="journey-detail-title">
+                            KEY EXPERIENCE
+                        </div>
 
-                if (openCard !== card) {
+                        <ul class="journey-detail-list">
 
-                    openCard.classList.remove(
-                        "open"
-                    );
+                            ${item.points.map(
+                                point => `
+                                    <li>
+                                        ${point}
+                                    </li>
+                                `
+                            ).join("")}
 
-                    openCard
-                        .querySelector(
-                            ".journey-header"
-                        )
-                        .setAttribute(
-                            "aria-expanded",
-                            "false"
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    `).join("");
+
+
+    /* ACCORDION */
+
+    journeyGrid
+        .querySelectorAll(".journey-header")
+        .forEach(header => {
+
+            header.addEventListener(
+                "click",
+                () => {
+
+                    const card =
+                        header.closest(
+                            ".journey-card"
                         );
 
+
+                    const isActive =
+                        card.classList.contains(
+                            "active"
+                        );
+
+
+                    /* Close every card */
+
+                    journeyGrid
+                        .querySelectorAll(
+                            ".journey-card"
+                        )
+                        .forEach(
+                            item =>
+                                item.classList.remove(
+                                    "active"
+                                )
+                        );
+
+
+                    /* Open clicked card */
+
+                    if (!isActive) {
+
+                        card.classList.add(
+                            "active"
+                        );
+
+                    }
+
                 }
+            );
 
-            });
+        });
 
-
-        /*
-         * Toggle selected card
-         */
-
-        card.classList.toggle(
-            "open",
-            !isOpen
-        );
-
-
-        header.setAttribute(
-            "aria-expanded",
-            String(!isOpen)
-        );
-
-    }
-);
+}
 
 /* =========================================================
    RENDER PROJECTS
@@ -1496,7 +1503,6 @@ themeToggle.addEventListener(
 /* =========================================================
    INITIALIZE
 ========================================================= */
-
 renderJourney();
 renderProjects();
 renderSkills();
