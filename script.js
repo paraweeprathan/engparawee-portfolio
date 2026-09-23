@@ -5,147 +5,191 @@
 const journey = [
 
     {
-        year: "2025 — 2026",
+        number: "01",
 
         role: "PROCESS TECHNOLOGIST",
 
-        company: "RECKITT / DUREX",
+        company: "RECKITT • DUREX",
 
-        category: "PROFESSIONAL EXPERIENCE",
+        duration: "2025 — 2026",
+
+        color: "#38bdf8",
+
+        keywords: [
+            ["PROCESS VALIDATION", "OQ / PQ"],
+            ["GMP", "MEDICAL DEVICE"],
+            ["DATA", "ACCURACY"]
+        ],
 
         description:
-            "Worked in GMP-regulated medical device manufacturing, supporting process validation, technical documentation, production trials and troubleshooting.",
+            "Worked in GMP-regulated medical device manufacturing, supporting process validation, technical documentation and production-related problem solving.",
+
+        points: [
+            "Led UDI laser printing validation across 5 machines.",
+            "Supported electronic leakage testing OQ across 12 machines.",
+            "Worked with Production, QA/QC, Engineering and operators.",
+            "Collected, reviewed and documented technical process data."
+        ],
 
         tags: [
             "PROCESS VALIDATION",
+            "OQ / PQ",
             "GMP",
-            "MANUFACTURING",
-            "DATA",
-            "TROUBLESHOOTING"
-        ],
-
-        highlights: [
-            "Executed OQ/PQ process validation activities in a GMP-regulated manufacturing environment.",
-            "Led UDI laser printing validation across 5 production machines.",
-            "Supported electronic leakage testing OQ across 12 new machines.",
-            "Collected, reviewed and documented technical process data.",
-            "Worked cross-functionally with Production, QA/QC and Engineering."
+            "TECHNICAL DOCUMENTATION",
+            "DATA REVIEW"
         ]
     },
 
 
     {
-        year: "2025",
-
-        role: "R&D INTERN",
-
-        company: "CIRPRISE",
-
-        category: "INTERNSHIP",
-
-        description:
-            "Worked on product development and formulation trials, focusing on product quality, cost considerations and sustainability-related innovation.",
-
-        tags: [
-            "R&D",
-            "PRODUCT DEVELOPMENT",
-            "FORMULATION",
-            "SUSTAINABILITY",
-            "INNOVATION"
-        ],
-
-        highlights: [
-            "Conducted formulation trials for powdered hand soap.",
-            "Evaluated product quality and cost considerations.",
-            "Worked with technical information and experimental results.",
-            "Supported patent coordination and technical documentation."
-        ]
-    },
-
-
-    {
-        year: "2024",
-
-        role: "FACILITIES ENGINEER INTERN",
-
-        company: "MEKTEC",
-
-        category: "INTERNSHIP",
-
-        description:
-            "Worked with manufacturing and environmental data, including carbon footprint analysis and wastewater-related technical information.",
-
-        tags: [
-            "ENGINEERING",
-            "MANUFACTURING",
-            "CARBON FOOTPRINT",
-            "DATA ANALYSIS",
-            "ENVIRONMENT"
-        ],
-
-        highlights: [
-            "Worked with plant data for carbon footprint assessment.",
-            "Supported Scope 1 and Scope 3 data collection.",
-            "Worked with wastewater and heavy-metal related information.",
-            "Connected engineering data with environmental considerations."
-        ]
-    },
-
-
-    {
-        year: "2021 — 2025",
+        number: "02",
 
         role: "CHEMICAL ENGINEERING",
 
         company: "CHULALONGKORN UNIVERSITY",
 
-        category: "EDUCATION",
+        duration: "2021 — 2025",
+
+        color: "#a78bfa",
+
+        stat: {
+            number: "4",
+            label: "VOLUNTEER CAMPS"
+        },
+
+        keywords: [
+            ["CHEMICAL ENGINEERING", "B.ENG."],
+            ["LEADERSHIP", "TEAMWORK"],
+            ["PROJECTS", "R&D"]
+        ],
 
         description:
-            "Built a strong foundation in chemical engineering through process design, simulation, research projects and technical problem-solving.",
+            "Built a foundation in chemical engineering while exploring process design, materials, sustainability, research and leadership through academic and extracurricular projects.",
+
+        points: [
+            "Developed engineering projects across process design and materials.",
+            "Participated in research, innovation and sustainability activities.",
+            "Led and coordinated university activities and events.",
+            "Joined 4 volunteer camps and community-oriented activities."
+        ],
 
         tags: [
             "PROCESS DESIGN",
-            "SIMULATION",
-            "RESEARCH",
-            "ENGINEERING",
-            "PROBLEM SOLVING"
-        ],
-
-        highlights: [
-            "Developed process design and simulation skills.",
-            "Worked on engineering research and technical projects.",
-            "Applied chemical engineering principles to real-world problems.",
-            "Developed experience with technical analysis and engineering software."
+            "R&D",
+            "SUSTAINABILITY",
+            "LEADERSHIP",
+            "VOLUNTEER"
         ]
     },
 
 
     {
-        year: "2025",
+        number: "03",
+
+        role: "R&D INTERN",
+
+        company: "CIRPRISE",
+
+        duration: "2025",
+
+        color: "#2dd4bf",
+
+        keywords: [
+            ["PRODUCT R&D", "FORMULATION"],
+            ["SUSTAINABILITY", "CARBON"],
+            ["INNOVATION", "STARTUP"]
+        ],
+
+        description:
+            "Worked on product development and formulation trials for powdered hand soap, connecting product performance, cost and sustainability considerations.",
+
+        points: [
+            "Conducted formulation and product development trials.",
+            "Evaluated product quality and cost considerations.",
+            "Worked with technical information and experimental results.",
+            "Supported patent-related coordination."
+        ],
+
+        tags: [
+            "R&D",
+            "FORMULATION",
+            "PRODUCT DEVELOPMENT",
+            "SUSTAINABILITY",
+            "STARTUP"
+        ]
+    },
+
+
+    {
+        number: "04",
+
+        role: "FACILITIES ENGINEER INTERN",
+
+        company: "MEKTEC",
+
+        duration: "2024",
+
+        color: "#fb923c",
+
+        keywords: [
+            ["CARBON FOOTPRINT", "SCOPE 1 & 3"],
+            ["FACILITIES", "PLANT DATA"],
+            ["WASTEWATER", "HEAVY METALS"]
+        ],
+
+        description:
+            "Worked with plant and facilities-related data while exploring environmental performance, carbon footprint and wastewater considerations.",
+
+        points: [
+            "Collected and organized plant-related data.",
+            "Supported Scope 1 and Scope 3 carbon footprint work.",
+            "Worked with wastewater and heavy-metal related information.",
+            "Connected engineering data with environmental analysis."
+        ],
+
+        tags: [
+            "FACILITIES",
+            "CARBON FOOTPRINT",
+            "SCOPE 1",
+            "SCOPE 3",
+            "WASTEWATER"
+        ]
+    },
+
+
+    {
+        number: "05",
 
         role: "WORK & TRAVEL",
 
-        company: "LIVINGSTON, MONTANA, USA",
+        company: "LIVINGSTON • MONTANA, USA",
 
-        category: "INTERNATIONAL EXPERIENCE",
+        duration: "2025",
 
-        description:
-            "Gained international work experience while developing communication, adaptability and cross-cultural collaboration skills.",
+        color: "#facc15",
 
-        tags: [
-            "INTERNATIONAL",
-            "ENGLISH",
-            "ADAPTABILITY",
-            "COMMUNICATION",
-            "CROSS-CULTURAL"
+        keywords: [
+            ["INTERNATIONAL", "EXPERIENCE"],
+            ["ENGLISH", "COMMUNICATION"],
+            ["ADAPTABILITY", "CULTURE"]
         ],
 
-        highlights: [
-            "Worked and lived in the United States.",
-            "Communicated with people from different cultural backgrounds.",
-            "Developed adaptability and independence in a new environment.",
-            "Strengthened practical English communication skills."
+        description:
+            "A four-month international Work & Travel experience in Montana, gaining exposure to a new working environment, culture and everyday communication in English.",
+
+        points: [
+            "Worked and lived independently in the United States.",
+            "Communicated with people from different backgrounds.",
+            "Adapted to a new working and living environment.",
+            "Strengthened English communication and independence."
+        ],
+
+        tags: [
+            "USA",
+            "ENGLISH",
+            "COMMUNICATION",
+            "ADAPTABILITY",
+            "INTERNATIONAL"
         ]
     }
 
