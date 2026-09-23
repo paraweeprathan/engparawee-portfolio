@@ -2278,3 +2278,75 @@ body.light-mode .mobile-nav-item.active {
     object-fit: cover;
     object-position: center;
 }
+/* =========================================================
+   MOBILE HERO — CENTERED LAYOUT
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-container {
+        width: calc(100% - 30px) !important;
+        max-width: 100% !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        text-align: center !important;
+
+        gap: 0 !important;
+    }
+
+    .hero-container > * {
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .hero-eyebrow {
+        width: 100%;
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 700px;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 760px;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+
+        text-align: center !important;
+    }
+
+    .hero-actions {
+        width: 100%;
+
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+}
