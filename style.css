@@ -1148,156 +1148,123 @@ main {
 
 
 /* =========================================================
-   MOBILE
+   JOURNEY — PHONE
 ========================================================= */
 
 @media (max-width: 600px) {
 
     .journey-grid {
-        gap: 10px;
+        gap: 8px;
     }
-
 
     .journey-header {
-        min-height: 76px;
+        min-height: 64px;
 
         grid-template-columns:
-            36px 1fr 28px;
+            30px 1fr 24px;
 
-        gap: 9px;
+        gap: 7px;
 
-        padding: 15px 13px;
+        padding: 12px 11px;
     }
-
 
     .journey-icon {
-        width: 34px;
-        height: 34px;
-
-        font-size: 18px;
-    }
-
-
-    .journey-role {
-        font-size: 16px;
-
-        line-height: 1.2;
-    }
-
-
-    .journey-company-row {
-        gap: 4px;
-
-        margin-top: 4px;
-    }
-
-
-    .journey-company {
-        font-size: 10px;
-    }
-
-
-    .journey-separator {
-        font-size: 9px;
-    }
-
-
-    .journey-duration {
-        font-size: 9px;
-    }
-
-
-    .journey-arrow {
         width: 28px;
         height: 28px;
 
-        font-size: 18px;
+        font-size: 16px;
     }
 
+    .journey-role {
+        font-size: 14px;
+        line-height: 1.15;
+    }
+
+    .journey-company-row {
+        gap: 4px;
+        margin-top: 3px;
+    }
+
+    .journey-company {
+        font-size: 9px;
+    }
+
+    .journey-separator {
+        font-size: 8px;
+    }
+
+    .journey-duration {
+        font-size: 8px;
+    }
+
+    .journey-arrow {
+        width: 24px;
+        height: 24px;
+
+        font-size: 16px;
+    }
+
+    /* CONTENT WHEN OPEN */
 
     .journey-details-inner,
-    .journey-card.active
-    .journey-details-inner {
-        padding-left: 15px;
-        padding-right: 15px;
+    .journey-card.active .journey-details-inner {
+        padding-left: 12px;
+        padding-right: 12px;
     }
 
-
-    .journey-card.active
-    .journey-details-inner {
-        padding-top: 20px;
-        padding-bottom: 23px;
+    .journey-card.active .journey-details-inner {
+        padding-top: 17px;
+        padding-bottom: 20px;
     }
-
 
     .journey-highlights {
         grid-template-columns: 1fr;
-
-        gap: 8px;
-
-        margin-bottom: 18px;
+        gap: 7px;
+        margin-bottom: 15px;
     }
-
 
     .journey-highlight {
         min-height: auto;
-
-        padding: 14px 15px;
+        padding: 12px;
     }
-
 
     .journey-highlight-value {
-        font-size: 30px;
+        font-size: 27px;
     }
-
 
     .journey-highlight-label {
-        margin-top: 5px;
-
-        font-size: 10px;
+        margin-top: 4px;
+        font-size: 9px;
     }
-
 
     .journey-highlights-label {
-        padding: 7px 12px;
-
-        font-size: 10px;
-
-        margin-bottom: 11px;
-    }
-
-
-    .journey-experience-title {
-        font-size: 13px;
-
+        padding: 6px 10px;
+        font-size: 9px;
         margin-bottom: 9px;
     }
 
+    .journey-experience-title {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
 
     .journey-points {
-        gap: 6px;
+        gap: 5px;
     }
-
 
     .journey-points li {
-        padding-left: 17px;
-
-        font-size: 11px;
-
-        line-height: 1.6;
+        padding-left: 15px;
+        font-size: 10px;
+        line-height: 1.55;
     }
-
 
     .journey-tags {
-        gap: 5px;
-
-        margin-top: 14px;
+        gap: 4px;
+        margin-top: 12px;
     }
 
-
     .journey-tag {
-        padding: 4px 7px;
-
+        padding: 3px 6px;
         font-size: 7px;
     }
 }
