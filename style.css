@@ -633,15 +633,14 @@ main {
     left: 0;
 }
 
-
 /* =========================================================
-   JOURNEY ACCORDION
+   JOURNEY
 ========================================================= */
 
 .journey-grid {
     display: flex;
     flex-direction: column;
-    gap: 14px;
+    gap: 12px;
 }
 
 
@@ -653,7 +652,6 @@ main {
     --journey-color: #38bdf8;
 
     position: relative;
-
     overflow: hidden;
 
     border: 1px solid
@@ -663,7 +661,7 @@ main {
             transparent
         );
 
-    border-radius: 9px;
+    border-radius: 8px;
 
     background:
         linear-gradient(
@@ -691,7 +689,7 @@ main {
         );
 
     box-shadow:
-        0 15px 50px rgba(0,0,0,.25);
+        0 12px 40px rgba(0,0,0,.22);
 }
 
 
@@ -700,18 +698,18 @@ main {
 ========================================================= */
 
 .journey-header {
-    min-height: 135px;
+    min-height: 105px;
 
     display: grid;
 
     grid-template-columns:
-        65px 1fr 40px;
+        52px 1fr 34px;
 
     align-items: center;
 
-    gap: 22px;
+    gap: 16px;
 
-    padding: 28px 30px;
+    padding: 20px 24px;
 
     cursor: pointer;
 }
@@ -720,22 +718,21 @@ main {
 /* ICON */
 
 .journey-icon {
-    width: 55px;
-    height: 55px;
+    width: 44px;
+    height: 44px;
 
     display: grid;
-
     place-items: center;
 
     color: var(--journey-color);
 
-    font-size: 30px;
+    font-size: 24px;
 
     text-shadow:
-        0 0 20px
+        0 0 18px
         color-mix(
             in srgb,
-            var(--journey-color) 45%,
+            var(--journey-color) 40%,
             transparent
         );
 }
@@ -744,13 +741,13 @@ main {
 /* TITLE */
 
 .journey-role {
-    font-size: 27px;
+    font-size: 22px;
 
     font-weight: 800;
 
     color: #f4f7fa;
 
-    line-height: 1.1;
+    line-height: 1.15;
 }
 
 
@@ -761,16 +758,16 @@ main {
 
     flex-wrap: wrap;
 
-    gap: 7px;
+    gap: 6px;
 
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 
 .journey-company {
     color: var(--journey-color);
 
-    font-size: 17px;
+    font-size: 14px;
 
     font-weight: 700;
 }
@@ -784,23 +781,22 @@ main {
 .journey-duration {
     color: #718095;
 
-    font-size: 16px;
+    font-size: 12px;
 }
 
 
 /* ARROW */
 
 .journey-arrow {
-    width: 38px;
-    height: 38px;
+    width: 34px;
+    height: 34px;
 
     display: grid;
-
     place-items: center;
 
     color: #7b8492;
 
-    font-size: 27px;
+    font-size: 22px;
 
     transition:
         transform .35s ease,
@@ -856,7 +852,7 @@ main {
     overflow: hidden;
 
     padding:
-        0 120px 0 120px;
+        0 55px;
 
     transition:
         padding .45s ease;
@@ -866,7 +862,7 @@ main {
 .journey-card.active
 .journey-details-inner {
     padding:
-        36px 120px 45px;
+        28px 55px 32px;
 }
 
 
@@ -877,27 +873,27 @@ main {
 .journey-highlights-label {
     display: inline-block;
 
-    padding: 13px 30px;
+    padding: 8px 16px;
 
     border:
         1px solid
         color-mix(
             in srgb,
-            var(--journey-color) 55%,
+            var(--journey-color) 50%,
             transparent
         );
 
-    border-radius: 7px;
+    border-radius: 6px;
 
     color: var(--journey-color);
 
-    font-size: 19px;
+    font-size: 12px;
 
     font-weight: 800;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
 
-    margin-bottom: 18px;
+    margin-bottom: 14px;
 }
 
 
@@ -911,16 +907,16 @@ main {
     grid-template-columns:
         repeat(3, 1fr);
 
-    gap: 17px;
+    gap: 12px;
 
-    margin-bottom: 28px;
+    margin-bottom: 22px;
 }
 
 
 .journey-highlight {
-    min-height: 135px;
+    min-height: 105px;
 
-    padding: 24px;
+    padding: 18px;
 
     border:
         1px solid
@@ -930,7 +926,7 @@ main {
             #27313c
         );
 
-    border-radius: 8px;
+    border-radius: 7px;
 
     background:
         radial-gradient(
@@ -952,7 +948,7 @@ main {
         "Bebas Neue",
         sans-serif;
 
-    font-size: 44px;
+    font-size: 34px;
 
     line-height: 1;
 
@@ -961,11 +957,11 @@ main {
 
 
 .journey-highlight-label {
-    margin-top: 12px;
+    margin-top: 8px;
 
     color: #9aa4b2;
 
-    font-size: 13px;
+    font-size: 11px;
 
     font-weight: 600;
 
@@ -974,7 +970,7 @@ main {
 
 
 /* =========================================================
-   EXPERIENCE TITLE
+   EXPERIENCE
 ========================================================= */
 
 .journey-experience-title {
@@ -982,13 +978,13 @@ main {
 
     align-items: center;
 
-    gap: 12px;
+    gap: 9px;
 
-    margin-bottom: 15px;
+    margin-bottom: 12px;
 
     color: #e8edf2;
 
-    font-size: 18px;
+    font-size: 15px;
 
     font-weight: 800;
 }
@@ -997,7 +993,7 @@ main {
 .journey-experience-icon {
     color: var(--journey-color);
 
-    font-size: 20px;
+    font-size: 17px;
 }
 
 
@@ -1010,7 +1006,7 @@ main {
 
     flex-direction: column;
 
-    gap: 10px;
+    gap: 7px;
 
     margin: 0;
 
@@ -1023,13 +1019,13 @@ main {
 .journey-points li {
     position: relative;
 
-    padding-left: 24px;
+    padding-left: 20px;
 
     color: #9aa4b2;
 
-    font-size: 15px;
+    font-size: 13px;
 
-    line-height: 1.7;
+    line-height: 1.65;
 }
 
 
@@ -1047,7 +1043,7 @@ main {
 
 
 /* =========================================================
-   KEYWORD TAGS
+   TAGS
 ========================================================= */
 
 .journey-tags {
@@ -1055,14 +1051,14 @@ main {
 
     flex-wrap: wrap;
 
-    gap: 8px;
+    gap: 6px;
 
-    margin-top: 24px;
+    margin-top: 18px;
 }
 
 
 .journey-tag {
-    padding: 7px 11px;
+    padding: 5px 9px;
 
     border:
         1px solid
@@ -1088,13 +1084,223 @@ main {
             #fff
         );
 
-    font-size: 9px;
+    font-size: 8px;
 
     font-weight: 800;
 
-    letter-spacing: 1px;
+    letter-spacing: .8px;
 }
 
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .journey-header {
+        min-height: 88px;
+
+        grid-template-columns:
+            44px 1fr 32px;
+
+        gap: 12px;
+
+        padding: 17px 18px;
+    }
+
+
+    .journey-icon {
+        width: 38px;
+        height: 38px;
+
+        font-size: 21px;
+    }
+
+
+    .journey-role {
+        font-size: 20px;
+    }
+
+
+    .journey-company {
+        font-size: 12px;
+    }
+
+
+    .journey-duration {
+        font-size: 11px;
+    }
+
+
+    .journey-details-inner {
+        padding:
+            0 24px;
+    }
+
+
+    .journey-card.active
+    .journey-details-inner {
+        padding:
+            24px 24px 28px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .journey-grid {
+        gap: 10px;
+    }
+
+
+    .journey-header {
+        min-height: 76px;
+
+        grid-template-columns:
+            36px 1fr 28px;
+
+        gap: 9px;
+
+        padding: 15px 13px;
+    }
+
+
+    .journey-icon {
+        width: 34px;
+        height: 34px;
+
+        font-size: 18px;
+    }
+
+
+    .journey-role {
+        font-size: 16px;
+
+        line-height: 1.2;
+    }
+
+
+    .journey-company-row {
+        gap: 4px;
+
+        margin-top: 4px;
+    }
+
+
+    .journey-company {
+        font-size: 10px;
+    }
+
+
+    .journey-separator {
+        font-size: 9px;
+    }
+
+
+    .journey-duration {
+        font-size: 9px;
+    }
+
+
+    .journey-arrow {
+        width: 28px;
+        height: 28px;
+
+        font-size: 18px;
+    }
+
+
+    .journey-details-inner,
+    .journey-card.active
+    .journey-details-inner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+
+    .journey-card.active
+    .journey-details-inner {
+        padding-top: 20px;
+        padding-bottom: 23px;
+    }
+
+
+    .journey-highlights {
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .journey-highlight {
+        min-height: auto;
+
+        padding: 14px 15px;
+    }
+
+
+    .journey-highlight-value {
+        font-size: 30px;
+    }
+
+
+    .journey-highlight-label {
+        margin-top: 5px;
+
+        font-size: 10px;
+    }
+
+
+    .journey-highlights-label {
+        padding: 7px 12px;
+
+        font-size: 10px;
+
+        margin-bottom: 11px;
+    }
+
+
+    .journey-experience-title {
+        font-size: 13px;
+
+        margin-bottom: 9px;
+    }
+
+
+    .journey-points {
+        gap: 6px;
+    }
+
+
+    .journey-points li {
+        padding-left: 17px;
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+
+    .journey-tags {
+        gap: 5px;
+
+        margin-top: 14px;
+    }
+
+
+    .journey-tag {
+        padding: 4px 7px;
+
+        font-size: 7px;
+    }
+}
 
 /* =========================================================
    MOBILE
