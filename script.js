@@ -90,21 +90,136 @@ const journey = [
 
         company: "CIRPRISE",
 
+        duration: "/* =========================================================
+   JOURNEY DATA
+========================================================= */
+
+const journey = [
+
+    {
+        role: "Process Technologist",
+
+        company: "Reckitt • Durex",
+
+        duration: "2025 — 2026",
+
+        icon: "⚙",
+
+        color: "#38bdf8",
+
+        highlights: [
+            {
+                value: "OQ / PQ",
+                label: "PROCESS VALIDATION"
+            },
+            {
+                value: "5",
+                label: "MACHINES VALIDATED"
+            },
+            {
+                value: "12",
+                label: "LEAK TESTING MACHINES"
+            }
+        ],
+
+        title:
+            "Process Validation / Technical Experience",
+
+        points: [
+            "Led UDI laser printing validation across 5 production machines.",
+            "Supported electronic leakage testing OQ across 12 new machines.",
+            "Worked with Production, QA/QC, Engineering and operators.",
+            "Collected, reviewed and documented technical process data."
+        ],
+
+        tags: [
+            "PROCESS VALIDATION",
+            "OQ / PQ",
+            "GMP",
+            "DATA REVIEW",
+            "TECHNICAL DOCUMENTATION"
+        ]
+    },
+
+
+    {
+        role: "Bachelor of Engineering",
+
+        company: "Chulalongkorn Uni",
+
+        duration: "Aug 2021 — Jun 2025",
+
+        icon: "🏛",
+
+        color: "#ec4899",
+
+        highlights: [
+            {
+                value: "4",
+                label: "CSR CAMPS"
+            },
+            {
+                value: "LEAD",
+                label: "ACTIVITY DIRECTION"
+            },
+            {
+                value: "CSR",
+                label: "COMMUNITY IMPACT"
+            }
+        ],
+
+        title:
+            "Activities Director / Project Manager",
+
+        points: [
+            "Led academic club initiatives and student activities, balancing academic responsibilities with project planning, team coordination, and event execution.",
+
+            "Organized 4 CSR camps, taking ownership of planning, logistics, budgeting, and on-ground problem solving for large student teams.",
+
+            "Contributed to school renovation at Wat Khao Chong Lab School and reforestation activities in a wildlife sanctuary, strengthening leadership and community impact experience."
+        ],
+
+        tags: [
+            "LEADERSHIP",
+            "PROJECT MANAGEMENT",
+            "CSR",
+            "TEAM COORDINATION",
+            "VOLUNTEER"
+        ]
+    },
+
+
+    {
+        role: "R&D Intern",
+
+        company: "Cirprise",
+
         duration: "2025",
+
+        icon: "✦",
 
         color: "#2dd4bf",
 
-        keywords: [
-            ["PRODUCT R&D", "FORMULATION"],
-            ["SUSTAINABILITY", "CARBON"],
-            ["INNOVATION", "STARTUP"]
+        highlights: [
+            {
+                value: "R&D",
+                label: "PRODUCT DEVELOPMENT"
+            },
+            {
+                value: "95%",
+                label: "CARBON REDUCTION"
+            },
+            {
+                value: "FORMULA",
+                label: "PRODUCT TRIALS"
+            }
         ],
 
-        description:
-            "Worked on product development and formulation trials for powdered hand soap, connecting product performance, cost and sustainability considerations.",
+        title:
+            "Product R&D / Sustainability",
 
         points: [
-            "Conducted formulation and product development trials.",
+            "Conducted formulation trials for powdered hand soap.",
             "Evaluated product quality and cost considerations.",
             "Worked with technical information and experimental results.",
             "Supported patent-related coordination."
@@ -121,24 +236,33 @@ const journey = [
 
 
     {
-        number: "04",
+        role: "Facilities Engineer Intern",
 
-        role: "FACILITIES ENGINEER INTERN",
-
-        company: "MEKTEC",
+        company: "Mektec",
 
         duration: "2024",
 
+        icon: "▣",
+
         color: "#fb923c",
 
-        keywords: [
-            ["CARBON FOOTPRINT", "SCOPE 1 & 3"],
-            ["FACILITIES", "PLANT DATA"],
-            ["WASTEWATER", "HEAVY METALS"]
+        highlights: [
+            {
+                value: "Scope 1",
+                label: "CARBON DATA"
+            },
+            {
+                value: "Scope 3",
+                label: "VALUE CHAIN"
+            },
+            {
+                value: "DATA",
+                label: "PLANT ANALYSIS"
+            }
         ],
 
-        description:
-            "Worked with plant and facilities-related data while exploring environmental performance, carbon footprint and wastewater considerations.",
+        title:
+            "Facilities / Environmental Data",
 
         points: [
             "Collected and organized plant-related data.",
@@ -158,24 +282,33 @@ const journey = [
 
 
     {
-        number: "05",
+        role: "Work & Travel",
 
-        role: "WORK & TRAVEL",
-
-        company: "LIVINGSTON • MONTANA, USA",
+        company: "Livingston • Montana, USA",
 
         duration: "2025",
 
+        icon: "✈",
+
         color: "#facc15",
 
-        keywords: [
-            ["INTERNATIONAL", "EXPERIENCE"],
-            ["ENGLISH", "COMMUNICATION"],
-            ["ADAPTABILITY", "CULTURE"]
+        highlights: [
+            {
+                value: "4",
+                label: "MONTHS IN USA"
+            },
+            {
+                value: "EN",
+                label: "ENGLISH COMMUNICATION"
+            },
+            {
+                value: "INTL",
+                label: "INTERNATIONAL EXPERIENCE"
+            }
         ],
 
-        description:
-            "A four-month international Work & Travel experience in Montana, gaining exposure to a new working environment, culture and everyday communication in English.",
+        title:
+            "International Experience",
 
         points: [
             "Worked and lived independently in the United States.",
@@ -713,72 +846,42 @@ function renderJourney() {
         document.getElementById("journeyGrid");
 
 
-    journeyGrid.innerHTML = journey.map(
-        (item, index) => `
+    journeyGrid.innerHTML =
+        journey.map((item, index) => `
 
         <article
             class="journey-card"
-            data-journey="${index}"
+            data-index="${index}"
             style="--journey-color:${item.color}"
         >
 
             <div class="journey-header">
 
-                <div class="journey-number">
-                    ${item.number}
+                <div class="journey-icon">
+                    ${item.icon}
                 </div>
 
 
-                <div class="journey-main">
+                <div>
 
                     <div class="journey-role">
                         ${item.role}
                     </div>
 
-                    <div class="journey-company">
-                        ${item.company}
-                    </div>
 
-                    <div class="journey-duration">
-                        ${item.duration}
-                    </div>
+                    <div class="journey-company-row">
 
+                        <span class="journey-company">
+                            ${item.company}
+                        </span>
 
-                    ${
-                        item.stat
-                        ? `
-                            <div class="journey-stat">
+                        <span class="journey-separator">
+                            |
+                        </span>
 
-                                <div class="journey-stat-number">
-                                    ${item.stat.number}
-                                </div>
-
-                                <div class="journey-stat-label">
-                                    ${item.stat.label}
-                                </div>
-
-                            </div>
-                        `
-                        : ""
-                    }
-
-
-                    <div class="journey-keywords">
-
-                        ${item.keywords.map(
-                            keyword => `
-
-                            <span class="journey-keyword">
-
-                                ${keyword[0]}
-
-                                <small>
-                                    ${keyword[1]}
-                                </small>
-
-                            </span>
-
-                        `).join("")}
+                        <span class="journey-duration">
+                            ${item.duration}
+                        </span>
 
                     </div>
 
@@ -786,7 +889,7 @@ function renderJourney() {
 
 
                 <div class="journey-arrow">
-                    →
+                    ↑
                 </div>
 
             </div>
@@ -796,49 +899,66 @@ function renderJourney() {
 
                 <div class="journey-details-inner">
 
-                    <div>
-
-                        <div class="journey-detail-title">
-                            EXPERIENCE
-                        </div>
-
-                        <p class="journey-detail-description">
-                            ${item.description}
-                        </p>
+                    <div class="journey-highlights-label">
+                        HIGHLIGHTS
+                    </div>
 
 
-                        <div class="journey-detail-tags">
+                    <div class="journey-highlights">
 
-                            ${item.tags.map(
-                                tag => `
-                                    <span class="journey-detail-tag">
-                                        ${tag}
-                                    </span>
-                                `
-                            ).join("")}
+                        ${item.highlights.map(
+                            highlight => `
 
-                        </div>
+                            <div class="journey-highlight">
+
+                                <div class="journey-highlight-value">
+                                    ${highlight.value}
+                                </div>
+
+                                <div class="journey-highlight-label">
+                                    ${highlight.label}
+                                </div>
+
+                            </div>
+
+                        `).join("")}
 
                     </div>
 
 
-                    <div>
+                    <div class="journey-experience-title">
 
-                        <div class="journey-detail-title">
-                            KEY EXPERIENCE
-                        </div>
+                        <span class="journey-experience-icon">
+                            ⚑
+                        </span>
 
-                        <ul class="journey-detail-list">
+                        ${item.title}
 
-                            ${item.points.map(
-                                point => `
-                                    <li>
-                                        ${point}
-                                    </li>
-                                `
-                            ).join("")}
+                    </div>
 
-                        </ul>
+
+                    <ul class="journey-points">
+
+                        ${item.points.map(
+                            point => `
+                                <li>
+                                    ${point}
+                                </li>
+                            `
+                        ).join("")}
+
+                    </ul>
+
+
+                    <div class="journey-tags">
+
+                        ${item.tags.map(
+                            tag => `
+                                <span class="journey-tag">
+                                    ${tag}
+                                </span>
+                            `
+                        ).join("")}
 
                     </div>
 
@@ -851,7 +971,9 @@ function renderJourney() {
     `).join("");
 
 
-    /* ACCORDION */
+    /* =====================================================
+       ACCORDION
+    ====================================================== */
 
     journeyGrid
         .querySelectorAll(".journey-header")
@@ -867,29 +989,25 @@ function renderJourney() {
                         );
 
 
-                    const isActive =
+                    const wasActive =
                         card.classList.contains(
                             "active"
                         );
 
-
-                    /* Close every card */
 
                     journeyGrid
                         .querySelectorAll(
                             ".journey-card"
                         )
                         .forEach(
-                            item =>
-                                item.classList.remove(
+                            other =>
+                                other.classList.remove(
                                     "active"
                                 )
                         );
 
 
-                    /* Open clicked card */
-
-                    if (!isActive) {
+                    if (!wasActive) {
 
                         card.classList.add(
                             "active"
