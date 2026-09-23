@@ -1858,11 +1858,7 @@ document.addEventListener(
 ========================================================= */
 
 renderJourney();
-
 renderSkills();
-
 renderProjects();
-
 observeRevealElements();
-
 handleHash();
