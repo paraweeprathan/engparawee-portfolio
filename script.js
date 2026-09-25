@@ -7,9 +7,9 @@ const journey = [
     {
         role: "Process Technologist",
 
-        company: "Reckitt • Durex",
+        company: "Reckitt Benckiser (Durex)",
 
-        duration: "2025 — 2026",
+        duration: "Dec 2025 — Mar 2026",
 
         icon: "⚙",
 
@@ -21,12 +21,12 @@ const journey = [
                 label: "PROCESS VALIDATION"
             },
             {
-                value: "5",
-                label: "MACHINES VALIDATED"
+                value: "LEAD",
+                label: "5 Machines Validation Project"
             },
             {
-                value: "12",
-                label: "LEAK TESTING MACHINES"
+                value: "Quality",
+                label: "GMP, QSIT"
             }
         ],
 
@@ -53,7 +53,7 @@ const journey = [
     {
         role: "Bachelor of Engineering",
 
-        company: "Chulalongkorn Uni",
+        company: "Chulalongkorn University",
 
         duration: "Aug 2021 — Jun 2025",
 
@@ -81,8 +81,10 @@ const journey = [
 
         points: [
             "Led academic club initiatives and student activities, balancing academic responsibilities with project planning, team coordination, and event execution.",
-            "Organized 4 CSR camps, taking ownership of planning, logistics, budgeting, and on-ground problem solving for large student teams.",
-            "Contributed to school renovation at Wat Khao Chong Lab School and reforestation activities in a wildlife sanctuary, strengthening leadership and community impact experience."
+            "Organized several CSR camps, taking ownership of planning, logistics, budgeting, and on-ground problem solving for large student teams.",
+            "Contributed to school renovation at Wat Khao Chong Lab School and reforestation activities in a wildlife sanctuary, strengthening leadership and community impact experience.",
+            "Community Development: Built check dams for local communities in Santi Subdistrict, Na Noi District, Nan Province, and participated in various community and environmental volunteer projects.",
+            "Educational Outreach: Organized and participated in educational volunteer camps for students in Sakon Nakhon Province, supporting learning and knowledge-sharing opportunities."
         ],
 
         tags: [
@@ -128,7 +130,8 @@ const journey = [
             "Conducted formulation trials for powdered hand soap.",
             "Evaluated product quality and cost considerations.",
             "Worked with technical information and experimental results.",
-            "Supported patent-related coordination."
+            "Supported patent-related coordination.",
+            "Research & Development: Developed hands-on experience in product formulation, experimental design, testing, and process improvement through R&D projects."
         ],
 
         tags: [
@@ -144,9 +147,9 @@ const journey = [
     {
         role: "Facilities Engineer Intern",
 
-        company: "Mektec",
+        company: "Mektec Manufacturing",
 
-        duration: "2024",
+        duration: "May 2024 - Aug 2024",
 
         icon: "▣",
 
@@ -154,11 +157,11 @@ const journey = [
 
         highlights: [
             {
-                value: "Scope 1",
-                label: "CARBON DATA"
+                value: "Scope 1 & 3",
+                label: "CARBON FOOTPRINT CALCULATION"
             },
             {
-                value: "Scope 3",
+                value: "TECHNICAL",
                 label: "VALUE CHAIN"
             },
             {
@@ -174,7 +177,8 @@ const journey = [
             "Collected and organized plant-related data.",
             "Supported Scope 1 and Scope 3 carbon footprint work.",
             "Worked with wastewater and heavy-metal related information.",
-            "Connected engineering data with environmental analysis."
+            "Connected engineering data with environmental analysis.",
+            "Data & Analytical Skills: Strengthened skills in data management, data analysis, and information accuracy, while gaining practical understanding of professional work environments and cross-functional collaboration."
         ],
 
         tags: [
@@ -190,9 +194,9 @@ const journey = [
     {
         role: "Work & Travel",
 
-        company: "Livingston • Montana, USA",
+        company: "Livingston, Montana, USA",
 
-        duration: "2025",
+        duration: "May 2025 - Sep 2025",
 
         icon: "✈",
 
