@@ -22,11 +22,11 @@ const journey = [
             },
             {
                 value: "LEAD",
-                label: "5 Machines Validation Project"
+                label: "5 Machines Validation Projects"
             },
             {
                 value: "Quality",
-                label: "GMP, QSIT"
+                label: "QSIT & Validation Training "
             }
         ],
 
@@ -34,10 +34,12 @@ const journey = [
             "Process Validation / Technical Experience",
 
         points: [
-            "Led UDI laser printing validation across 5 production machines.",
-            "Supported electronic leakage testing OQ across 12 new machines.",
-            "Worked with Production, QA/QC, Engineering and operators.",
-            "Collected, reviewed and documented technical process data."
+            points: [
+    "<strong>Led UDI laser printing validation across 5 production machines</strong>, strengthening skills in process validation, data accuracy, and systematic problem-solving.",
+    "<strong>Supported OQ for electronic leakage testing across 12 new machines</strong>, ensuring reliable validation data and compliance with technical requirements.",
+    "<strong>Collaborated with Production, QA/QC, Engineering, and operators</strong>, developing strong cross-functional communication and practical understanding of manufacturing operations.",
+    "<strong>Collected, reviewed, and documented technical process data</strong>, strengthening attention to detail, data management, and evidence-based decision-making."
+]
         ],
 
         tags: [
