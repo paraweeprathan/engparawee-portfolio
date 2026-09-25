@@ -127,11 +127,9 @@ const journey = [
             "Product R&D / Sustainability",
 
         points: [
-            "Conducted formulation trials for powdered hand soap.",
-            "Evaluated product quality and cost considerations.",
-            "Worked with technical information and experimental results.",
-            "Supported patent-related coordination.",
-            "Research & Development: Developed hands-on experience in product formulation, experimental design, testing, and process improvement through R&D projects."
+            "Developed and optimized powdered hand soap formulations through structured experimentation and testing.",
+            "Evaluated quality, cost, and experimental data to identify opportunities for product improvement.",
+            "Translated experimental findings into practical formulation insights, while supporting technical documentation and patent coordination."
         ],
 
         tags: [
@@ -174,11 +172,10 @@ const journey = [
             "Facilities / Environmental Data",
 
         points: [
-            "Collected and organized plant-related data.",
-            "Supported Scope 1 and Scope 3 carbon footprint work.",
-            "Worked with wastewater and heavy-metal related information.",
-            "Connected engineering data with environmental analysis.",
-            "Data & Analytical Skills: Strengthened skills in data management, data analysis, and information accuracy, while gaining practical understanding of professional work environments and cross-functional collaboration."
+            "Collected and analyzed plant data to support Scope 1 & Scope 3 carbon footprint assessment, strengthening data management and analytical skills.",
+            "Worked with wastewater and heavy-metal data, developing a practical understanding of environmental monitoring and industrial processes.",
+            "Connected engineering data with environmental analysis, turning technical information into insights for sustainability-related decision-making.",
+            "Developed strong attention to data accuracy and reliability while working with real-world industrial data and cross-functional teams."
         ],
 
         tags: [
