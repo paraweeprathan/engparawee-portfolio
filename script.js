@@ -35,10 +35,10 @@ const journey = [
 
         points: [
             points: [
-    "<strong>Led UDI laser printing validation across 5 production machines</strong>, strengthening skills in process validation, data accuracy, and systematic problem-solving.",
-    "<strong>Supported OQ for electronic leakage testing across 12 new machines</strong>, ensuring reliable validation data and compliance with technical requirements.",
-    "<strong>Collaborated with Production, QA/QC, Engineering, and operators</strong>, developing strong cross-functional communication and practical understanding of manufacturing operations.",
-    "<strong>Collected, reviewed, and documented technical process data</strong>, strengthening attention to detail, data management, and evidence-based decision-making."
+    "Led UDI laser printing validation across 5 production machines, strengthening skills in process validation, data accuracy, and systematic problem-solving.",
+    "Supported OQ for electronic leakage testing across 12 new machines, ensuring reliable validation data and compliance with technical requirements.",
+    "Collaborated with Production, QA/QC, Engineering, and operators, developing strong cross-functional communication and practical understanding of manufacturing operations.",
+    "Collected, reviewed, and documented technical process data, strengthening attention to detail, data management, and evidence-based decision-making."
 ]
         ],
 
