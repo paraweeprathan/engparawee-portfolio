@@ -34,12 +34,10 @@ const journey = [
             "Process Validation / Technical Experience",
 
         points: [
-            points: [
-    "Led UDI laser printing validation across 5 production machines, strengthening skills in process validation, data accuracy, and systematic problem-solving.",
-    "Supported OQ for electronic leakage testing across 12 new machines, ensuring reliable validation data and compliance with technical requirements.",
-    "Collaborated with Production, QA/QC, Engineering, and operators, developing strong cross-functional communication and practical understanding of manufacturing operations.",
-    "Collected, reviewed, and documented technical process data, strengthening attention to detail, data management, and evidence-based decision-making."
-]
+            "Led UDI laser printing validation across 5 production machines, strengthening skills in process validation, data accuracy, and systematic problem-solving.",
+            "Supported OQ for electronic leakage testing across 12 new machines, ensuring reliable validation data and compliance with technical requirements.",
+            "Collaborated with Production, QA/QC, Engineering, and operators, developing strong cross-functional communication and practical understanding of manufacturing operations.",
+            "Collected, reviewed, and documented technical process data, strengthening attention to detail, data management, and evidence-based decision-making."
         ],
 
         tags: [
