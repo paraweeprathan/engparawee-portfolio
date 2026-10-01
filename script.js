@@ -83,7 +83,7 @@ const journey = [
             "Led academic club initiatives and student activities, balancing academic responsibilities with project planning, team coordination, and event execution.",
             "Organized several CSR camps, taking ownership of planning, logistics, budgeting, and on-ground problem solving for large student teams.",
             "Contributed to school renovation at Wat Khao Chong Lab School and reforestation activities in a wildlife sanctuary, strengthening leadership and community impact experience.",
-            "Community Development: Built check dams for local communities in Santi Subdistrict, Na Noi District, Nan Province, and participated in various community and environmental volunteer projects.",
+            "Community Development: Built check dams for local communities in Santa Subdistrict, Na Noi District, Nan Province, and participated in various community and environmental volunteer projects.",
             "Educational Outreach: Organized and participated in educational volunteer camps for students in Sakon Nakhon Province, supporting learning and knowledge-sharing opportunities."
         ],
 
