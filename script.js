@@ -257,7 +257,7 @@ const projects = [
             "PROCESS DESIGN",
             "ASPEN PLUS",
             "SIMULATION",
-            "CO₂"
+            "SUSTAINABLE"
         ],
 
         insights: [
