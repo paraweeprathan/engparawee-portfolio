@@ -3265,3 +3265,85 @@ body.light-mode .contact-link {
     }
 
 }
+/* =========================================================
+   FINAL MOBILE HERO FIX
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        overflow: hidden;
+    }
+
+    .hero-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        overflow: hidden;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: clamp(48px, 13vw, 68px);
+        line-height: .88;
+
+        letter-spacing: 0;
+        word-break: normal;
+        overflow-wrap: anywhere;
+        white-space: normal;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero h1 span {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        font-size: 13px;
+        line-height: 1.8;
+
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+    .hero-tags {
+        width: 100%;
+        max-width: 100%;
+
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
