@@ -3095,3 +3095,173 @@ body.light-mode .contact-box {
 body.light-mode .contact-link {
     color: #0f172a;
 }
+/* =========================================================
+   MOBILE WIDTH & TEXT FIX
+========================================================= */
+
+@media (max-width: 600px) {
+
+    /* Prevent content from becoming wider than the screen */
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    main,
+    section,
+    .section {
+        max-width: 100%;
+    }
+
+    .section {
+        width: 90%;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-grid {
+        width: 100%;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+
+        /* Smaller so long words fit on mobile */
+        font-size: clamp(52px, 14vw, 80px);
+
+        line-height: .88;
+
+        letter-spacing: 0;
+
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+
+    /* =====================================================
+       HERO DESCRIPTION
+    ===================================================== */
+
+    .hero-description {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 13px;
+        line-height: 1.8;
+
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+
+    /* =====================================================
+       TAGS
+    ===================================================== */
+
+    .hero-tags {
+        width: 100%;
+        max-width: 100%;
+
+        justify-content: center;
+
+        gap: 9px;
+    }
+
+    .hero-tags span {
+        max-width: 100%;
+
+        padding: 8px 11px;
+
+        font-size: 9px;
+    }
+
+
+    /* =====================================================
+       BUTTON
+    ===================================================== */
+
+    .hero-buttons {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact-box {
+        width: 100%;
+        max-width: 100%;
+
+        padding: 28px 22px;
+    }
+
+    .contact-box h2 {
+        font-size: 55px;
+        line-height: .9;
+    }
+
+    .contact-links {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .contact-links a {
+        min-width: 0;
+        width: 100%;
+        max-width: 100%;
+
+        overflow-wrap: anywhere;
+    }
+
+
+    /* =====================================================
+       PROJECTS
+    ===================================================== */
+
+    .project-card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .project-title {
+        font-size: 38px;
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       MODALS
+    ===================================================== */
+
+    .modal-window {
+        width: 100%;
+        max-width: 100%;
+    }
+
+}
