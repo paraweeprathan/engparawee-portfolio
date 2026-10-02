@@ -3347,3 +3347,14 @@ body.light-mode .contact-link {
     }
 
 }
+@media (max-width: 600px) {
+
+    .journey-header {
+        grid-template-columns: 38px minmax(0, 1fr);
+    }
+
+    .journey-arrow {
+        display: none;
+    }
+
+}
