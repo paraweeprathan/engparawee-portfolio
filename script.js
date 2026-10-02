@@ -271,35 +271,35 @@ const projects = [
                 title: "OVERVIEW",
 
                 text:
-                    "Designed a conceptual process for producing methanol from CO₂, combining process simulation, equipment design and economic considerations."
+                    "Designed a conceptual process for producing methanol from CO₂, integrating chemical engineering fundamentals, process simulation, equipment design, and preliminary economic considerations to explore a technically feasible production route."
             },
 
             {
                 title: "CHALLENGE",
 
                 text:
-                    "Developing a technically feasible process while maintaining product purity and considering process integration."
+                    "Developed a process capable of converting CO₂ into methanol while maintaining high product purity and process feasibility. The project required balancing reaction conditions, separation performance, energy considerations, and process integration across multiple stages."
             },
 
             {
                 title: "APPROACH",
 
                 text:
-                    "Defined the process route, performed simulation and material balance calculations, designed major equipment and evaluated preliminary process economics."
+                    "Defined the overall process route and developed the process flowsheet using Aspen Plus. Performed material and energy balance calculations, evaluated key operating conditions, designed major process equipment, and assessed preliminary process economics to support engineering decisions."
             },
 
             {
                 title: "KEY RESULT",
 
                 text:
-                    "The simulated process achieved methanol purity above 98%."
+                    "The simulated process achieved methanol purity above 98%, demonstrating the technical feasibility of the proposed process under the selected operating conditions."
             },
 
             {
                 title: "LEARNING",
 
                 text:
-                    "Strengthened my understanding of how chemical engineering fundamentals connect with real process design and decision-making."
+                    "Strengthened my ability to connect chemical engineering fundamentals with process simulation and engineering decision-making, while developing a broader understanding of how process conditions, equipment design, and economics interact in real-world process development."
             }
         ]
     },
@@ -315,7 +315,7 @@ const projects = [
         icon: "laser",
 
         description:
-            "Process validation of UDI laser printing across five production machines.",
+            "Process validation of UDI laser printing across 5 production machines.",
 
         keywords: [
             "VALIDATION",
@@ -335,35 +335,35 @@ const projects = [
                 title: "OVERVIEW",
 
                 text:
-                    "Supported and led validation activities for UDI laser printing on foil within a GMP-regulated medical device manufacturing environment."
+                    "Led and supported the validation of UDI laser printing on foil across 5 production machines within a GMP-regulated medical device manufacturing environment, focusing on process consistency, validation requirements, and reliable technical data."
             },
 
             {
                 title: "CHALLENGE",
 
                 text:
-                    "Ensuring consistent printing performance across multiple production machines while maintaining validation requirements."
+                    "Ensuring consistent and reliable printing performance across multiple production machines while meeting defined validation criteria and maintaining proper documentation within a regulated manufacturing environment."
             },
 
             {
                 title: "APPROACH",
 
                 text:
-                    "Reviewed validation requirements, prepared and executed validation activities, collected process data and documented findings."
+                    "Reviewed validation requirements and process parameters, prepared and executed validation activities, collected and analyzed machine and process data, and documented results to build reliable evidence for process evaluation."
             },
 
             {
                 title: "KEY RESULT",
 
                 text:
-                    "Generated validation evidence supporting evaluation of the UDI laser printing process."
+                    "Generated structured validation evidence for the UDI laser printing process across 5 machines, supporting the assessment of process performance and consistency under defined operating conditions."
             },
 
             {
                 title: "LEARNING",
 
                 text:
-                    "Strengthened my understanding of validation, technical documentation and the importance of reliable process data."
+                    "Strengthened practical skills in process validation, data accuracy, technical documentation, and systematic problem-solving, while gaining hands-on understanding of how quality and engineering requirements are applied in GMP manufacturing."
             }
         ]
     },
@@ -379,7 +379,7 @@ const projects = [
         icon: "filter",
 
         description:
-            "Development of an electrospun air filter using recycled plastic.",
+            "Development of an high-efficiency air filter using recycled plastic waste.",
 
         keywords: [
             "MATERIALS",
@@ -399,35 +399,35 @@ const projects = [
                 title: "OVERVIEW",
 
                 text:
-                    "Explored the conversion of recycled plastic from baby milk bottles into material suitable for high-efficiency air filtration."
+                    "Developed a high-efficiency electrospun air filter using recycled plastic from baby milk bottles, exploring how waste polymer can be transformed into a functional material with potential environmental and engineering value."
             },
 
             {
                 title: "CHALLENGE",
 
                 text:
-                    "Finding a practical way to transform waste plastic into a useful high-value material."
+                    "Explored how to convert post-consumer plastic waste into a higher-value functional material, while maintaining suitable material properties and filtration performance."
             },
 
             {
                 title: "APPROACH",
 
                 text:
-                    "Prepared recycled polymer material, investigated processing conditions, produced electrospun fiber structures and evaluated filter characteristics."
+                    "Prepared and processed recycled polymer, investigated material and processing conditions, produced electrospun fiber structures, and evaluated their characteristics to understand the relationship between fiber morphology, material properties, and filtration performance."
             },
 
             {
                 title: "KEY RESULT",
 
                 text:
-                    "Demonstrated the potential of recycled polymer waste as a feedstock for functional filtration materials."
+                    "Demonstrated the feasibility of using recycled polymer as a feedstock for electrospun filtration materials, highlighting a potential pathway for adding value to plastic waste through material engineering."
             },
 
             {
                 title: "LEARNING",
 
                 text:
-                    "Learned how material properties, processing conditions and final product performance are closely connected."
+                    "Strengthened my understanding of polymer materials, electrospinning, experimental design, and performance evaluation, while learning how material selection and processing conditions influence final product performance and sustainability."
             }
         ]
     }
