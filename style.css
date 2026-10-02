@@ -3028,3 +3028,70 @@ footer strong {
     }
 
 }
+/* =========================================================
+   LIGHT MODE
+========================================================= */
+
+body.light-mode {
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+body.light-mode .site-header {
+    background: rgba(248, 250, 252, 0.85);
+    border-bottom-color: rgba(15, 23, 42, 0.1);
+}
+
+body.light-mode .section {
+    background: #f8fafc;
+}
+
+body.light-mode .section:nth-child(even) {
+    background: #f1f5f9;
+}
+
+body.light-mode .theme-toggle {
+    background: #0f172a;
+    color: #f8fafc;
+}
+
+body.light-mode .nav-link {
+    color: #475569;
+}
+
+body.light-mode .nav-link:hover,
+body.light-mode .nav-link.active {
+    color: #0f172a;
+}
+
+body.light-mode .journey-card,
+body.light-mode .project-card,
+body.light-mode .skill-card,
+body.light-mode .leadership-card {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.1);
+    color: #0f172a;
+}
+
+body.light-mode .journey-role,
+body.light-mode .project-title,
+body.light-mode .skill-name,
+body.light-mode .leadership-card h4 {
+    color: #0f172a;
+}
+
+body.light-mode .journey-company,
+body.light-mode .journey-duration,
+body.light-mode .project-description,
+body.light-mode .leadership-card p {
+    color: #64748b;
+}
+
+body.light-mode .contact-box {
+    background: #ffffff;
+    border-color: rgba(15, 23, 42, 0.1);
+}
+
+body.light-mode .contact-link {
+    color: #0f172a;
+}
