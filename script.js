@@ -102,7 +102,7 @@ const journey = [
 
         company: "Cirprise",
 
-        duration: "2025",
+        duration: "Feb 2025 - May 2025",
 
         icon: "✦",
 
@@ -160,7 +160,7 @@ const journey = [
             },
             {
                 value: "TECHNICAL",
-                label: "VALUE CHAIN"
+                label: "Wastewater Treatment"
             },
             {
                 value: "DATA",
@@ -205,7 +205,7 @@ const journey = [
                 label: "MONTHS IN USA"
             },
             {
-                value: "EN",
+                value: "Self Improvement",
                 label: "ENGLISH COMMUNICATION"
             },
             {
@@ -218,10 +218,10 @@ const journey = [
             "International Experience",
 
         points: [
-            "Worked and lived independently in the United States.",
-            "Communicated with people from different backgrounds.",
-            "Adapted to a new working and living environment.",
-            "Strengthened English communication and independence."
+            "Lived and worked independently in the United States, developing adaptability, self-management, and confidence in navigating an unfamiliar environment.",
+            "Worked with people from diverse cultural and professional backgrounds, strengthening cross-cultural communication, teamwork, and interpersonal skills.",
+            "Adapted to new workplace expectations and day-to-day challenges, learning to communicate effectively and solve problems independently.",
+            "Strengthened practical English communication, particularly in real-world workplace interactions, while becoming more confident working in an international environment."
         ],
 
         tags: [
